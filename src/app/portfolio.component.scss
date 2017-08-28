@@ -1,0 +1,43 @@
+// variables
+@import "./styles/_variables.scss";
+@import "./styles/_colors.scss";
+
+// resets
+@import "./styles/_google-fonts.scss";
+@import "./styles/_reset.scss";
+
+// helpers
+@import "./styles/_flexbox.scss";
+
+// components
+@import "./styles/_list-view.scss";
+
+// temp styles
+
+.header {
+    background-color: #888;
+    height: 40px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.detail {
+    bottom: 0;
+    left: 41.5%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.detail-content {
+    background-color: #ddd;
+    height: 2000px;
+    max-width: 540px;
+}
