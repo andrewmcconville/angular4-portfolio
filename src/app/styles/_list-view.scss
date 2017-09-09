@@ -2,25 +2,18 @@
 @import "../styles/_variables.scss";
 
 .list-view {
-    // bottom: 0;
 	display: none;
-    // left: 0;
-    // overflow-x: hidden;
-    // overflow-y: scroll;
-    // position: absolute;
-    // right: 0;
-    // top: 40px;
 }
 
 .list-view--active {
     display: flex;
 }
 
-.list-view--force-hide .list-view--active {
+.list-view--force-hide.list-view--active {
     display: none;
 }
 
-.list-view--force-show .list-view {
+.list-view--force-show.list-view {
     display: flex;
 }
 

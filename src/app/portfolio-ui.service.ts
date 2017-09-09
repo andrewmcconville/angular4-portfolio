@@ -12,7 +12,7 @@ export class PortfolioUIService {
     setMenuState(menuState: string) {
         console.log(menuState);
         this.menuState.next(menuState);
-    };
+    }
 
     getMenuState(): Observable<any> {
         return this.menuState.asObservable();

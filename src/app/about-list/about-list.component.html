@@ -1,16 +1,19 @@
-<div class="list-view flex flex-end-start" routerLinkActive="list-view--active" [routerLinkActiveOptions]="{exact: true}">
-  <ul class="list-view__list">
-    <li class="list-view__preview flex">
-      <a class="list-view__link" [routerLink]="['/home']">Home</a>
-    </li>
-    <li class="list-view__preview flex">
-      <a class="list-view__link" [routerLink]="['/resume']">Resume</a>
-    </li>
-    <li class="list-view__preview flex">
-      <a class="list-view__link" [routerLink]="['/reading-list']">Reading list</a>
-    </li>
-    <li class="list-view__preview flex">
-      <a class="list-view__link" [routerLink]="['/contact']">Contact</a>
-    </li>
-  </ul>
+<div class="list-view flex flex-end-start"
+    [ngClass]="{'list-view--force-show': menuStateOverride == 'about', 'list-view--force-hide': menuStateOverride != 'about' && menuStateOverride != null}"
+    routerLinkActive="list-view--active"
+    [routerLinkActiveOptions]="{exact: true}">
+    <ul class="list-view__list">
+        <li class="list-view__preview flex">
+            <a class="list-view__link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="list-view__preview flex">
+            <a class="list-view__link" [routerLink]="['/resume']">Resume</a>
+        </li>
+        <li class="list-view__preview flex">
+            <a class="list-view__link" [routerLink]="['/reading-list']">Reading list</a>
+        </li>
+        <li class="list-view__preview flex">
+            <a class="list-view__link" [routerLink]="['/contact']">Contact</a>
+        </li>
+    </ul>
 </div>

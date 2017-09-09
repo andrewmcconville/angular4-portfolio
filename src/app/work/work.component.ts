@@ -17,7 +17,7 @@ export class WorkComponent implements OnInit {
     constructor(
         private portfolioUIService: PortfolioUIService,
         private workService: WorkService,
-        private route: ActivatedRoute
+        private activatedRoute: ActivatedRoute
     ) { }
 
     ngOnInit(): void {
@@ -26,8 +26,8 @@ export class WorkComponent implements OnInit {
     }
 
     getWorkByRouteParam(): void {
-        this.route.params.map((params: Params) => {
-            return {url: params['url']};
+        this.activatedRoute.params.map((params: Params) => {
+            return { url: params['url'] };
         }).subscribe((params: Params) => {
             this.work = this.workService.getWorkByURL(params.url);
         });

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 import { IWork } from '../work/work.model';
 import { WorkService } from '../work/work.service';
@@ -10,6 +10,7 @@ import { WorkService } from '../work/work.service';
 })
 export class WorkListComponent implements OnInit {
     public works: Array<IWork> = this.workService.getWorks();
+    @Input() menuStateOverride: string;
     
     constructor(
         private workService: WorkService

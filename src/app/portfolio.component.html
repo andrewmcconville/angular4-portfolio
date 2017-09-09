@@ -8,8 +8,8 @@
         <button (click)="toggleMenuStateOverride('work')">Work</button>
     </div>
     <div class="flex-grow flex-scroll--y">
-        <portfolio-about-list [ngClass]="{'list-view--force-show': menuStateOverride == 'about', 'list-view--force-hide': menuStateOverride != 'about' && menuStateOverride != null}"></portfolio-about-list>
-        <portfolio-work-list [ngClass]="{'list-view--force-show': menuStateOverride == 'work', 'list-view--force-hide': menuStateOverride != 'work' && menuStateOverride != null}"></portfolio-work-list>
+        <portfolio-about-list [menuStateOverride]="menuStateOverride"></portfolio-about-list>
+        <portfolio-work-list [menuStateOverride]="menuStateOverride"></portfolio-work-list>
     </div>
 </nav>
 
@@ -20,7 +20,7 @@
     </header>
     <nav>
         <button>prev</button>
-        <button>next</button>
+        <button (click)="nextView()">next</button>
     </nav>
     <div id="router-view" class="flex-grow flex-scroll--y">
         <router-outlet></router-outlet>

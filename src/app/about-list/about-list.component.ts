@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'portfolio-about-list',
@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
     //styleUrls: ['./about-list.component.scss']
 })
 export class AboutListComponent {
-
+    @Input() menuStateOverride: string;
 }
