@@ -1,13 +1,42 @@
-<header class="header">
-  <button (click)="toggleMenuStateOverride('about')">About</button>
-  <button (click)="toggleMenuStateOverride('work')">Work</button>
-</header>
-
-<nav>
-  <portfolio-about-list [ngClass]="{'list-view--force-show': menuStateOverride == 'about', 'list-view--force-hide': menuStateOverride != 'about' && menuStateOverride != null}"></portfolio-about-list>
-  <portfolio-work-list [ngClass]="{'list-view--force-show': menuStateOverride == 'work', 'list-view--force-hide': menuStateOverride != 'work' && menuStateOverride != null}"></portfolio-work-list>
+<nav class="app-menu flex flex-col flex-grow">
+    <header class="">
+        <button>X</button>
+        <span>App Menu</span>
+    </header>
+    <div class="">
+        <button (click)="toggleMenuStateOverride('about')">About</button>
+        <button (click)="toggleMenuStateOverride('work')">Work</button>
+    </div>
+    <div class="flex-grow flex-scroll--y">
+        <portfolio-about-list [ngClass]="{'list-view--force-show': menuStateOverride == 'about', 'list-view--force-hide': menuStateOverride != 'about' && menuStateOverride != null}"></portfolio-about-list>
+        <portfolio-work-list [ngClass]="{'list-view--force-show': menuStateOverride == 'work', 'list-view--force-hide': menuStateOverride != 'work' && menuStateOverride != null}"></portfolio-work-list>
+    </div>
 </nav>
 
-<article class="detail">
-  <router-outlet></router-outlet>
+<article class="detail flex flex-col flex-grow">
+    <header class="">
+        <button>X</button>
+        <span>Main Content</span>
+    </header>
+    <nav>
+        <button>prev</button>
+        <button>next</button>
+    </nav>
+    <div id="router-view" class="flex-grow flex-scroll--y">
+        <router-outlet></router-outlet>
+    </div>
 </article>
+
+
+<!-- <style>
+    .spacer {
+        position: fixed;
+        background-color: pink;
+        height: 100px;
+        width: 100px;
+        top: 200px;
+        z-index: 10;
+    }
+</style>
+<div class="spacer" style="left: 0;"></div>
+<div class="spacer" style="right: 0;"></div> -->

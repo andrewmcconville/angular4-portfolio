@@ -11,6 +11,7 @@
 
 // components
 @import "./styles/_list-view.scss";
+@import "./styles/_app-menu.scss";
 
 // temp styles
 
@@ -27,9 +28,9 @@
 .detail {
     bottom: 0;
     left: 41.5%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding-top: 20px;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+    // padding-top: 20px;
     position: absolute;
     right: 0;
     top: 0;

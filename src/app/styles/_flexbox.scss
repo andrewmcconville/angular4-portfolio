@@ -62,6 +62,25 @@
     flex-shrink: 0;
 }
 
+.flex-maxgrow {
+    flex-basis: 100%;
+}
+
+
+/*
+ * overflow
+ */
+
+.flex-scroll--x {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.flex-scroll--y {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 
 /*
  * layout position

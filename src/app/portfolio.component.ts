@@ -1,5 +1,5 @@
-import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
-import { Router, Params } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, Params, NavigationEnd } from '@angular/router';
 import { ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import { PortfolioUIService } from './portfolio-ui.service';
@@ -14,6 +14,7 @@ export class PortfolioComponent implements OnInit, OnDestroy {
     menuStateOverride: string;
     menuState: string;
     subscription: Subscription;
+    detailContainer: HTMLElement;
  
     constructor(
         private portfolioUIService: PortfolioUIService,
@@ -25,23 +26,21 @@ export class PortfolioComponent implements OnInit, OnDestroy {
             this.menuState = menuState;
         });
 
-        //this.setMenuState('work');
-        //console.log(this.router);
-    }
-
-    ngAfterViewInit(): void {
+        this.detailContainer = document.getElementById('router-view');
+        
+        this.router.events.subscribe((evt) => {
+            if (!(evt instanceof NavigationEnd)) {
+                return;
+            }
+            this.detailContainer.scrollTop = 0;
+        });
     }
 
     ngOnDestroy(): void {
         this.subscription.unsubscribe();
     }
 
-    setMenuState(menuState): void {
-        this.portfolioUIService.setMenuState(menuState);
-    }
-
     toggleMenuStateOverride(menuState): void {
         this.menuStateOverride = menuState;
-        console.log(this.menuStateOverride);
     }
 }
