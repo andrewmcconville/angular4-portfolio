@@ -1,6 +1,6 @@
 <nav class="app-menu flex flex-col flex-grow" [ngClass]="{'app-menu--show': appMenuOpen}">
     <header class="">
-        <button>X</button>
+        <button (click)="closeAppMenu()">X</button>
         <span>App Menu</span>
     </header>
     <div class="">

@@ -4,7 +4,10 @@
     [routerLinkActiveOptions]="{exact: true}">
     <ul class="list-view__list">
         <li class="list-view__preview flex" *ngFor="let work of works">
-            <a class="list-view__link" [routerLink]="['/', work.url]" routerLinkActive="list-view__link--active">
+            <a class="list-view__link"
+                [routerLink]="['/', work.url]"
+                routerLinkActive="list-view__link--active"
+                (click)="closeAppMenu()">
                 {{work.name}}
             </a>
         </li>

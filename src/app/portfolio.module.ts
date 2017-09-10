@@ -17,6 +17,8 @@ import { WorkListComponent } from './work-list/work-list.component';
 import { WorkService } from './work/work.service';
 import { WorkComponent } from './work/work.component';
 
+import { PortfolioUIService } from './portfolio-ui.service';
+
 @NgModule({
   declarations: [
     AboutListComponent,
@@ -36,7 +38,8 @@ import { WorkComponent } from './work/work.component';
   ],
   providers: [
     portfolioRoutingProviders,
-    WorkService
+    WorkService,
+    PortfolioUIService
   ],
   bootstrap: [PortfolioComponent]
 })
