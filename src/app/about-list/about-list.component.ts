@@ -1,4 +1,5 @@
 import { Component, Input } from "@angular/core";
+import { PortfolioUIService } from '../portfolio-ui.service';
 
 @Component({
     selector: 'portfolio-about-list',
@@ -7,4 +8,12 @@ import { Component, Input } from "@angular/core";
 })
 export class AboutListComponent {
     @Input() menuStateOverride: string;
+
+    constructor(
+        private portfolioUIService: PortfolioUIService
+    ) {}
+    
+    closeAppMenu(): void {
+        this.portfolioUIService.changeAppMenuOpen(false);
+    }
 }

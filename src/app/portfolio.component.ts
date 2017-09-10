@@ -13,6 +13,7 @@ import { WorkService } from './work/work.service';
 export class PortfolioComponent implements OnInit {
     menuStateOverride: string;
     appMenuOpen: boolean;
+    appMenuList: HTMLElement;
  
     constructor(
         private portfolioUIService: PortfolioUIService,
@@ -20,9 +21,11 @@ export class PortfolioComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        this.portfolioUIService.currentAppMenuOpen.subscribe(appMenuOpen => {
+        this.portfolioUIService.currentAppMenuOpen.subscribe((appMenuOpen: boolean) => {
             this.appMenuOpen = appMenuOpen;
         });
+
+        this.appMenuList = document.getElementById('app-menu-list');
     }
 
     closeAppMenu(): void {
@@ -31,5 +34,6 @@ export class PortfolioComponent implements OnInit {
 
     toggleMenuStateOverride(menuState): void {
         this.menuStateOverride = menuState;
+        this.appMenuList.scrollTop = 0;
     }
 }

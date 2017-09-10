@@ -15,7 +15,7 @@ export class WorkComponent implements OnInit {
     work: IWork;
     detailContainer: HTMLElement;
     currentWorkURL: string;
-    appMenuOpen: boolean;
+    //appMenuOpen: boolean;
     
     constructor(
         private router: Router,
@@ -27,9 +27,9 @@ export class WorkComponent implements OnInit {
     ngOnInit(): void {
         this.getWorkByRouteParam();
 
-        this.portfolioUIService.currentAppMenuOpen.subscribe(appMenuOpen => {
-            this.appMenuOpen = appMenuOpen;
-        });
+        // this.portfolioUIService.currentAppMenuOpen.subscribe(appMenuOpen => {
+        //     this.appMenuOpen = appMenuOpen;
+        // });
 
         this.detailContainer = document.getElementById('router-view');
         

@@ -4,16 +4,28 @@
     [routerLinkActiveOptions]="{exact: true}">
     <ul class="list-view__list">
         <li class="list-view__preview flex">
-            <a class="list-view__link" [routerLink]="['/home']" routerLinkActive="list-view__link--active">Home</a>
+            <a class="list-view__link"
+                [routerLink]="['/home']"
+                routerLinkActive="list-view__link--active"
+                (click)="closeAppMenu()">Home</a>
         </li>
         <li class="list-view__preview flex">
-            <a class="list-view__link" [routerLink]="['/resume']" routerLinkActive="list-view__link--active">Resume</a>
+            <a class="list-view__link"
+                [routerLink]="['/resume']"
+                routerLinkActive="list-view__link--active"
+                (click)="closeAppMenu()">Resume</a>
         </li>
         <li class="list-view__preview flex">
-            <a class="list-view__link" [routerLink]="['/reading-list']" routerLinkActive="list-view__link--active">Reading list</a>
+            <a class="list-view__link"
+                [routerLink]="['/reading-list']"
+                routerLinkActive="list-view__link--active"
+                (click)="closeAppMenu()">Reading list</a>
         </li>
         <li class="list-view__preview flex">
-            <a class="list-view__link" [routerLink]="['/contact']" routerLinkActive="list-view__link--active">Contact</a>
+            <a class="list-view__link"
+                [routerLink]="['/contact']"
+                routerLinkActive="list-view__link--active"
+                (click)="closeAppMenu()">Contact</a>
         </li>
     </ul>
 </div>

@@ -7,7 +7,7 @@
         <button (click)="toggleMenuStateOverride('about')">About</button>
         <button (click)="toggleMenuStateOverride('work')">Work</button>
     </div>
-    <div class="flex-grow flex-scroll--y">
+    <div id="app-menu-list" class="flex-grow flex-scroll--y">
         <portfolio-about-list [menuStateOverride]="menuStateOverride"></portfolio-about-list>
         <portfolio-work-list [menuStateOverride]="menuStateOverride"></portfolio-work-list>
     </div>
