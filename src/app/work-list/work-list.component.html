@@ -1,15 +1,16 @@
-<div class="list-view flex flex-end-start"
+<div class="list-view"
     [ngClass]="{'list-view--force-show': menuStateOverride == 'work', 'list-view--force-hide': menuStateOverride != 'work' && menuStateOverride != null}"
     routerLinkActive="list-view--active"
     [routerLinkActiveOptions]="{exact: true}">
+
     <ul class="list-view__list">
         <li class="list-view__preview flex" *ngFor="let work of works">
             <a class="list-view__link"
                 [routerLink]="['/', work.url]"
-                routerLinkActive="list-view__link--active"
-                (click)="closeAppMenu()">
+                routerLinkActive="list-view__link--active">
                 {{work.name}}
             </a>
         </li>
     </ul>
+    
 </div>

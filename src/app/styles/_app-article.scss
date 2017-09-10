@@ -1,0 +1,26 @@
+.app-article {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media(max-width: 719px) {
+        left: 0;
+        z-index: 1;
+    }
+
+    @media(min-width: 720px) {
+        left: 360px;
+        margin-left: -8px;
+        z-index: 2;
+    }
+}
+
+.app-article__shadow-box {
+    background-color: #fff;
+
+    @media(min-width: 720px) {
+        box-shadow: $shadow-z-2;
+        margin: 40px 8px 8px 8px;
+    }
+}

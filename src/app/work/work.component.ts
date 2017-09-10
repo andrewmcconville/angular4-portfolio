@@ -9,7 +9,7 @@ import { PortfolioUIService } from '../portfolio-ui.service';
 
 @Component({
     templateUrl: './work.component.html',
-    //styleUrls: ['./work-list.component.scss']
+    styleUrls: ['./work.component.scss']
 })
 export class WorkComponent implements OnInit {
     work: IWork;

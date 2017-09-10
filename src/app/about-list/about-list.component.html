@@ -1,31 +1,29 @@
-<div class="list-view flex flex-end-start"
+<div class="list-view"
     [ngClass]="{'list-view--force-show': menuStateOverride == 'about', 'list-view--force-hide': menuStateOverride != 'about' && menuStateOverride != null}"
     routerLinkActive="list-view--active"
     [routerLinkActiveOptions]="{exact: true}">
+
     <ul class="list-view__list">
         <li class="list-view__preview flex">
             <a class="list-view__link"
                 [routerLink]="['/home']"
-                routerLinkActive="list-view__link--active"
-                (click)="closeAppMenu()">Home</a>
+                routerLinkActive="list-view__link--active">Home</a>
         </li>
         <li class="list-view__preview flex">
             <a class="list-view__link"
                 [routerLink]="['/resume']"
-                routerLinkActive="list-view__link--active"
-                (click)="closeAppMenu()">Resume</a>
+                routerLinkActive="list-view__link--active">Resume</a>
         </li>
         <li class="list-view__preview flex">
             <a class="list-view__link"
                 [routerLink]="['/reading-list']"
-                routerLinkActive="list-view__link--active"
-                (click)="closeAppMenu()">Reading list</a>
+                routerLinkActive="list-view__link--active">Reading list</a>
         </li>
         <li class="list-view__preview flex">
             <a class="list-view__link"
                 [routerLink]="['/contact']"
-                routerLinkActive="list-view__link--active"
-                (click)="closeAppMenu()">Contact</a>
+                routerLinkActive="list-view__link--active">Contact</a>
         </li>
     </ul>
+
 </div>

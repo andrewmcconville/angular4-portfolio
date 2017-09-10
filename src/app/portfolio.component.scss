@@ -1,10 +1,9 @@
 // variables
-@import "./styles/_variables.scss";
 @import "./styles/_colors.scss";
 
 // resets
-@import "./styles/_google-fonts.scss";
 @import "./styles/_reset.scss";
+@import "./styles/_google-fonts.scss";
 
 // helpers
 @import "./styles/_flexbox.scss";
@@ -12,6 +11,9 @@
 // components
 @import "./styles/_list-view.scss";
 @import "./styles/_app-menu.scss";
+@import "./styles/_app-article.scss";
+@import "./styles/_nav-bar.scss";
+@import "./styles/_header-bar.scss";
 
 // temp styles
 
@@ -23,27 +25,4 @@
     top: 0;
     width: 100%;
     z-index: 1;
-}
-
-.detail {
-    bottom: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    @media(max-width: 719px) {
-        left: 0;
-        z-index: 1;
-    }
-
-    @media(min-width: 720px) {
-        left: 41.5%;
-        z-index: 2;
-    }
-}
-
-.detail-content {
-    background-color: #ddd;
-    height: 2000px;
-    max-width: 540px;
 }

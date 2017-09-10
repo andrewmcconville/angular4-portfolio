@@ -5,18 +5,43 @@
     top: 0;
 
     @media(max-width: 719px) {
-        background-color: #fff;
+        background-color: rgba(0, 0, 0, .5);
         display: none;
         width: 100%;
         z-index: 2;
     }
 
     @media(min-width: 720px) {
-        width: 41.5%;
+        width: 360px;
         z-index: 1;
     }
 }
 
 .app-menu--show {
     display: flex !important;
+}
+
+.app-menu__close {
+    @media(min-width: 720px) {
+        display: none;
+    }
+}
+
+.app-menu__home {
+    @media(max-width: 719px) {
+        display: none;
+    }
+}
+
+.app-menu__menu {
+    z-index: 1;
+}
+
+.app-menu__mask {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
 }
