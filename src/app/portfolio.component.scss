@@ -27,14 +27,19 @@
 
 .detail {
     bottom: 0;
-    left: 41.5%;
-    // overflow-x: hidden;
-    // overflow-y: scroll;
-    // padding-top: 20px;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 2;
+
+    @media(max-width: 719px) {
+        left: 0;
+        z-index: 1;
+    }
+
+    @media(min-width: 720px) {
+        left: 41.5%;
+        z-index: 2;
+    }
 }
 
 .detail-content {

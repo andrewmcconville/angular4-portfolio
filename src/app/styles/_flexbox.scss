@@ -72,11 +72,13 @@
  */
 
 .flex-scroll--x {
+    -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     overflow-y: hidden;
 }
 
 .flex-scroll--y {
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: auto;
 }

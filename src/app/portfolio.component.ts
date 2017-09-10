@@ -11,6 +11,7 @@ import { WorkService } from './work/work.service';
 })
 export class PortfolioComponent implements OnInit {
     menuStateOverride: string;
+    appMenuOpen: boolean = false;
  
     constructor(
         private workService: WorkService

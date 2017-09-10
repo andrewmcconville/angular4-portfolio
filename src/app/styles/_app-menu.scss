@@ -3,6 +3,20 @@
     left: 0;
     position: absolute;
     top: 0;
-    width: 41.5%;
-    z-index: 1;
+
+    @media(max-width: 719px) {
+        background-color: #fff;
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+
+    @media(min-width: 720px) {
+        width: 41.5%;
+        z-index: 1;
+    }
+}
+
+.app-menu--show {
+    display: block !important;
 }
