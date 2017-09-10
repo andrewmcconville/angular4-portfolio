@@ -36,6 +36,10 @@
     width: 100%;
 }
 
+.list-view__link--active {
+    color: red;
+}
+
 .list-view__poster-container {
 	overflow: hidden;
 }
