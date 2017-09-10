@@ -1,1 +1,15 @@
-<div class="detail-content">Resume</div>
+<div class="detail flex flex-col flex-grow">
+    <header class="">
+        <button>X</button>
+        <span>Main Content</span>
+    </header>
+    <nav>
+        <button [routerLink]="['/home']">prev</button>
+        <button [routerLink]="['/reading-list']">next</button>
+    </nav>
+    <article class="flex-grow flex-scroll--y">
+        <div class="detail-content">
+            <p>Resume</p>
+        </div>
+    </article>
+</div>

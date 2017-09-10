@@ -13,19 +13,7 @@
     </div>
 </nav>
 
-<article class="detail flex flex-col flex-grow">
-    <header class="">
-        <button>X</button>
-        <span>Main Content</span>
-    </header>
-    <nav>
-        <button>prev</button>
-        <button (click)="nextView()">next</button>
-    </nav>
-    <div id="router-view" class="flex-grow flex-scroll--y">
-        <router-outlet></router-outlet>
-    </div>
-</article>
+<router-outlet></router-outlet>
 
 
 <!-- <style>

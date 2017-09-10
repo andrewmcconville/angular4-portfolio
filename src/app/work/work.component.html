@@ -1,6 +1,18 @@
-<div class="detail-content">
-    <img src="/wp-content/uploads/{{work.defaultImage}}-blur.jpg" style="height: auto; width: 100%" />
-    <p>{{work.name}}</p>
-    <p>{{work.introduction}}</p>
-    <p>{{work.excerpt}}</p>
+<div class="detail flex flex-col flex-grow">
+    <header class="">
+        <button>X</button>
+        <span>Main Content</span>
+    </header>
+    <nav>
+        <button (click)="prevWork()">prev</button>
+        <button (click)="nextWork()">next</button>
+    </nav>
+    <article id="router-view" class="flex-grow flex-scroll--y">
+        <div class="detail-content">
+            <img src="/wp-content/uploads/{{work.defaultImage}}-blur.jpg" style="height: auto; width: 100%" />
+            <p>{{work.name}}</p>
+            <p>{{work.introduction}}</p>
+            <p>{{work.excerpt}}</p>
+        </div>
+    </article>
 </div>
