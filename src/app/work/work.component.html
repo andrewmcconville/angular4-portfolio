@@ -7,8 +7,8 @@
         <button class="nav-bar__tab flex-grow flex-50" (click)="prevWork()">prev</button>
         <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()">next</button>
     </nav>
-    <article id="router-view" class="flex-grow flex-scroll--y">
-        <div class="app-article__shadow-box">
+    <article id="router-view" class="flex-grow flex-scroll--y flex flex-col">
+        <div class="app-article__shadow-box flex-col">
             <img src="/wp-content/uploads/{{work.defaultImage}}-blur.jpg" style="height: auto; width: 100%" />
             <p>{{work.name}}</p>
             <p>{{work.introduction}}</p>

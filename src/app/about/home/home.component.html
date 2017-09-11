@@ -1,14 +1,14 @@
 <div class="app-article flex flex-col flex-grow">
-    <header class="">
+    <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()">M</button>
-        <span>Main Content</span>
+        <h1 class="header-bar__title">Home</h1>
     </header>
-    <nav>
-        <button [routerLink]="['/contact']">prev</button>
-        <button [routerLink]="['/resume']">next</button>
+    <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
+        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/contact']">prev</button>
+        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/resume']">next</button>
     </nav>
-    <article class="flex-grow flex-scroll--y">
-        <div class="detail-content">
+    <article class="flex-grow flex-scroll--y flex flex-col">
+        <div class="app-article__shadow-box flex-grow">
             <p>Home</p>
         </div>
     </article>
