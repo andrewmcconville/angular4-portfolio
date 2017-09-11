@@ -1,18 +1,18 @@
-<nav class="app-menu flex flex-col flex-grow" [ngClass]="{'app-menu--show': appMenuOpen}">
-    <header class="header-bar--menu flex-noshrink flex flex-start-center">
+<nav class="app-menu flex flex-col flex-grow" [ngClass]="{'app-menu--show': appMenuOpen}" (click)="closeAppMenu()">
+    <header class="header-bar--menu flex-noshrink flex flex-start-center" (click)="$event.stopPropagation()">
         <button class="app-menu__close" (click)="closeAppMenu()">X</button>
         <button class="app-menu__home" [routerLink]="['/home']">H</button>
         <h1 class="header-bar__title">Andrew McConville</h1>
     </header>
-    <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink">
+    <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink" (click)="$event.stopPropagation()">
         <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('about')">About</button>
         <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('work')">Work</button>
     </nav>
-    <div id="app-menu-list" class="app-menu__menu flex-grow flex-scroll--y" (click)="closeAppMenu()">
+    <div id="app-menu-list" class="app-menu__menu flex-grow flex-scroll--y">
         <portfolio-about-list [menuStateOverride]="menuStateOverride"></portfolio-about-list>
         <portfolio-work-list [menuStateOverride]="menuStateOverride"></portfolio-work-list>
     </div>
-    <div class="app-menu__mask" (click)="closeAppMenu()"></div>
 </nav>
+<div class="app-menu__mask" [ngClass]="{'app-menu__mask--show': appMenuOpen}"></div>
 
 <router-outlet></router-outlet>

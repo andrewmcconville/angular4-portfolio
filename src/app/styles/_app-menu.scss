@@ -5,10 +5,10 @@
     top: 0;
 
     @media(max-width: 719px) {
-        background-color: rgba(0, 0, 0, .5);
-        display: none;
+        transform: translate3d(-100%, 0, 0);
+        transition: transform 240ms ease-in-out;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
     }
 
     @media(min-width: 720px) {
@@ -18,7 +18,7 @@
 }
 
 .app-menu--show {
-    display: flex !important;
+    transform: translate3d(0, 0, 0);
 }
 
 .app-menu__close {
@@ -33,15 +33,19 @@
     }
 }
 
-.app-menu__menu {
-    z-index: 1;
-}
-
 .app-menu__mask {
+    background-color: rgba(0, 0, 0, .5);
     bottom: 0;
+    display: none;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 0;
+    z-index: 2;
+}
+
+.app-menu__mask--show {
+    @media(max-width: 719px) {
+        display: block;
+    }
 }

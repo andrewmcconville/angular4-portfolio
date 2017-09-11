@@ -6,7 +6,6 @@
 
 .header-bar--menu {
     @extend .header-bar;
-    z-index: 1;
 
     @media(max-width: 719px) {
         width: 320px;
