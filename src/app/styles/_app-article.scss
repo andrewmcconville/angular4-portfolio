@@ -24,3 +24,34 @@
         margin: 40px 8px 8px 8px;
     }
 }
+
+.app-article__header {
+    background-color: #f0f0f0;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    padding: 54px 32px 32px 32px;
+}
+
+.app-article__header-title {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 46px;
+    font-weight: 200;
+    line-height: 46px;
+    margin: 0 0 16px 0;
+}
+
+.app-article__header-subtitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 0 12px 0;
+}
+
+.app-article__header-meta {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}

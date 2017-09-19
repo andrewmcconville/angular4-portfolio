@@ -9,10 +9,16 @@
     </nav>
     <article id="router-view" class="flex-grow flex-scroll--y flex flex-col">
         <div class="app-article__shadow-box flex-col">
-            <img src="/wp-content/uploads/{{work.defaultImage}}-blur.jpg" style="height: auto; width: 100%" />
-            <p>{{work.name}}</p>
+            <header class="app-article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
+                <h1 class="app-article__header-title">{{work.name}}</h1>
+                <h2 class="app-article__header-subtitle">{{work.excerpt}}</h2>
+                <div class="app-article__header-meta">
+                    <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'yMMMMd'}}</time>
+                    <span itemprop="genre">{{work.category}}</span>
+                    <a href="https://plus.google.com/+AndrewMcConville/" rel="author" itemprop="author" target="_blank">Andrew McConville</a>
+                </div>
+            </header>
             <p>{{work.introduction}}</p>
-            <p>{{work.excerpt}}</p>
             <div style="height: 2000px;"></div>
         </div>
     </article>
