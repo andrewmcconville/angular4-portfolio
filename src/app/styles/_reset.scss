@@ -12,15 +12,6 @@ body {
 p {
     font-size: 18px;
     line-height: 1.5;
-    
-    @media(max-width: 719px) {
-        margin: 27px 18px;
-    }
-    
-    @media(min-width: 720px) {
-        font-weight: 300;
-        margin: 27px;
-    }
 }
 
 ul {

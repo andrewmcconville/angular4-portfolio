@@ -1,4 +1,4 @@
-<div class="app-article flex flex-col flex-grow">
+<div class="article flex flex-col flex-grow">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()">M</button>
         <h1 class="header-bar__title">{{work.name}}</h1>
@@ -9,17 +9,17 @@
         <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()">next</button>
     </nav>
     <article id="router-view" class="flex-grow flex-scroll--y flex flex-col">
-        <div class="app-article__shadow-box flex-col">
-            <header class="app-article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
-                <h1 class="app-article__header-title">{{work.name}}</h1>
-                <h2 class="app-article__header-subtitle">{{work.excerpt}}</h2>
-                <div class="app-article__header-meta">
+        <div class="article__shadow-box flex-col">
+            <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
+                <h1 class="article__header-title">{{work.name}}</h1>
+                <h2 class="article__header-subtitle">{{work.excerpt}}</h2>
+                <div class="article__header-meta">
                     <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'yMMMMd'}}</time>
                     <span itemprop="genre">{{work.category}}</span>
                     <a href="https://plus.google.com/+AndrewMcConville/" rel="author" itemprop="author" target="_blank">Andrew McConville</a>
                 </div>
             </header>
-            <p>{{work.introduction}}</p>
+            <p class="article__indented">{{work.introduction}}</p>
             <div style="height: 2000px;"></div>
         </div>
     </article>
