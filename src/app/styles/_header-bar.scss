@@ -1,7 +1,7 @@
 .header-bar {
     background-color: $slate-500;
     color: #fff;
-    height: 40px;
+    height: 54px;
 }
 
 .header-bar--menu {
@@ -21,8 +21,12 @@
 }
 
 .header-bar__title {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 16px;
+    font-weight: 400;
     overflow: hidden;
     padding: 4px 8px;
+    text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
 }

@@ -3,6 +3,7 @@
 }
 
 body {
+    background-color: $slate-50;
     color: rgba(0, 0, 0, 0.6);
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
@@ -29,6 +30,7 @@ ul {
 }
 
 a {
+    color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
 }
 
