@@ -8,7 +8,7 @@
             <a class="list-view__link flex"
                 [routerLink]="['/', work.url]"
                 routerLinkActive="list-view__link--active">
-                <img class="list-view__poster" [src]="'/wp-content/uploads/' + work.defaultImage + '-thumbnail.jpg'" />
+                <img class="list-view__poster flex-noshrink" [src]="'/wp-content/uploads/' + work.defaultImage + '-thumbnail.jpg'" />
                 <div class="live-view__copy">
                     <p class="list-view__name">{{work.name}}</p>
                     <p class="list-view__excerpt">{{work.excerpt}}</p>
