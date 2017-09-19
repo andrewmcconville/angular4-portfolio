@@ -53,12 +53,36 @@
     line-height: 18px;
 }
 
-.article__indented {
+.article__body {
     @media(max-width: 719px) {
-        margin: 27px 18px;
+        padding: 27px 18px;
     }
 
     @media(min-width: 720px) {
-        margin: 27px;
+        padding: 32px;
     }
+}
+
+.article__copy {
+    margin: 0 0 32px 0;
+}
+
+.article__figure {
+    margin: 0 0 32px 0;
+}
+
+.article__image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.article__caption {
+    // border-left: 1px solid #f0f0f0;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+    margin-left: 16px;
+    // padding: 0 8px 0 16px;
+    width: 200px;
 }

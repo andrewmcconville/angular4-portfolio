@@ -19,7 +19,19 @@
                     <a href="https://plus.google.com/+AndrewMcConville/" rel="author" itemprop="author" target="_blank">Andrew McConville</a>
                 </div>
             </header>
-            <p class="article__indented">{{work.introduction}}</p>
+            <div class="article__body">
+                <p class="article__copy">{{work.introduction}}</p>
+
+                <div *ngFor="let image of work.images" class="article__copy">
+                    <figure class="article__figure flex">
+                        <div>
+                            <img class="article__image" [src]="'/wp-content/uploads/' + image.src" [height]="image.height" width="1500" />
+                        </div>
+                        <figcaption class="article__caption flex-noshrink">{{image.caption}}</figcaption>
+                    </figure>
+                    <p>{{work.introduction}}</p>
+                </div>
+            </div>
             <div style="height: 2000px;"></div>
         </div>
     </article>
