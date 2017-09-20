@@ -17,8 +17,8 @@
 }
 
 .list-view__list {
-	background-color: #fff;
-	padding: 3px 0;
+	//background-color: #fff;
+	padding: 4px 0 4px 4px;
 	
 	@media(max-width: 719px) {
 		width: 320px;
@@ -30,15 +30,20 @@
 }
 
 .list-view__link {
-	background-color: #fff;
 	cursor: pointer;
-	padding: 3px 6px 3px 0;
+	padding: 4px;
+
+	&:focus {
+		outline: 2px solid orange;
+		outline-offset: -2px;
+	}
 }
 
 .list-view__link--active {
-	.list-view__poster {
-		border-left-color: $slate-500;
-	}
+	background-color: #fff;
+	box-shadow: $shadow-z-1;
+	//outline: 2px solid $slate-100;
+	//outline-offset: -1px;
 }
 
 .list-view__poster-container {
@@ -47,7 +52,6 @@
 
 .list-view__poster {
 	background-color: #9dc2e8;
-	border-left: 6px solid #fff;
 	height: 120px;
 	width: 120px;
 }

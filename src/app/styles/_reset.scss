@@ -2,8 +2,14 @@
     box-sizing: border-box;
 }
 
+html {
+    background: -moz-linear-gradient(top, #fff 20%, $slate-50 100%);
+    background: -webkit-linear-gradient(top, #fff 20%, $slate-50 100%);
+    background: linear-gradient(to bottom, #fff 20%, $slate-50 100%);
+    min-height: 100%;
+}
+
 body {
-    background-color: $slate-50;
     color: rgba(0, 0, 0, 0.6);
     font-family: 'Titillium Web', sans-serif;
     margin: 0;
