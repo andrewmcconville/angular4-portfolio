@@ -23,6 +23,11 @@ ul {
 a {
     color: rgba(0, 0, 0, 0.6);
     text-decoration: none;
+
+    &:focus {
+        outline: 2px solid orange;
+        outline-offset: -3px;
+    }
 }
 
 .button,
@@ -40,6 +45,11 @@ button {
     padding: 8px 10px;
     text-decoration: none;
     text-transform: uppercase;
+    
+    &:focus {
+        outline: 2px solid orange;
+        outline-offset: -3px;
+    }
 
     &:hover {
         background-color: #fff;
