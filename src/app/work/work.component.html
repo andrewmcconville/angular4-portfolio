@@ -15,9 +15,11 @@
             <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
                 <h1 class="article__header-title">{{work.name}}</h1>
                 <h2 class="article__header-subtitle">{{work.excerpt}}</h2>
-                <div class="article__header-meta">
-                    <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'yMMMMd'}}</time>
+                <div class="article__header-meta flex flex-start-stretch">
+                    <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'yMMMMd'}}</time>                    
+                    <span class="article__header-divider flex-noshrink"></span>
                     <span itemprop="genre">{{work.category}}</span>
+                    <span class="article__header-divider flex-noshrink"></span>
                     <a href="https://plus.google.com/+AndrewMcConville/" rel="author" itemprop="author" target="_blank">Andrew McConville</a>
                 </div>
             </header>
