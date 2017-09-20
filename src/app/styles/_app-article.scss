@@ -81,7 +81,6 @@
 
 .article__header-meta {
     font-size: 14px;
-    font-weight: 300;
     line-height: 18px;
     text-transform: capitalize;
 }
@@ -93,20 +92,28 @@
 }
 
 .article__body {
-    @media(max-width: 719px) {
-        padding: 20px;
-    }
-
-    @media(min-width: 720px) {
-        padding: 32px;
-    }
+    padding: 0 7px;
 }
 
 .article__copy {
-    margin: 0 0 32px 0;
+    @media(max-width: 719px) {
+        margin: 16px 12px 20px 12px;
+    }
+
+    @media(min-width: 720px) {
+        margin: 28px 24px 32px 24px;
+    }
 }
 
 .article__figure {
+    @media(max-width: 719px) {
+        margin: 0 0 24px 0;
+    }
+
+    @media(min-width: 720px) {
+        margin: 0 0 40px 0;
+    }
+
     @media(min-width: 1350px) {
         align-items: flex-start;
         display: flex;
@@ -127,21 +134,33 @@
 }
 
 .article__caption {
-    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
     font-style: italic;
-    line-height: 20px;
+    line-height: 1.5;
+    
+    @media(max-width: 719px) {
+        border-bottom: 2px solid $slate-50;
+        padding: 2px 12px;
+    }
+
+    @media(min-width: 720px) and (max-width: 1349px) {
+        border-bottom: 2px solid $slate-50;
+        padding: 4px 24px;
+    }
 
     @media(min-width: 1350px) {
-        margin-left: 60px;
+        margin-left: 20px;
         width: 180px;
-        margin-right: -240px;
+        margin-right: -200px;
     }
 }
 
 .article__caption-mask {
     background-color: $slate-500;
     height: 104px;
-    left: 1152px;
+    left: 1137px;
     position: fixed;
     top: 0;
     width: 180px;

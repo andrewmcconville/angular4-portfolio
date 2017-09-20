@@ -32,9 +32,10 @@
 .list-view__link {
 	cursor: pointer;
 	padding: 4px;
+	transition: background-color 240ms ease-in-out;
 
 	&:focus {
-		outline: 2px solid orange;
+		outline: 1px solid orange;
 		outline-offset: -2px;
 	}
 }
@@ -42,8 +43,18 @@
 .list-view__link--active {
 	background-color: #fff;
 	box-shadow: $shadow-z-1;
-	//outline: 2px solid $slate-100;
-	//outline-offset: -1px;
+	
+	.list-view__name {
+		color: rgba(0, 0, 0, .6);
+	}
+	
+	.list-view__excerpt {
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	.list-view__poster {
+		opacity: 1;
+	}
 }
 
 .list-view__poster-container {
@@ -53,6 +64,8 @@
 .list-view__poster {
 	background-color: #9dc2e8;
 	height: 120px;
+	opacity: .9;
+	transition: opacity 240ms ease-in-out;
 	width: 120px;
 }
 
@@ -65,16 +78,19 @@
 .list-view__name {
 	color: rgba(0, 0, 0, .5);
 	line-height: 18px;
-	margin: 0 0 8px 0;
+	margin: 0 0 4px 0;
+	transition: color 240ms ease-in-out;
 }
 
 .list-view__excerpt {
 	color: rgba(0, 0, 0, 0.4);
 	font-size: 14px;
 	font-weight: 300;
-	height: 44px;
+	height: 50px;
 	line-height: 16px;
 	margin: 0;
+	overflow: hidden;
+	transition: color 240ms ease-in-out;
 }
 
 .list-view__end-of-list-message {
