@@ -25,7 +25,7 @@
                 <p class="article__copy">{{work.introduction}}</p>
 
                 <figure class="article__figure article__copy" *ngFor="let image of work.images">
-                    <div>
+                    <div class="article__image-container flex flex-center-start">
                         <img class="article__image" [src]="'/wp-content/uploads/' + image.src" [height]="image.height" width="1500" />
                     </div>
                     <figcaption class="article__caption flex-noshrink">{{image.caption}}</figcaption>

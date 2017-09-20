@@ -98,6 +98,10 @@
     }
 }
 
+.article__image-container {
+    width: 100%;
+}
+
 .article__image {
     display: block;
     height: auto;
@@ -121,8 +125,8 @@
 .article__caption-mask {
     background-color: $slate-500;
     height: 104px;
-    left: 1140px;
+    left: 1152px;
     position: fixed;
-    right: 0;
     top: 0;
+    width: 180px;
 }
