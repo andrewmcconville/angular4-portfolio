@@ -5,11 +5,13 @@
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
         <button class="nav-bar__tab flex-grow flex-50" (click)="prevWork()">prev</button>
-        <span class="nav-bar__divider"></span>
+        <span class="nav-bar__divider flex-noshrink"></span>
         <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()">next</button>
     </nav>
-    <article id="router-view" class="flex-grow flex-scroll--y flex flex-col">
-        <div class="article__shadow-box flex-col">
+    <article id="router-view"
+            class="flex-grow flex-scroll--y article__scrollbar"
+            [style.marginRight]="0 - scrollbarWidth + 'px'">
+        <div class="article__shadow-box">
             <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
                 <h1 class="article__header-title">{{work.name}}</h1>
                 <h2 class="article__header-subtitle">{{work.excerpt}}</h2>
@@ -22,17 +24,18 @@
             <div class="article__body">
                 <p class="article__copy">{{work.introduction}}</p>
 
-                <div *ngFor="let image of work.images" class="article__copy">
-                    <figure class="article__figure flex">
-                        <div>
-                            <img class="article__image" [src]="'/wp-content/uploads/' + image.src" [height]="image.height" width="1500" />
-                        </div>
-                        <figcaption class="article__caption flex-noshrink">{{image.caption}}</figcaption>
-                    </figure>
-                    <p>{{work.introduction}}</p>
-                </div>
+                <figure class="article__figure article__copy" *ngFor="let image of work.images">
+                    <div>
+                        <img class="article__image" [src]="'/wp-content/uploads/' + image.src" [height]="image.height" width="1500" />
+                    </div>
+                    <figcaption class="article__caption flex-noshrink">{{image.caption}}</figcaption>
+                </figure>
+
+                <p class="article__copy">{{work.introduction}}</p>
+                <p class="article__copy">{{work.introduction}}</p>
+                <p class="article__copy">{{work.introduction}}</p>
             </div>
-            <div style="height: 2000px;"></div>
         </div>
     </article>
+    <div class="article__caption-mask"></div>
 </div>

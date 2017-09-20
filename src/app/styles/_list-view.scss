@@ -16,7 +16,10 @@
     display: flex;
 }
 
-.list-view__list {	
+.list-view__list {
+	background-color: #fff;
+	padding: 3px 0;
+	
 	@media(max-width: 719px) {
 		width: 320px;
 	}
@@ -28,14 +31,14 @@
 
 .list-view__link {
 	background-color: #fff;
-	border-right: 4px solid #fff;
-	box-shadow: $shadow-z-1;
 	cursor: pointer;
-	margin: 6px;
+	padding: 3px 6px 3px 0;
 }
 
 .list-view__link--active {
-    border-right-color: $slate-500;
+	.list-view__poster {
+		border-left-color: $slate-500;
+	}
 }
 
 .list-view__poster-container {
@@ -44,6 +47,7 @@
 
 .list-view__poster {
 	background-color: #9dc2e8;
+	border-left: 6px solid #fff;
 	height: 120px;
 	width: 120px;
 }

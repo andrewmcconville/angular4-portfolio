@@ -49,3 +49,9 @@
         display: block;
     }
 }
+
+.app-menu__menu {
+    @media(max-width: 719px) {
+        margin-right: 0 !important;
+    }
+}

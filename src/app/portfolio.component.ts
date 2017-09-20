@@ -12,6 +12,7 @@ import { WorkService } from './work/work.service';
 })
 export class PortfolioComponent implements OnInit {
     menuStateOverride: string;
+    scrollbarWidth: number;
     appMenuOpen: boolean;
     appMenuList: HTMLElement;
  
@@ -26,6 +27,8 @@ export class PortfolioComponent implements OnInit {
         });
 
         this.appMenuList = document.getElementById('app-menu-list');
+
+        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     closeAppMenu(): void {

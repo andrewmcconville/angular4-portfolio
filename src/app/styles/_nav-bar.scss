@@ -8,12 +8,19 @@
 
 .nav-bar--article {
     background-color: $slate-500;
-
+    
     @media(min-width: 720px) {
         position: fixed;
-        right: 8px;
         top: 54px;
-        width: 200px;
+        width: 160px;
+    }
+    
+    @media(max-width: 1131px) {
+        right: 8px;
+    }
+    
+    @media(min-width: 1132px) {
+        left: 964px;
     }
 }
 

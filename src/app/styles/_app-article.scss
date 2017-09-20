@@ -1,5 +1,6 @@
 .article {
     bottom: 0;
+    overflow-x: hidden;
     position: absolute;
     right: 0;
     top: 0;
@@ -16,12 +17,20 @@
     }
 }
 
+.article__scrollbar {
+    @media(max-width: 719px) {
+        margin-right: 0 !important;
+    }
+}
+
 .article__shadow-box {
     background-color: #fff;
+    max-width: 764px;
+    padding-bottom: 160px;
 
     @media(min-width: 720px) {
         box-shadow: $shadow-z-2;
-        margin: 54px 8px 8px 8px;
+        margin: 54px 8px 0 8px;
     }
 }
 
@@ -29,15 +38,29 @@
     background-color: #f0f0f0;
     background-position: center;
     background-size: cover;
-    height: 200px;
-    padding: 54px 32px 32px 32px;
+
+    @media(max-width: 719px) {
+        padding: 20px;
+    }
+
+    @media(min-width: 720px) {
+        min-height: 200px;
+        padding: 54px 32px 32px 32px;
+    }
 }
 
 .article__header-title {
-    font-size: 46px;
     font-weight: 200;
-    line-height: 46px;
+    line-height: 1;
     margin: 0 0 16px 0;
+    
+    @media(max-width: 719px) {
+        font-size: 40px;
+    }
+
+    @media(min-width: 720px) {
+        font-size: 46px;
+    }
 }
 
 .article__header-subtitle {
@@ -55,7 +78,7 @@
 
 .article__body {
     @media(max-width: 719px) {
-        padding: 27px 18px;
+        padding: 20px;
     }
 
     @media(min-width: 720px) {
@@ -68,21 +91,38 @@
 }
 
 .article__figure {
-    margin: 0 0 32px 0;
+    @media(min-width: 1350px) {
+        align-items: flex-start;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .article__image {
     display: block;
     height: auto;
-    width: 100%;
+    max-height: 500px;
+    max-width: 100%;
+    width: auto;
 }
 
 .article__caption {
-    // border-left: 1px solid #f0f0f0;
     font-size: 14px;
     font-style: italic;
     line-height: 20px;
-    margin-left: 16px;
-    // padding: 0 8px 0 16px;
-    width: 200px;
+
+    @media(min-width: 1350px) {
+        margin-left: 60px;
+        width: 180px;
+        margin-right: -240px;
+    }
+}
+
+.article__caption-mask {
+    background-color: $slate-500;
+    height: 104px;
+    left: 1140px;
+    position: fixed;
+    right: 0;
+    top: 0;
 }

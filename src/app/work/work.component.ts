@@ -15,6 +15,7 @@ export class WorkComponent implements OnInit {
     work: IWork;
     detailContainer: HTMLElement;
     currentWorkURL: string;
+    scrollbarWidth: number;
     //appMenuOpen: boolean;
     
     constructor(
@@ -39,6 +40,8 @@ export class WorkComponent implements OnInit {
             }
             this.detailContainer.scrollTop = 0;
         });
+
+        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     getWorkByRouteParam(): void {
