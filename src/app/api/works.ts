@@ -27,7 +27,7 @@ export const works: Array<IWork> = [
             },
             {
                 src: "2013/10/shuttle-bus-status.jpg",
-                caption: "UWM shuttle shuttle status",
+                caption: "UWM shuttle status",
                 height: 1000
             },
             {

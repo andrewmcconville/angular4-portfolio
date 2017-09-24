@@ -28,7 +28,10 @@
 
                 <figure class="article__figure" *ngFor="let image of work.images">
                     <div class="article__image-container flex flex-center-start">
-                        <img class="article__image" [src]="'/wp-content/uploads/' + image.src" [height]="image.height" width="1500" />
+                        <img class="article__image"
+                            [src]="'/wp-content/uploads/' + image.src"
+                            [alt]="image.caption"
+                            [height]="image.height" width="1500" />
                     </div>
                     <figcaption class="article__caption flex-noshrink">{{image.caption}}</figcaption>
                 </figure>
