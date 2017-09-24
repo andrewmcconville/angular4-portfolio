@@ -3,7 +3,6 @@ import { IWork } from '../work/work.model';
 export const works: Array<IWork> = [
     {
         name: "AccuLynx",
-        category: "interface",
         excerpt: "AccuLynx.",
         introduction: "AccuLynx.",
         date: '2017-10-12T18:00:00-05:00',
@@ -14,7 +13,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Standing Desk",
-        category: "interface",
         excerpt: "Standing Desk.",
         introduction: "Standing Desk.",
         date: '2017-06-12T18:00:00-05:00',
@@ -25,7 +23,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "1000 Books Before Kindergarten",
-        category: "interface",
         excerpt: "Information architecture, color, and interface design.",
         introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
         date: '2013-10-11T18:00:00-05:00',
@@ -36,7 +33,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "UWM Mobile",
-        category: "interface",
         excerpt: "Designed UI, UX and interactions along with in app prototyping.",
         introduction: "I was given the task of completely redesigning the UWM Mobile app and decided to create a highly interactive experience. The home screen presents users with fresh data relevant to campus life. Where the previous version relied on text, the new version adds graphics and icons allowing users to quickly glean information while hastily rushing to class.",
         date: '2013-09-23T20:07:54-05:00',
@@ -72,7 +68,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Mesmer",
-        category: "interface",
         excerpt: "Interactive, drag and drop, web-app providing students real-time data manipulation.",
         introduction: "Interactive, drag and drop, web-app that assists students and academic advisers with course planning and meeting degree requirements.",
         date: '2012-09-27T18:21:30-05:00',
@@ -124,7 +119,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Mesmer Infographic",
-        category: "infographic",
         excerpt: "Information gathering on the viability and need for interactive degree tracking software.",
         introduction: "Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education. The data gathered in this infographic was used to determine the need for a degree planning web app and if students has access to the technology required to use the app.",
         date: '2012-09-24T19:31:37-05:00',
@@ -155,7 +149,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Energy Life Cycle of Coal",
-        category: "infographic",
         excerpt: "Visualizing the movement and consumption of coal reserves.",
         introduction: "The Great Lakes infographic highlights the lifecycle of coal, from extraction to use, and the dependency of the Great Lakes states on Wyoming coal. The map of Wyoming and the Great Lakes connected by railways creates a narrative of process and shows dependency from one region to another. Color is used heavily to unite spatially diffused data objects; connecting, for example, red colored power plant locations on the map to red data relating to power production.",
         date: '2011-12-21T11:34:06-05:00',
@@ -196,7 +189,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Demographics Supersized",
-        category: "infographic",
         excerpt: "City demographics in Milwaukee vs McDonald’s spatial density.",
         introduction: "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county along side the geographical locations of McDonald’s restaurants.",
         date: '2011-06-25T12:58:36-05:00',
@@ -227,7 +219,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Water Cooled Wood Computer",
-        category: "interface",
         excerpt: "Excerpt.",
         introduction: "The quest for processing speed and complete silence lead to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
         date: '2009-05-06T18:00:00-05:00',
@@ -238,7 +229,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Brain Brawn & Body",
-        category: "interface",
         excerpt: "Designed, prototyped and programmed swipe menu interactions.",
         introduction: "Brain Brawn & Body is a website dedicated to the health and wellness of African American men. The app aims to bring targeted news and event information to users along with a journal for health tracking and health care finder.",
         date: '2013-07-07T20:35:04-05:00',
@@ -269,7 +259,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Census Viewer",
-        category: "interface",
         excerpt: "Interactive infographic to U.S. census API in HTML, CSS & JS.",
         introduction: "Interactive web-app featuring data from the U.S. Department of Commerce’s Census Bureau API. Census data fetched using AJAX via jQuery. Interactive map is rendered using SVG and the Raphaël.js data rendering library.",
         date: '2013-05-19T20:05:31-05:00',
@@ -291,7 +280,6 @@ export const works: Array<IWork> = [
     },
     {
         name: "Personal Timeline",
-        category: "infographic",
         excerpt: "Income and expense vs hours worked and credits enrolled.",
         introduction: "The Personal Timeline infographic displays income and employment along side expenses and enrolled college credits. Narrative and metaphor created with plant imagery were used to convey a sense of time and growth.",
         date: '2011-06-18T12:17:41-05:00',
