@@ -2,6 +2,39 @@ import { IWork } from '../work/work.model';
 
 export const works: Array<IWork> = [
     {
+        name: "AccuLynx",
+        category: "interface",
+        excerpt: "AccuLynx.",
+        introduction: "AccuLynx.",
+        date: '2017-10-12T18:00:00-05:00',
+        url: "acculynx",
+        defaultImage: "2017/10/acculynx",
+        // images: [
+        // ]
+    },
+    {
+        name: "Standing Desk",
+        category: "interface",
+        excerpt: "Standing Desk.",
+        introduction: "Standing Desk.",
+        date: '2017-06-12T18:00:00-05:00',
+        url: "standing-desk",
+        defaultImage: "2017/06/standing-desk",
+        // images: [
+        // ]
+    },
+    {
+        name: "1000 Books Before Kindergarten",
+        category: "interface",
+        excerpt: "Information architecture, color, and interface design.",
+        introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
+        date: '2013-10-11T18:00:00-05:00',
+        url: "1000-books-kindergarten",
+        defaultImage: "2017/06/1000-books-kindergarten",
+        // images: [
+        // ]
+    },
+    {
         name: "UWM Mobile",
         category: "interface",
         excerpt: "Designed UI, UX and interactions along with in app prototyping.",
@@ -191,6 +224,17 @@ export const works: Array<IWork> = [
                 height: 1000
             }
         ]
+    },
+    {
+        name: "Water Cooled Wood Computer",
+        category: "interface",
+        excerpt: "Excerpt.",
+        introduction: "The quest for processing speed and complete silence lead to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
+        date: '2009-05-06T18:00:00-05:00',
+        url: "water-cooled-wood-computer",
+        defaultImage: "2009/05/water-cooled-wood-computer",
+        // images: [
+        // ]
     },
     {
         name: "Brain Brawn & Body",
