@@ -71,7 +71,7 @@
 
 .live-view__copy {
 	max-height: 120px;
-	margin: 14px 28px 14px 14px;
+	margin: 0 28px 0 14px;
 	overflow: hidden;
 }
 
@@ -86,9 +86,9 @@
 	color: rgba(0, 0, 0, 0.4);
 	font-size: 14px;
 	font-weight: 300;
-	height: 50px;
 	line-height: 16px;
 	margin: 0;
+	max-height: 50px;
 	overflow: hidden;
 	transition: color 240ms ease-in-out;
 }

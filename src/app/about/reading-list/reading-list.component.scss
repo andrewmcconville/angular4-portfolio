@@ -1,0 +1,43 @@
+@import "../../styles/_colors.scss";
+
+.reading-list__item {
+    margin-bottom: 24px;
+}
+
+.reading-list__image {
+    background-color: $slate-50;
+    background-image: url("/wp-content/reading-list-covers.jpg");
+    background-size: 100px;
+    display: block;
+    height: 100px;
+    width: 100px;
+}
+
+@for $i from 1 through 30 {
+    .reading-list__item:nth-child(#{$i + 1}) .reading-list__image {
+        background-position-y: $i * -100px;
+    }
+}
+
+.reading-list__meta {
+    line-height: 1;
+    padding: 0 8px;
+}
+
+.reading-list__title {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.reading-list__subtitle {
+    color: rgba(0, 0, 0, .6);
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.reading-list__by {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    font-weight: 300;
+}

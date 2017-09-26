@@ -2,12 +2,12 @@ import { IWork } from '../work/work.model';
 
 export const works: Array<IWork> = [
     {
-        name: "AccuLynx",
-        excerpt: "AccuLynx.",
-        introduction: "AccuLynx.",
+        name: "Scaling a Consistent User Experience",
+        excerpt: "CSS at Scale.",
+        introduction: "CSS at Scale.",
         date: '2017-10-12T18:00:00-05:00',
-        url: "acculynx",
-        defaultImage: "2017/10/acculynx",
+        url: "css-at-scale",
+        defaultImage: "2017/10/css-at-scale",
         // images: [
         // ]
     },
