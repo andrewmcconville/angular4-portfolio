@@ -57,6 +57,40 @@
     }
 }
 
+.article__header--has-cover-iamge {
+    background-color: #f0f0f0;
+    background-position: center;
+    background-size: cover;
+    min-height: 240px;
+}
+
+.article__photo {
+    background-color: #eee;
+    border: 4px solid #fff;
+    border-radius: 100px;
+    bottom: -84px;
+    box-shadow: $shadow-z-1;
+    height: 200px;
+    position: relative;
+    width: 200px;
+    z-index: 1;
+}
+
+.article__callout {
+    background-color: #fff;
+    box-shadow: $shadow-z-1;
+
+    @media(max-width: 719px) {
+        margin: -8px 4px 20px 4px;
+        padding: 120px 12px 12px 12px;
+    }
+
+    @media(min-width: 720px) {
+        margin: -12px 8px 32px 8px;
+        padding: 116px 16px 16px 16px;
+    }
+}
+
 .article__header-title {
     font-weight: 200;
     line-height: 1;
