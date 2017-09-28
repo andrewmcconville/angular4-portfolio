@@ -64,15 +64,27 @@
     min-height: 240px;
 }
 
+.article__header--home {
+    background-image: url("/assets/about/home-cover.jpg");
+}
+
+.article__header--contact {
+    background-image: url("/assets/about/home-cover.jpg");
+}
+
+.article__header--reading-list {
+    background-image: url("/assets/about/home-cover.jpg");
+}
+
 .article__photo {
     background-color: #eee;
     border: 4px solid #fff;
     border-radius: 100px;
-    bottom: -84px;
+    bottom: -76px;
     box-shadow: $shadow-z-1;
-    height: 200px;
+    height: 180px;
     position: relative;
-    width: 200px;
+    width: 180px;
     z-index: 1;
 }
 
