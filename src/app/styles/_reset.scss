@@ -70,12 +70,6 @@ button {
     }
 
     &:active {
-        background-color: #fff;
-        color: #000;
         text-decoration: none;
-    }
-
-    &.active {
-        background-color: pink;
     }
 }
