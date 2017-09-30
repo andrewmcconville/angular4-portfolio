@@ -1,0 +1,68 @@
+@import "../../styles/_colors.scss";
+
+.article__header {
+    background-color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, .7);
+}
+
+.article__shadow-box,
+.article__body {
+    background-color: #fafbfc;
+}
+
+.resume__section {
+    padding-bottom: 27px;
+}
+
+.resume__icon-col {
+    margin-right: 8px;
+    width: 30px;
+}
+
+.resume__title {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 0 0 27px 0;
+}
+
+
+.resume__heading {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+}
+
+.resume__subheading {
+    color: rgba(0, 0, 0, .4);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+}
+
+.resume__text {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.resume__list {
+    @extend .resume__list--no-margin;
+    margin-bottom: 27px;
+}
+
+.resume__list--no-margin {
+    font-size: 18px;
+    line-height: 27px;
+    padding-left: 10px;
+
+    li {
+        text-indent: -8px;
+
+        &:before {
+            content: "\00B7";
+            margin-right: 4px;
+        }
+    }
+}
