@@ -1,7 +1,15 @@
 <nav class="app-menu flex flex-col flex-grow" [ngClass]="{'app-menu--show': appMenuOpen}" (click)="closeAppMenu()">
     <header class="header-bar--menu flex-noshrink flex flex-start-center" (click)="$event.stopPropagation()">
-        <button class="app-menu__close" (click)="closeAppMenu()">X</button>
-        <button class="app-menu__home" [routerLink]="['/home']">H</button>
+        <button class="app-menu__close" (click)="closeAppMenu()">
+            <svg class="app-menu__icon">
+                <use xlink:href="/assets/icons/icon-sprite.svg#close"></use>
+            </svg>
+        </button>
+        <button class="app-menu__home" [routerLink]="['/home']">
+            <svg class="app-menu__icon">
+                <use xlink:href="/assets/icons/icon-sprite.svg#home"></use>
+            </svg>
+        </button>
         <h1 class="header-bar__title">Andrew McConville</h1>
     </header>
     <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink" (click)="$event.stopPropagation()">

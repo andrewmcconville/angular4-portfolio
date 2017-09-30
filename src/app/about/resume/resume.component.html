@@ -1,13 +1,18 @@
 <div class="article flex flex-col flex-grow">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
-        <button (click)="openAppMenu()">M</button>
+        <button (click)="openAppMenu()">
+            <svg class="app-menu__icon">
+                <use xlink:href="/assets/icons/icon-sprite.svg#hamburger-menu"></use>
+            </svg>
+        </button>
         <h1 class="header-bar__title">Resume</h1>
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
         <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/home']">prev</button>
         <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/reading-list']">next</button>
     </nav>
-    <article class="flex-grow flex-scroll--y flex flex-col">
+    <article class="flex-grow flex-scroll--y flex flex-col"
+            [style.marginRight]="0 - scrollbarWidth + 'px'">
         <div class="article__shadow-box flex-grow">
             <header class="article__header">
                 <h1 class="article__header-title">Resume</h1>

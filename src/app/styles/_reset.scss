@@ -12,11 +12,11 @@ html {
 body {
     color: rgba(0, 0, 0, 0.7);
     font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
     margin: 0;
 }
 
 p {
-    font-size: 19px;
     line-height: 1.6;
     margin: 0;
 }
@@ -28,7 +28,8 @@ ul {
 }
 
 a {
-    color: rgba(0, 0, 0, 0.6);
+    color: $slate-500;
+    cursor: pointer;
     text-decoration: none;
 
     &:focus {
@@ -37,11 +38,15 @@ a {
     }
 }
 
+.underline-link {
+    text-decoration: underline;
+}
+
 .button,
 button {
     -webkit-appearance: none;
-    background-color: #fff;
-    border: 1px solid #000;
+    background-color: transparent;
+    border: none;
     border-radius: 0;
     color: #000;
     cursor: pointer;
@@ -59,7 +64,7 @@ button {
     }
 
     &:hover {
-        background-color: #fff;
+        background-color: transparent;
         color: #000;
         text-decoration: none;
     }

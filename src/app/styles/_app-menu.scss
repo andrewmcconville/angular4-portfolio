@@ -34,6 +34,12 @@
     }
 }
 
+.app-menu__icon {
+    fill: $slate-100;
+    height: 18px;
+    width: 18px;
+}
+
 .app-menu__home {
     @media(max-width: 719px) {
         display: none;
