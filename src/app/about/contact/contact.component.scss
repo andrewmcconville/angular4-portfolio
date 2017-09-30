@@ -1,0 +1,25 @@
+.contact__item {
+    margin-bottom: 32px;
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.contact__icon-col {
+    margin: 0 8px 0 0;
+    padding: 2px;
+}
+
+.contact__icon {
+    display: block;
+    height: 32px;
+    width: 32px;
+}
+
+.contact__title {
+    font-size: 22px;
+    font-weight: 300;
+}

@@ -1,45 +1,82 @@
 <div class="article flex flex-col flex-grow">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
-        <button (click)="openAppMenu()">M</button>
+        <button (click)="openAppMenu()">
+            <svg class="app-menu__icon">
+                <use xlink:href="/assets/icons/icon-sprite.svg#hamburger-menu"></use>
+            </svg>
+        </button>
         <h1 class="header-bar__title">Contact</h1>
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
         <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/reading-list']">prev</button>
         <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/home']">next</button>
     </nav>
-    <article class="flex-grow flex-scroll--y flex flex-col">
+    <article class="flex-grow flex-scroll--y flex flex-col"
+            [style.marginRight]="0 - scrollbarWidth + 'px'">
         <div class="article__shadow-box flex-grow">
             <header class="article__header--has-cover-iamge article__header--contact flex flex-center-end">
                 <img class="article__photo" src="/assets/about/andrew-avatar.jpg" alt="Andrew McConville" height="180" width="180" />
             </header>
             <div class="article__body">
                 <div class="article__callout">
-                    <p class="flex flex-center-center">andrew@andrewmcconville.com</p>
-                    <p class="flex flex-center-center">262-893-7157</p>
-                    <p>Or if you're on a fact finding mission, I can be found aroud the internet.</p>
+                    <div class="flex flex-center-center"><a href="andrew@andrewmcconville.com">andrew@andrewmcconville.com</a></div>
+                    <div class="flex flex-center-center"><a href="tel:12628937157">262-893-7157</a></div>
                 </div>
                 <ul class="article__copy">
-                    <li>
-                        <div><a href="https://www.linkedin.com/in/andrewmcconville" target="_blank" rel="noopener">LinkedIn</a></div>
-                        <div>I keep it updated and in parity with my <a [routerLink]="['/resume']">resume</a></div>
+                    <li class="contact__item flex flex-start-start">
+                        <a class="contact__icon-col flex-noshrink" href="https://www.linkedin.com/in/andrewmcconville" target="_blank" rel="noopener">
+                            <svg class="contact__icon">
+                                <use xlink:href="/assets/icons/icon-sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                        <div>
+                            <div class="contact__title"><a style="color: #0077b5;" href="https://www.linkedin.com/in/andrewmcconville" target="_blank" rel="noopener">LinkedIn</a></div>
+                            <div style="color: #3a5765;">My LinkedIn profile and resume are pretty similar, but LinkedIn also includes a list of <a class="underline-link" style="color: #0077b5;" href="https://www.linkedin.com/in/andrewmcconville/detail/skills/" target="_blank" rel="noopener">skills &amp; endorsements</a> along with a few more details.</div>
+                        </div>
                     </li>
-                    <li>
-                        <div><a href="https://github.com/andrewmcconville" target="_blank" rel="noopener">GitHub</a></div>
-                        <div>All personal projects, I have yet to contribute to     open source. The <a href="https://github.com/andrewmcconville/angular4-portfolio" target="_blank" rel="noopener">repo for my portfolio</a> open for your critique.</div>
+                    <li class="contact__item flex flex-start-start">
+                        <a class="contact__icon-col flex-noshrink" href="https://github.com/andrewmcconville" target="_blank" rel="noopener">
+                            <svg class="contact__icon">
+                                <use xlink:href="/assets/icons/icon-sprite.svg#github"></use>
+                            </svg>
+                        </a>
+                        <div>
+                            <div class="contact__title"><a style="color: #24292e;" href="https://github.com/andrewmcconville" target="_blank" rel="noopener">GitHub</a></div>
+                            <div style="color: #424345;">My GitHub repo is all personal projects, I have yet to contribute to open source projects. It includes the <a class="underline-link" style="color: #24292e;" href="https://github.com/andrewmcconville/angular4-portfolio" target="_blank" rel="noopener">repo for this portfolio</a>, written with Angular 4 in TypeScript.</div>
+                        </div>
                     </li>
-                    <li>
-                        <div><a href="https://twitter.com/drew_mcconville" target="_blank" rel="noopener">Twitter</a></div>
-                        <div>I don't tweet much, primarilly used to <a href="https://twitter.com/following" target="_blank" rel="noopener">follow people in tech</a></div>
+                    <li class="contact__item flex flex-start-start">
+                        <a class="contact__icon-col flex-noshrink" href="https://twitter.com/drew_mcconville" target="_blank" rel="noopener">
+                            <svg class="contact__icon">
+                                <use xlink:href="/assets/icons/icon-sprite.svg#twiter"></use>
+                            </svg>
+                        </a>
+                        <div>
+                            <div class="contact__title"><a style="color: #1da1f2;" href="https://twitter.com/drew_mcconville" target="_blank" rel="noopener">Twitter</a></div>
+                            <div style="color: #416175;">I almost never tweet. I primarilly use Twitter to <a class="underline-link" style="color: #1da1f2;" href="https://twitter.com/following" target="_blank" rel="noopener">follow people in tech</a> and stay current with the tech world.</div>
+                        </div>
                     </li>
-                    <li>
-                        <div><a href="https://dribbble.com/andrewmcconville" target="_blank" rel="noopener">Dribbble</a></div>
-                        <div>I have yet to put up a shot on dribbble, but you can get a sense for they type of work I admire from my <a href="https://dribbble.com/andrewmcconville/likes" target="_blank" rel="noopener">lengthly list of likes</a></div>
+                    <li class="contact__item flex flex-start-start">
+                        <a class="contact__icon-col flex-noshrink" href="https://dribbble.com/andrewmcconville" target="_blank" rel="noopener">
+                            <svg class="contact__icon">
+                                <use xlink:href="/assets/icons/icon-sprite.svg#dribbble"></use>
+                            </svg>
+                        </a>
+                        <div>
+                            <div class="contact__title"><a style="color: #c32361;" href="https://dribbble.com/andrewmcconville" target="_blank" rel="noopener">Dribbble</a></div>
+                            <div style="color: #5e464f;">I have yet to put up a shot on dribbble, but you can get a sense for the type of work I admire from my <a class="underline-link" style="color: #c32361;" href="https://dribbble.com/andrewmcconville/likes" target="_blank" rel="noopener">lengthly list of likes</a> which I'm always adding to.</div>
+                        </div>
                     </li>
-                    <li>
-                        <div><a href="https://www.facebook.com/andrew.d.mcconville" target="_blank" rel="noopener">Facebook</a></div>
-                        <div>Lots of pictures of my dogs. I'll get you started...</div>
-                        <div>Lando</div>
-                        <div>Olive</div>
+                    <li class="contact__item flex flex-start-start">
+                        <a class="contact__icon-col flex-noshrink" href="https://www.facebook.com/andrew.d.mcconville" target="_blank" rel="noopener">
+                            <svg class="contact__icon">
+                                <use xlink:href="/assets/icons/icon-sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <div>
+                            <div class="contact__title"><a style="color: #3b5998;" href="https://www.facebook.com/andrew.d.mcconville" target="_blank" rel="noopener">Facebook</a></div>
+                            <div style="color: #484f5e;">My Facebook wall is almost exclusivly <a class="underline-link" style="color: #3b5998;" href="https://www.facebook.com/andrew.d.mcconville/photos_all" target="_blank" rel="noopener">photos</a>; I have yet to make the switch to Instagram.</div>
+                        </div>
                     </li>
                 </ul>
             </div>
