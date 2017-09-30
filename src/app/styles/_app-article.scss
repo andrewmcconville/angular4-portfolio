@@ -152,7 +152,16 @@
 
 .article__callout {
     background-color: #fff;
+    //background: linear-gradient(to bottom, #fff 20%, #fafcfe 100%);
+    // background: repeating-linear-gradient(
+    //     -45deg,
+    //     #f6f8fa,
+    //     #f6f8fa 2px,
+    //     #fdfeff 2px,
+    //     #fdfeff 16px
+    //   );
     box-shadow: $shadow-z-1;
+    color: $slate-500;
     transition: padding 320ms ease-in-out;
 
     @media(max-width: 519px) {
