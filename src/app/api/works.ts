@@ -27,7 +27,7 @@ export const works: Array<IWork> = [
         introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
         date: '2013-10-11T18:00:00-05:00',
         url: "1000-books-kindergarten",
-        defaultImage: "2017/06/1000-books-kindergarten",
+        defaultImage: "2013/11/1000-books-kindergarten",
         images: [
             {
                 src: "2013/11/1000-books-before-kindergarten-app.jpg",
@@ -243,7 +243,7 @@ export const works: Array<IWork> = [
         introduction: "The quest for processing speed and complete silence lead to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
         date: '2009-05-06T18:00:00-05:00',
         url: "water-cooled-wood-computer",
-        defaultImage: "2009/05/water-cooled-wood-computer",
+        defaultImage: "2011/12/water-cooled-wood-computer",
         images: [
             {
                 src: "2011/12/wood-computer-front-sides-on.jpg",
