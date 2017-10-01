@@ -234,11 +234,11 @@
 
 .article__copy {
     @media(max-width: 719px) {
-        padding: 16px 12px 20px 12px;
+        margin: 16px 12px 20px 12px;
     }
 
     @media(min-width: 720px) {
-        padding: 28px 24px 32px 24px;
+        margin: 28px 24px 32px 24px;
     }
 }
 
@@ -265,7 +265,7 @@
 .article__image {
     display: block;
     height: auto;
-    max-height: 500px;
+    max-height: 750px;
     max-width: 100%;
     width: auto;
 }
