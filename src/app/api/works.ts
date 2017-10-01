@@ -28,8 +28,28 @@ export const works: Array<IWork> = [
         date: '2013-10-11T18:00:00-05:00',
         url: "1000-books-kindergarten",
         defaultImage: "2017/06/1000-books-kindergarten",
-        // images: [
-        // ]
+        images: [
+            {
+                src: "2013/11/1000-books-before-kindergarten-app.jpg",
+                caption: "1000 Books Before Kindergarten startup screen.",
+                height: 500
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-state-map.jpg",
+                caption: "State map, information architecture, overview of app beta progress.",
+                height: 380
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-readers.jpg",
+                caption: "Readers selection and milestone overview. As milestones are met the app is brought to the readers local library for prizes.",
+                height: 500
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-home-and-account.jpg",
+                caption: "Home page featuring library news feed. Account screen utilizes direct barcode scanning interaction.",
+                height: 500
+            }
+        ]
     },
     {
         name: "UWM Mobile",
@@ -224,83 +244,113 @@ export const works: Array<IWork> = [
         date: '2009-05-06T18:00:00-05:00',
         url: "water-cooled-wood-computer",
         defaultImage: "2009/05/water-cooled-wood-computer",
-        // images: [
-        // ]
-    },
-    {
-        name: "Brain Brawn & Body",
-        excerpt: "Designed, prototyped and programmed swipe menu interactions.",
-        introduction: "Brain Brawn & Body is a website dedicated to the health and wellness of African American men. The app aims to bring targeted news and event information to users along with a journal for health tracking and health care finder.",
-        date: '2013-07-07T20:35:04-05:00',
-        url: "brain-brawn-body",
-        defaultImage: "2013/07/brain-brawn-body",
         images: [
             {
-                src: "2013/07/brain-brawn-and-body-app.jpg",
-                caption: "Brain Brawn and Body app startup screen.",
+                src: "2011/12/wood-computer-front-sides-on.jpg",
+                caption: "Water cooled wood computer front and left sides with doors on.",
                 height: 1000
             },
             {
-                src: "2013/07/brain-brawn-and-body-app-blog.jpg",
-                caption: "Website blog integration with mobile app.",
+                src: "2011/12/wood-computer-front-sides-off.jpg",
+                caption: "Wood computer front left with sides off showing water cooled interior.",
                 height: 1000
             },
             {
-                src: "2013/07/brain-brawn-body-health.jpg",
-                caption: "User maintained health journal.",
+                src: "2011/12/wood-computer-rear-sides-off.jpg",
+                caption: "Wood computer rear right with sides off showing radiator and reservoir.",
                 height: 1000
             },
             {
-                src: "2013/07/brain-brawn-body-screenings.jpg",
-                caption: "Medical information featuring: physician finder, prescription pricing, health surveys and health screening information.",
-                height: 1000
+                src: "2011/12/wood-computer-inside.jpg",
+                caption: "Motherboard and other primary water cooled components.",
+                height: 400
+            },
+            {
+                src: "2011/12/wood-computer-cpu-gpu.jpg",
+                caption: "Water cooled video card, chipset and processor close-up.",
+                height: 400
+            },
+            {
+                src: "2011/12/wood-computer-lights.jpg",
+                caption: "Water cooled video card, chipset and processor with lighting active.",
+                height: 490
             }
         ]
     },
-    {
-        name: "Census Viewer",
-        excerpt: "Interactive infographic to U.S. census API in HTML, CSS & JS.",
-        introduction: "Interactive web-app featuring data from the U.S. Department of Commerce’s Census Bureau API. Census data fetched using AJAX via jQuery. Interactive map is rendered using SVG and the Raphaël.js data rendering library.",
-        date: '2013-05-19T20:05:31-05:00',
-        url: "u-s-census-data-viwer",
-        defaultImage: "2013/05/census-data",
-        link: "censusdata.andrewmcconville.com",
-        images: [
-            {
-                src: "2013/05/us-census-data-viwer.jpg",
-                caption: "Data pulled in via the Census API.",
-                height: 840
-            },
-            {
-                src: "2013/05/census-data-closeup.jpg",
-                caption: "SVG and the Raphaël.js map create a truly scalable and pixel perfect interaction.",
-                height: 840
-            }
-        ]
-    },
-    {
-        name: "Personal Timeline",
-        excerpt: "Income and expense vs hours worked and credits enrolled.",
-        introduction: "The Personal Timeline infographic displays income and employment along side expenses and enrolled college credits. Narrative and metaphor created with plant imagery were used to convey a sense of time and growth.",
-        date: '2011-06-18T12:17:41-05:00',
-        url: "personal-timeline-infographic",
-        defaultImage: "2011/12/personal-timeline",
-        images: [
-            {
-                src: "2011/12/personal-timeline.png",
-                caption: "13 year snapshot of work and school with imagery on left building metaphoric narrative.",
-                height: 2318
-            },
-            {
-                src: "2011/12/personal-timeline-scale.png",
-                caption: "Scale, top showing estimated yearly expenses and semester credit hours enrolled at a given month.",
-                height: 1000
-            },
-            {
-                src: "2011/12/personal-timeline-key.png",
-                caption: "Graph key resembling a planted pot.",
-                height: 1000
-            }
-        ]
-    },
+    // {
+    //     name: "Brain Brawn & Body",
+    //     excerpt: "Designed, prototyped and programmed swipe menu interactions.",
+    //     introduction: "Brain Brawn & Body is a website dedicated to the health and wellness of African American men. The app aims to bring targeted news and event information to users along with a journal for health tracking and health care finder.",
+    //     date: '2013-07-07T20:35:04-05:00',
+    //     url: "brain-brawn-body",
+    //     defaultImage: "2013/07/brain-brawn-body",
+    //     images: [
+    //         {
+    //             src: "2013/07/brain-brawn-and-body-app.jpg",
+    //             caption: "Brain Brawn and Body app startup screen.",
+    //             height: 1000
+    //         },
+    //         {
+    //             src: "2013/07/brain-brawn-and-body-app-blog.jpg",
+    //             caption: "Website blog integration with mobile app.",
+    //             height: 1000
+    //         },
+    //         {
+    //             src: "2013/07/brain-brawn-body-health.jpg",
+    //             caption: "User maintained health journal.",
+    //             height: 1000
+    //         },
+    //         {
+    //             src: "2013/07/brain-brawn-body-screenings.jpg",
+    //             caption: "Medical information featuring: physician finder, prescription pricing, health surveys and health screening information.",
+    //             height: 1000
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Census Viewer",
+    //     excerpt: "Interactive infographic to U.S. census API in HTML, CSS & JS.",
+    //     introduction: "Interactive web-app featuring data from the U.S. Department of Commerce’s Census Bureau API. Census data fetched using AJAX via jQuery. Interactive map is rendered using SVG and the Raphaël.js data rendering library.",
+    //     date: '2013-05-19T20:05:31-05:00',
+    //     url: "u-s-census-data-viwer",
+    //     defaultImage: "2013/05/census-data",
+    //     link: "censusdata.andrewmcconville.com",
+    //     images: [
+    //         {
+    //             src: "2013/05/us-census-data-viwer.jpg",
+    //             caption: "Data pulled in via the Census API.",
+    //             height: 840
+    //         },
+    //         {
+    //             src: "2013/05/census-data-closeup.jpg",
+    //             caption: "SVG and the Raphaël.js map create a truly scalable and pixel perfect interaction.",
+    //             height: 840
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Personal Timeline",
+    //     excerpt: "Income and expense vs hours worked and credits enrolled.",
+    //     introduction: "The Personal Timeline infographic displays income and employment along side expenses and enrolled college credits. Narrative and metaphor created with plant imagery were used to convey a sense of time and growth.",
+    //     date: '2011-06-18T12:17:41-05:00',
+    //     url: "personal-timeline-infographic",
+    //     defaultImage: "2011/12/personal-timeline",
+    //     images: [
+    //         {
+    //             src: "2011/12/personal-timeline.png",
+    //             caption: "13 year snapshot of work and school with imagery on left building metaphoric narrative.",
+    //             height: 2318
+    //         },
+    //         {
+    //             src: "2011/12/personal-timeline-scale.png",
+    //             caption: "Scale, top showing estimated yearly expenses and semester credit hours enrolled at a given month.",
+    //             height: 1000
+    //         },
+    //         {
+    //             src: "2011/12/personal-timeline-key.png",
+    //             caption: "Graph key resembling a planted pot.",
+    //             height: 1000
+    //         }
+    //     ]
+    // },
 ];
