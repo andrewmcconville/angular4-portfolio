@@ -1,26 +1,26 @@
 import { IWork } from '../work/work.model';
 
 export const works: Array<IWork> = [
-    {
-        name: "Scaling a Consistent User Experience",
-        excerpt: "CSS at Scale.",
-        introduction: "CSS at Scale.",
-        date: '2017-10-12T18:00:00-05:00',
-        url: "css-at-scale",
-        defaultImage: "2017/10/css-at-scale",
-        // images: [
-        // ]
-    },
-    {
-        name: "Standing Desk",
-        excerpt: "Standing Desk.",
-        introduction: "Standing Desk.",
-        date: '2017-06-12T18:00:00-05:00',
-        url: "standing-desk",
-        defaultImage: "2017/06/standing-desk",
-        // images: [
-        // ]
-    },
+    // {
+    //     name: "Scaling a Consistent User Experience",
+    //     excerpt: "CSS at Scale.",
+    //     introduction: "CSS at Scale.",
+    //     date: '2017-10-12T18:00:00-05:00',
+    //     url: "css-at-scale",
+    //     defaultImage: "2017/10/css-at-scale",
+    //     images: [
+    //     ]
+    // },
+    // {
+    //     name: "Standing Desk",
+    //     excerpt: "Standing Desk.",
+    //     introduction: "Standing Desk.",
+    //     date: '2017-06-12T18:00:00-05:00',
+    //     url: "standing-desk",
+    //     defaultImage: "2017/06/standing-desk",
+    //     images: [
+    //     ]
+    // },
     {
         name: "1000 Books Before Kindergarten",
         excerpt: "Information architecture, color, and interface design.",
@@ -134,6 +134,41 @@ export const works: Array<IWork> = [
                 src: "2012/09/mesmer-is-your-personal-guide.jpg",
                 caption: "Mesmer is your personal guide. Transforming project management into a visual, interactive experience by connecting people and data across time.",
                 height: 510
+            }
+        ]
+    },
+    {
+        name: "DK Handbook",
+        excerpt: "College level English-102 e-handbook for tablet.",
+        introduction: "College level English-102 handbook in tablet format. Featuring highly interactive content and games.",
+        date: '2013-05-28T19:00:00-05:00',
+        url: "dk-handbook",
+        defaultImage: "2013/05/dk-handbook",
+        images: [
+            {
+                src: "2013/05/dk-handbook-kinds-of-sources.jpg",
+                caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
+                height: 1174
+            },
+            {
+                src: "2013/05/dk-handbook-evaluating-sources.jpg",
+                caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
+                height: 1174
+            },
+            {
+                src: "2013/05/dk-handbook-revision.jpg",
+                caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
+                height: 1174
+            },
+            {
+                src: "2013/05/dk-handbook-sample-papers.jpg",
+                caption: "DK Handbook Sample Papers module. Students are presented with a research paper and sidebar with buttons that toggle writing features (introduction, transitions, conclusion). Each feature can then be clicked to read notes describing the highlighted area.",
+                height: 1174
+            },
+            {
+                src: "2013/05/dk-handbook.jpg",
+                caption: "The handbook modules are part of a larger, interactive version of the book currently under development.",
+                height: 1174
             }
         ]
     },
