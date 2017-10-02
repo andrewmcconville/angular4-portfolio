@@ -15,8 +15,33 @@
 }
 
 .resume__icon-col {
-    margin-right: 8px;
-    width: 30px;
+    margin-right: 12px;
+    width: 40px;
+}
+
+.resume__icon {
+    fill: rgba(0, 0, 0, 0.8);
+}
+
+.resume__icon--acculynx {
+    @extend .resume__icon;
+    height: 45.5px;
+    margin-top: 2px;
+    width: 40px;
+}
+
+.resume__icon--uwm {
+    @extend .resume__icon;
+    height: 28px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.resume__icon--uw {
+    @extend .resume__icon;
+    height: 62.5px;
+    margin-top: 3px;
+    width: 40px;
 }
 
 .resume__title {
