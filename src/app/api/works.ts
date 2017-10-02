@@ -274,7 +274,7 @@ export const works: Array<IWork> = [
     },
     {
         name: "Water Cooled Wood Computer",
-        excerpt: "Excerpt.",
+        excerpt: "Crafting a silent computing experience.",
         introduction: "The quest for processing speed and complete silence lead to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
         date: '2009-05-06T18:00:00-05:00',
         url: "water-cooled-wood-computer",
