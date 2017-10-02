@@ -1,6 +1,6 @@
 <div class="article flex flex-col flex-grow">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
-        <button (click)="openAppMenu()">
+        <button (click)="openAppMenu()" role="button" aria-label="Main menu">
             <svg class="app-menu__icon">
                 <use xlink:href="/assets/icons/icon-sprite.svg#hamburger-menu"></use>
             </svg>
@@ -8,8 +8,9 @@
         <h1 class="header-bar__title">Contact</h1>
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/reading-list']">prev</button>
-        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/home']">next</button>
+        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/reading-list']" role="button" aria-label="Previous page">prev</button>
+        <span class="nav-bar__divider flex-noshrink"></span>
+        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/home']" role="button" aria-label="Next page">next</button>
     </nav>
     <article class="flex-grow flex-scroll--y flex flex-col"
             [style.marginRight]="0 - scrollbarWidth + 'px'">
@@ -24,7 +25,7 @@
                 </div>
                 <ul class="article__copy">
                     <li class="contact__item flex flex-start-start">
-                        <a class="contact__icon-col flex-noshrink" href="https://www.linkedin.com/in/andrewmcconville" target="_blank" rel="noopener">
+                        <a class="contact__icon-col flex-noshrink" aria-hidden="true" href="https://www.linkedin.com/in/andrewmcconville" target="_blank" rel="noopener">
                             <svg class="contact__icon">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#linkedin"></use>
                             </svg>
@@ -35,7 +36,7 @@
                         </div>
                     </li>
                     <li class="contact__item flex flex-start-start">
-                        <a class="contact__icon-col flex-noshrink" href="https://github.com/andrewmcconville" target="_blank" rel="noopener">
+                        <a class="contact__icon-col flex-noshrink" aria-hidden="true" href="https://github.com/andrewmcconville" target="_blank" rel="noopener">
                             <svg class="contact__icon">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#github"></use>
                             </svg>
@@ -46,7 +47,7 @@
                         </div>
                     </li>
                     <li class="contact__item flex flex-start-start">
-                        <a class="contact__icon-col flex-noshrink" href="https://twitter.com/drew_mcconville" target="_blank" rel="noopener">
+                        <a class="contact__icon-col flex-noshrink" aria-hidden="true" href="https://twitter.com/drew_mcconville" target="_blank" rel="noopener">
                             <svg class="contact__icon">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#twiter"></use>
                             </svg>
@@ -57,7 +58,7 @@
                         </div>
                     </li>
                     <li class="contact__item flex flex-start-start">
-                        <a class="contact__icon-col flex-noshrink" href="https://dribbble.com/andrewmcconville" target="_blank" rel="noopener">
+                        <a class="contact__icon-col flex-noshrink" aria-hidden="true" href="https://dribbble.com/andrewmcconville" target="_blank" rel="noopener">
                             <svg class="contact__icon">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#dribbble"></use>
                             </svg>
@@ -68,7 +69,7 @@
                         </div>
                     </li>
                     <li class="contact__item flex flex-start-start">
-                        <a class="contact__icon-col flex-noshrink" href="https://www.facebook.com/andrew.d.mcconville" target="_blank" rel="noopener">
+                        <a class="contact__icon-col flex-noshrink" aria-hidden="true" href="https://www.facebook.com/andrew.d.mcconville" target="_blank" rel="noopener">
                             <svg class="contact__icon">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#facebook"></use>
                             </svg>

@@ -1,11 +1,11 @@
 <nav class="app-menu flex flex-col flex-grow" [ngClass]="{'app-menu--show': appMenuOpen}" (click)="closeAppMenu()">
     <header class="header-bar--menu flex-noshrink flex flex-start-center" (click)="$event.stopPropagation()">
-        <button class="app-menu__close" (click)="closeAppMenu()">
+        <button class="app-menu__close" (click)="closeAppMenu()" role="button" aria-label="Close menu">
             <svg class="app-menu__icon">
                 <use xlink:href="/assets/icons/icon-sprite.svg#close"></use>
             </svg>
         </button>
-        <button class="app-menu__home" [routerLink]="['/home']">
+        <button class="app-menu__home" [routerLink]="['/home']" role="button" aria-label="Go to home page">
             <svg class="app-menu__icon">
                 <use xlink:href="/assets/icons/icon-sprite.svg#home"></use>
             </svg>
@@ -13,8 +13,8 @@
         <h1 class="header-bar__title">Andrew McConville</h1>
     </header>
     <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink" (click)="$event.stopPropagation()">
-        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('about')">About</button>
-        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('work')">Work</button>
+        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('about')" role="button">About</button>
+        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('work')" role="button">Work</button>
     </nav>
     <div id="app-menu-list" class="app-menu__menu flex-grow flex-scroll--y" [style.marginRight]="0 - scrollbarWidth + 'px'">
         <portfolio-about-list [menuStateOverride]="menuStateOverride"></portfolio-about-list>
