@@ -95,6 +95,11 @@ export const works: Array<IWork> = [
         defaultImage: "2013/05/dk-handbook",
         images: [
             {
+                src: "2013/05/dk-handbook-revision.jpg",
+                caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
+                height: 1174
+            },
+            {
                 src: "2013/05/dk-handbook-kinds-of-sources.jpg",
                 caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
                 height: 1174
@@ -102,11 +107,6 @@ export const works: Array<IWork> = [
             {
                 src: "2013/05/dk-handbook-evaluating-sources.jpg",
                 caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
-                height: 1174
-            },
-            {
-                src: "2013/05/dk-handbook-revision.jpg",
-                caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
                 height: 1174
             },
             {
