@@ -5,9 +5,16 @@
     border-bottom: 2px solid rgba(0, 0, 0, .7);
 }
 
-.article__shadow-box,
-.article__body {
-    background-color: #fafbfc;
+.resume__download-link-container {
+    margin-top: -78px;
+}
+
+.resume__download-link {
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, .7);
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
 }
 
 .resume__section {
@@ -21,6 +28,11 @@
 
 .resume__icon {
     fill: rgba(0, 0, 0, 0.8);
+}
+
+.resume__icon--pdf {
+    height: 60px;
+    width: 48px;
 }
 
 .resume__icon--acculynx {
@@ -41,6 +53,13 @@
     @extend .resume__icon;
     height: 62.5px;
     margin-top: 3px;
+    width: 40px;
+}
+
+.resume__icon--nab {
+    @extend .resume__icon;
+    height: 35.5px;
+    margin-top: 4px;
     width: 40px;
 }
 
