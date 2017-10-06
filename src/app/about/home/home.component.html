@@ -20,7 +20,65 @@
             </header>
             <div class="article__body">
                 <p class="article__callout">Hi, I’m Andrew McConville; I work with product &amp; design on creating user workflows, wireframes and adhering to user interface consistency. I also document reusable components, maintain pattern libraries and build user interfaces. I believe in user centered design, style guides and grid systems.</p>
+                
+                <h2 class="heading">Featured Work</h2>
+                <div class="article__copy flex flex-between-start flex-wrap">
+                    <div class="home__work-snippet flex-grow">
+                        <a class="list-view__link list-view__link--active flex" [routerLink]="['/mesmer-interactive-degree-builder']">
+                            <img class="list-view__poster flex-noshrink"
+                                src="/wp-content/uploads/2012/09/mesmer-thumbnail.jpg"
+                                alt="Mesmer interactive degree builder thumbnail" />
+                            <div class="live-view__copy flex flex-col flex-center-start">
+                                <p class="list-view__name">Mesmer</p>
+                                <p class="list-view__excerpt">Interactive, drag and drop, web-app providing students real-time data manipulation.</p>
+                            </div>
+                        </a>
+                        <p class="home__caption caption-text">Mesmer is a Trello like degree planner I designed and prototyped in 2012 that allows college courses to be easily reorganized by semester with drag and drop.</p>
+                    </div>
+                    <div class="home__work-snippet flex-grow">
+                        <a class="list-view__link list-view__link--active flex" [routerLink]="['/dk-handbook']">
+                            <img class="list-view__poster flex-noshrink"
+                                src="/wp-content/uploads/2013/05/dk-handbook-thumbnail.jpg"
+                                alt="DK handbook thumbnail" />
+                            <div class="live-view__copy flex flex-col flex-center-start">
+                                <p class="list-view__name">DK Handbook</p>
+                                <p class="list-view__excerpt">College level English-102 e-handbook for tablet.</p>
+                            </div>
+                        </a>
+                        <p class="home__caption caption-text">The DK Handbook project prototypes interactions from severl chapters of the print based book. It's a translation from print to tablet that features video, audio, drag and drop, along with games.</p>
+                    </div>
+                </div>
+
+                <h2 class="heading">Experimental Work</h2>                
+                <div class="article__copy flex flex-between-start flex-wrap">
+                    <div class="home__work-snippet flex-grow">
+                        <a class="list-view__link list-view__link--active flex" href="">
+                            <img class="list-view__poster flex-noshrink"
+                                src="/wp-content/uploads/2015/03/stack-overflow-angular-animate-thumbnail.jpg"
+                                alt="Stack Overflow thumbnail" />
+                            <div class="live-view__copy flex flex-col flex-center-start">
+                                <p class="list-view__name">Stack Overflow Angular Animate</p>
+                                <p class="list-view__excerpt">http://andrewmcconville.com/acculynx/stackoverflow</p>
+                            </div>
+                        </a>
+                        <p class="home__caption caption-text">An expirement using AngularJS and its ngAnimate module paired with CSS animations. This was an excersise in both learning Angular and how it can be used with CSS to trigger animations based on state and data powered by the Stack Overflow API.</p>
+                    </div>
+                    <div class="home__work-snippet flex-grow">
+                        <a class="list-view__link list-view__link--active flex" href="">
+                            <img class="list-view__poster flex-noshrink"
+                                src="/wp-content/uploads/2017/04/stack-vote-live-thumbnail.jpg"
+                                alt="Stack Vote Live thumbnail" />
+                            <div class="live-view__copy flex flex-col flex-center-start">
+                                <p class="list-view__name">Stack Vote Live</p>
+                                <p class="list-view__excerpt">https://stack-vote-live.firebaseapp.com</p>
+                            </div>
+                        </a>
+                        <p class="home__caption caption-text">A progressive webapp expirement using Angular 4, RxJS, Service Workers, and Firebase. I dove in head first with this one, it was my first exposure to TypeScript, Rx Observables and Firebase's realtime database paired with the Stack Overflow API.</p>
+                    </div>
+                </div>
+
                 <p class="article__copy">In my free time I enjoy genealogical research, I have so far discovered over 1,000 people in my family tree; woodworking, I recently finished designing and building a standing desk; and science history, which I’m currently building a progressive webapp in Angular.</p>
+                
                 <!-- <p class="article__copy">I've been on a pretty big Google kick the past few years with Google Design Sprints, Google's Angular framework, Google Fonts and I even use Google's G Suite to host my email.</p> -->
             </div>
         </div>

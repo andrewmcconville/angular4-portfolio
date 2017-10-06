@@ -3,7 +3,7 @@ import { PortfolioUIService } from '../../portfolio-ui.service';
 
 @Component({
     templateUrl: './home.component.html',
-    //styleUrls: ['./home.component.scss']
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
     scrollbarWidth: number;
