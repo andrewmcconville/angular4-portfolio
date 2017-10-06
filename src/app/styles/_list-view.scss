@@ -45,11 +45,11 @@
 	box-shadow: $shadow-z-1;
 	
 	.list-view__name {
-		color: rgba(0, 0, 0, .6);
+		color: rgba(0, 0, 0, .7);
 	}
 	
 	.list-view__excerpt {
-		color: rgba(0, 0, 0, 0.5);
+		color: rgba(0, 0, 0, 0.6);
 	}
 
 	.list-view__poster {
@@ -76,14 +76,14 @@
 }
 
 .list-view__name {
-	color: rgba(0, 0, 0, .5);
+	color: rgba(0, 0, 0, .6);
 	line-height: 18px;
 	margin: 0 0 4px 0;
 	transition: color 240ms ease-in-out;
 }
 
 .list-view__excerpt {
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.5);
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 16px;

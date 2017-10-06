@@ -1,0 +1,22 @@
+.heading {
+    font-weight: 200;
+    line-height: 1;
+
+    @media(max-width: 719px) {
+        font-size: 24px;
+        margin: 16px 12px -8px 12px;
+    }
+
+    @media(min-width: 720px) {
+        font-size: 26px;
+        margin: 28px 24px -12px 24px;
+    }
+}
+
+.caption-text {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+}

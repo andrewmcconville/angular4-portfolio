@@ -152,45 +152,37 @@
 
 .article__callout {
     background-color: #fff;
-    //background: linear-gradient(to bottom, #fff 20%, #fafcfe 100%);
-    // background: repeating-linear-gradient(
-    //     -45deg,
-    //     #f6f8fa,
-    //     #f6f8fa 2px,
-    //     #fdfeff 2px,
-    //     #fdfeff 16px
-    //   );
     box-shadow: $shadow-z-1;
     color: $slate-500;
     transition: padding 320ms ease-in-out;
 
     @media(max-width: 519px) {
-        margin: -8px 4px 20px 4px;
+        margin: -8px 4px 24px 4px;
         padding: 80px 12px 12px 12px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        margin: -8px 4px 20px 4px;
+        margin: -8px 4px 24px 4px;
         padding: 90px 12px 12px 12px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        margin: -8px 4px 20px 4px;
+        margin: -8px 4px 24px 4px;
         padding: 105px 12px 12px 12px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        margin: -12px 8px 32px 8px;
+        margin: -12px 8px 48px 8px;
         padding: 90px 16px 16px 16px;
     }
 
     @media(min-width: 820px) and (max-width: 919px) {
-        margin: -12px 8px 32px 8px;
+        margin: -12px 8px 48px 8px;
         padding: 105px 16px 16px 16px;
     }
     
     @media(min-width: 920px) {
-        margin: -12px 8px 32px 8px;
+        margin: -12px 8px 48px 8px;
         padding: 120px 16px 16px 16px;
     }
 }
@@ -270,13 +262,7 @@
     width: auto;
 }
 
-.article__caption {
-    color: rgba(0, 0, 0, 0.6);
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-style: italic;
-    line-height: 1.5;
-    
+.article__caption {    
     @media(max-width: 719px) {
         border-bottom: 2px solid $slate-50;
         padding: 2px 12px;
