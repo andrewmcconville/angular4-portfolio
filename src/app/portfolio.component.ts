@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
+import { Router, NavigationEnd }  from "@angular/router";
 
 import { PortfolioUIService } from './portfolio-ui.service';
 import { WorkService } from './work/work.service';
+
+declare let ga: Function;
 
 @Component({
     encapsulation: ViewEncapsulation.None,
@@ -18,8 +21,16 @@ export class PortfolioComponent implements OnInit {
  
     constructor(
         private portfolioUIService: PortfolioUIService,
-        private workService: WorkService
-    ) { }
+        private workService: WorkService,
+        public router: Router
+    ) {
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+                ga('set', 'page', event.urlAfterRedirects);
+                ga('send', 'pageview');
+            }
+        });
+    }
 
     ngOnInit(): void {
         this.portfolioUIService.currentAppMenuOpen.subscribe((appMenuOpen: boolean) => {
