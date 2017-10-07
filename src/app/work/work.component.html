@@ -37,6 +37,10 @@
                     </div>
                     <figcaption class="article__caption caption-text flex-noshrink">{{image.caption}}</figcaption>
                 </figure>
+
+                <div class="flex flex-center-center" *ngIf="work.link">
+                    <a [href]="work.link" target="_blank" rel="noopener">View it live</a>
+                </div>
             </div>
         </div>
     </article>

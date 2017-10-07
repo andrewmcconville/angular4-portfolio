@@ -62,6 +62,7 @@ export const works: Array<IWork> = [
         introduction: "College level English-102 handbook in tablet format. Featuring highly interactive content and games.",
         date: '2013-05-28T19:00:00-05:00',
         url: "dk-handbook",
+        link: "http://dkmodules.andrewmcconville.com/",
         defaultImage: "2013/05/dk-handbook",
         images: [
             {
@@ -97,8 +98,8 @@ export const works: Array<IWork> = [
         introduction: "Interactive, drag and drop, web-app that assists students and academic advisers with course planning and meeting degree requirements.",
         date: '2012-09-27T18:21:30-05:00',
         url: "mesmer-interactive-degree-builder",
+        link: "http://mesmer.ly",
         defaultImage: "2012/09/mesmer",
-        link: "mesmer.ly",
         images: [
             {
                 src: "2012/09/mesmer-ipad.png",
@@ -178,6 +179,7 @@ export const works: Array<IWork> = [
         introduction: "An expirement using AngularJS and its ngAnimate module paired with CSS animations. This was an excersise in both learning Angular and how it can be used with CSS to trigger animations based on state and data powered by the Stack Overflow API.",
         date: '2015-03-31T18:00:00-05:00',
         url: "stack-overflow-angular-animate",
+        link: "https://andrewmcconville.com/acculynx/stackoverflow",
         defaultImage: "2015/03/stack-overflow-angular-animate",
         images: []
     },
@@ -187,6 +189,7 @@ export const works: Array<IWork> = [
         introduction: "A progressive webapp expirement using Angular 4, RxJS, Service Workers, and Firebase. I dove in head first with this one, it was my first exposure to TypeScript, Rx Observables and Firebase's realtime database paired with the Stack Overflow API.",
         date: '2017-04-13T18:00:00-05:00',
         url: "stack-vote-live",
+        link: "https://stack-vote-live.firebaseapp.com/",
         defaultImage: "2017/04/stack-vote-live",
         images: []
     },
