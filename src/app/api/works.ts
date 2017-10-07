@@ -181,7 +181,20 @@ export const works: Array<IWork> = [
         url: "stack-overflow-angular-animate",
         link: "https://andrewmcconville.com/acculynx/stackoverflow",
         defaultImage: "2015/03/stack-overflow-angular-animate",
-        images: []
+        images: [
+            {
+                src: "2015/03/stack-overflow-angular-animate-expand.mp4",
+                type: "video",
+                caption: "Answer expanding.",
+                height: 900
+            },
+            {
+                src: "2015/03/stack-overflow-angular-animate-drop.mp4",
+                type: "video",
+                caption: "User dropping.",
+                height: 900
+            },
+        ]
     },
     {
         name: "Stack Vote Live",

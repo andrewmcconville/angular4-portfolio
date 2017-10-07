@@ -29,11 +29,18 @@
                 <p class="article__copy">{{work.introduction}}</p>
 
                 <figure class="article__figure" *ngFor="let image of work.images">
-                    <div class="article__image-container flex flex-center-start">
+                    <div class="article__image-container flex flex-center-start" *ngIf="image.type != 'video'">
                         <img class="article__image"
                             [src]="'/wp-content/uploads/' + image.src"
                             [alt]="image.caption"
                             [height]="image.height" width="1500" />
+                    </div>
+                    <div  class="article__image-container flex flex-center-start" *ngIf="image.type === 'video'">
+                        <video class="article__image" controls loop autoplay
+                            [height]="image.height" width="1500">
+                            <source [src]="'/wp-content/uploads/' + image.src" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
                     </div>
                     <figcaption class="article__caption caption-text flex-noshrink">{{image.caption}}</figcaption>
                 </figure>
