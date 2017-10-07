@@ -10,7 +10,9 @@
                 <use xlink:href="/assets/icons/icon-sprite.svg#home"></use>
             </svg>
         </button>
-        <h1 class="header-bar__title">Andrew McConville</h1>
+        <h1 class="header-bar__title" aria-hidden="true">
+            <a [routerLink]="['/home']" tabindex="-1" >Andrew McConville</a>
+        </h1>
     </header>
     <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink" (click)="$event.stopPropagation()">
         <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('about')" role="button">About</button>
