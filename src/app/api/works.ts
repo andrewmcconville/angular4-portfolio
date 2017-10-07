@@ -22,36 +22,6 @@ export const works: Array<IWork> = [
     //     ]
     // },
     {
-        name: "1000 Books Before Kindergarten",
-        excerpt: "Information architecture, color, and interface design.",
-        introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
-        date: '2013-10-11T18:00:00-05:00',
-        url: "1000-books-kindergarten",
-        defaultImage: "2013/11/1000-books-kindergarten",
-        images: [
-            {
-                src: "2013/11/1000-books-before-kindergarten-app.jpg",
-                caption: "1000 Books Before Kindergarten startup screen.",
-                height: 500
-            },
-            {
-                src: "2013/11/1000-books-before-kindergarten-state-map.jpg",
-                caption: "Information architecture, overview of app beta progress.",
-                height: 380
-            },
-            {
-                src: "2013/11/1000-books-before-kindergarten-readers.jpg",
-                caption: "Readers selection and milestone overview. As milestones are met the app is brought to the readers local library for prizes.",
-                height: 500
-            },
-            {
-                src: "2013/11/1000-books-before-kindergarten-home-and-account.jpg",
-                caption: "Home page featuring library news feed. Account screen utilizes direct barcode scanning interaction.",
-                height: 500
-            }
-        ]
-    },
-    {
         name: "UWM Mobile",
         excerpt: "Designed UI, UX and interactions along with in app prototyping.",
         introduction: "I was given the task of completely redesigning the UWM Mobile app and decided to create a highly interactive experience. The home screen presents users with fresh data relevant to campus life. Where the previous version relied on text, the new version adds graphics and icons allowing users to quickly glean information while hastily rushing to class.",
@@ -171,6 +141,54 @@ export const works: Array<IWork> = [
                 height: 510
             }
         ]
+    },
+    {
+        name: "1000 Books Before Kindergarten",
+        excerpt: "Information architecture, color, and interface design.",
+        introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
+        date: '2013-10-11T18:00:00-05:00',
+        url: "1000-books-kindergarten",
+        defaultImage: "2013/11/1000-books-kindergarten",
+        images: [
+            {
+                src: "2013/11/1000-books-before-kindergarten-app.jpg",
+                caption: "1000 Books Before Kindergarten startup screen.",
+                height: 500
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-state-map.jpg",
+                caption: "Information architecture, overview of app beta progress.",
+                height: 380
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-readers.jpg",
+                caption: "Readers selection and milestone overview. As milestones are met the app is brought to the readers local library for prizes.",
+                height: 500
+            },
+            {
+                src: "2013/11/1000-books-before-kindergarten-home-and-account.jpg",
+                caption: "Home page featuring library news feed. Account screen utilizes direct barcode scanning interaction.",
+                height: 500
+            }
+        ]
+    },
+    {
+        name: "Stack Overflow Angular Animate",
+        excerpt: "Interaction design exploration using Angular Animate.",
+        introduction: "An expirement using AngularJS and its ngAnimate module paired with CSS animations. This was an excersise in both learning Angular and how it can be used with CSS to trigger animations based on state and data powered by the Stack Overflow API.",
+        date: '2015-03-31T18:00:00-05:00',
+        url: "stack-overflow-angular-animate",
+        defaultImage: "2015/03/stack-overflow-angular-animate",
+        images: []
+    },
+    {
+        name: "Stack Vote Live",
+        excerpt: "Rapid prototyping using Angular 4.",
+        introduction: "A progressive webapp expirement using Angular 4, RxJS, Service Workers, and Firebase. I dove in head first with this one, it was my first exposure to TypeScript, Rx Observables and Firebase's realtime database paired with the Stack Overflow API.",
+        date: '2017-04-13T18:00:00-05:00',
+        url: "stack-vote-live",
+        defaultImage: "2017/04/stack-vote-live",
+        images: []
     },
     {
         name: "Mesmer Infographic",
