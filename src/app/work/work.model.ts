@@ -6,6 +6,6 @@ export interface IWork {
     defaultImage: string;
     url: string;
 
-    images?: Array<any>;
+    media?: Array<any>;
     link?: string;
 }

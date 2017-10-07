@@ -8,7 +8,7 @@ export const works: Array<IWork> = [
     //     date: '2017-10-12T18:00:00-05:00',
     //     url: "css-at-scale",
     //     defaultImage: "2017/10/css-at-scale",
-    //     images: [
+    //     media: [
     //     ]
     // },
     // {
@@ -18,7 +18,7 @@ export const works: Array<IWork> = [
     //     date: '2017-06-12T18:00:00-05:00',
     //     url: "standing-desk",
     //     defaultImage: "2017/06/standing-desk",
-    //     images: [
+    //     media: [
     //     ]
     // },
     {
@@ -28,7 +28,7 @@ export const works: Array<IWork> = [
         date: '2013-09-23T20:07:54-05:00',
         url: "uwm-mobile",
         defaultImage: "2013/10/uwm-mobile",
-        images: [
+        media: [
             {
                 src: "2013/10/uwm-mobile-app.jpg",
                 caption: "UI, UX and interactions designed from the ground up. Programmed several interaction prototypes in app for testing across multiple mobile platforms.",
@@ -64,7 +64,7 @@ export const works: Array<IWork> = [
         url: "dk-handbook",
         link: "http://dkmodules.andrewmcconville.com/",
         defaultImage: "2013/05/dk-handbook",
-        images: [
+        media: [
             {
                 src: "2013/05/dk-handbook-revision.jpg",
                 caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
@@ -100,7 +100,7 @@ export const works: Array<IWork> = [
         url: "mesmer-interactive-degree-builder",
         link: "http://mesmer.ly",
         defaultImage: "2012/09/mesmer",
-        images: [
+        media: [
             {
                 src: "2012/09/mesmer-ipad.png",
                 caption: "Mesmer Interactive Degree Builder iPad interface",
@@ -150,7 +150,7 @@ export const works: Array<IWork> = [
         date: '2013-10-11T18:00:00-05:00',
         url: "1000-books-kindergarten",
         defaultImage: "2013/11/1000-books-kindergarten",
-        images: [
+        media: [
             {
                 src: "2013/11/1000-books-before-kindergarten-app.jpg",
                 caption: "1000 Books Before Kindergarten startup screen.",
@@ -181,7 +181,7 @@ export const works: Array<IWork> = [
         url: "stack-overflow-angular-animate",
         link: "https://andrewmcconville.com/acculynx/stackoverflow",
         defaultImage: "2015/03/stack-overflow-angular-animate",
-        images: [
+        media: [
             {
                 src: "2015/03/stack-overflow-angular-animate-expand.mp4",
                 type: "video",
@@ -204,7 +204,7 @@ export const works: Array<IWork> = [
         url: "stack-vote-live",
         link: "https://stack-vote-live.firebaseapp.com/",
         defaultImage: "2017/04/stack-vote-live",
-        images: []
+        media: []
     },
     {
         name: "Mesmer Infographic",
@@ -213,7 +213,7 @@ export const works: Array<IWork> = [
         date: '2012-09-24T19:31:37-05:00',
         url: "mesmer-infographic",
         defaultImage: "2013/10/mesmer-infographic",
-        images: [
+        media: [
             {
                 src: "2013/10/mesmer-infographic.jpg",
                 caption: "The information in this infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
@@ -243,7 +243,7 @@ export const works: Array<IWork> = [
         date: '2011-12-21T11:34:06-05:00',
         url: "energy-life-cycle-of-coal-infographic",
         defaultImage: "2011/12/great-lakes-infographic",
-        images: [
+        media: [
             {
                 src: "2011/12/great-lakes-infographic.png",
                 caption: "Infographic on Great Lakes coal energy use.",
@@ -283,7 +283,7 @@ export const works: Array<IWork> = [
         date: '2011-06-25T12:58:36-05:00',
         url: "demographics-supersized-infographic",
         defaultImage: "2011/12/demographics-supersized-infographic",
-        images: [
+        media: [
             {
                 src: "2011/12/demographics-supersized-infographic.png",
                 caption: "Demographics supersized infographic overview.",
@@ -313,7 +313,7 @@ export const works: Array<IWork> = [
         date: '2009-05-06T18:00:00-05:00',
         url: "water-cooled-wood-computer",
         defaultImage: "2011/12/water-cooled-wood-computer",
-        images: [
+        media: [
             {
                 src: "2011/12/wood-computer-front-sides-on.jpg",
                 caption: "Water cooled wood computer front and left sides with doors on.",
@@ -353,7 +353,7 @@ export const works: Array<IWork> = [
     //     date: '2013-07-07T20:35:04-05:00',
     //     url: "brain-brawn-body",
     //     defaultImage: "2013/07/brain-brawn-body",
-    //     images: [
+    //     media: [
     //         {
     //             src: "2013/07/brain-brawn-and-body-app.jpg",
     //             caption: "Brain Brawn and Body app startup screen.",
@@ -384,7 +384,7 @@ export const works: Array<IWork> = [
     //     url: "u-s-census-data-viwer",
     //     defaultImage: "2013/05/census-data",
     //     link: "censusdata.andrewmcconville.com",
-    //     images: [
+    //     media: [
     //         {
     //             src: "2013/05/us-census-data-viwer.jpg",
     //             caption: "Data pulled in via the Census API.",
@@ -404,7 +404,7 @@ export const works: Array<IWork> = [
     //     date: '2011-06-18T12:17:41-05:00',
     //     url: "personal-timeline-infographic",
     //     defaultImage: "2011/12/personal-timeline",
-    //     images: [
+    //     media: [
     //         {
     //             src: "2011/12/personal-timeline.png",
     //             caption: "13 year snapshot of work and school with imagery on left building metaphoric narrative.",

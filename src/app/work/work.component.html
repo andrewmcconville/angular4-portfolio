@@ -28,8 +28,8 @@
             <div class="article__body">
                 <p class="article__copy">{{work.introduction}}</p>
 
-                <figure class="article__figure" *ngFor="let image of work.images">
-                    <div class="article__image-container flex flex-center-start" *ngIf="image.type != 'video'">
+                <figure class="article__figure" *ngFor="let image of work.media">
+                    <div class="article__image-container flex flex-center-start" *ngIf="image.type !== 'video'">
                         <img class="article__image"
                             [src]="'/wp-content/uploads/' + image.src"
                             [alt]="image.caption"
