@@ -6,14 +6,14 @@
 
 .reading-list__image {
     background-color: $slate-50;
-    background-image: url("/wp-content/reading-list-covers.jpg");
+    background-image: url("/assets/about/reading-list-covers.jpg");
     background-size: 100px;
     display: block;
     height: 100px;
     width: 100px;
 }
 
-@for $i from 1 through 30 {
+@for $i from 1 through 32 {
     .reading-list__item:nth-child(#{$i + 1}) .reading-list__image {
         background-position-y: $i * -100px;
     }
