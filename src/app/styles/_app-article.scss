@@ -34,7 +34,7 @@
 
 .article__shadow-box {
     background-color: #fff;
-    max-width: 764px;
+    max-width: 768px;
     padding-bottom: 160px;
 
     @media(min-width: 720px) {
@@ -64,31 +64,31 @@
     transition: height 320ms ease-in-out;
 
     @media(max-width: 419px) {
-        height: 150px;
+        height: 128px;
     }
     
     @media(min-width: 420px) and (max-width: 519px) {
-        height: 180px;
+        height: 160px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        height: 210px;
+        height: 208px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        height: 240px;
+        height: 256px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        height: 180px;
+        height: 160px;
     }
 
     @media(min-width: 820px) and (max-width: 919px) {
-        height: 210px;
+        height: 208px;
     }
     
     @media(min-width: 920px) {
-        height: 240px;
+        height: 256px;
     }
 }
 
@@ -101,7 +101,7 @@
 }
 
 .article__header--reading-list {
-    background-image: url("/assets/about/home-cover.jpg");
+    background-image: url("/assets/about/reading-list-cover.jpg");
 }
 
 .article__photo {
