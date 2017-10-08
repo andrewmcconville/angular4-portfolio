@@ -196,16 +196,16 @@ export const works: Array<IWork> = [
             },
         ]
     },
-    {
-        name: "Stack Vote Live",
-        excerpt: "Rapid prototyping using Angular 4.",
-        introduction: "A progressive webapp expirement using Angular 4, RxJS, Service Workers, and Firebase. I dove in head first with this one, it was my first exposure to TypeScript, Rx Observables and Firebase's realtime database paired with the Stack Overflow API.",
-        date: '2017-04-13T18:00:00-05:00',
-        url: "stack-vote-live",
-        link: "https://stack-vote-live.firebaseapp.com/",
-        defaultImage: "2017/04/stack-vote-live",
-        media: []
-    },
+    // {
+    //     name: "Stack Vote Live",
+    //     excerpt: "Rapid prototyping using Angular 4.",
+    //     introduction: "A progressive webapp expirement using Angular 4, RxJS, Service Workers, and Firebase. I dove in head first with this one, it was my first exposure to TypeScript, Rx Observables and Firebase's realtime database paired with the Stack Overflow API.",
+    //     date: '2017-04-13T18:00:00-05:00',
+    //     url: "stack-vote-live",
+    //     link: "https://stack-vote-live.firebaseapp.com/",
+    //     defaultImage: "2017/04/stack-vote-live",
+    //     media: []
+    // },
     {
         name: "Mesmer Infographic",
         excerpt: "Information gathering on the viability and need for interactive degree tracking software.",
