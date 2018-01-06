@@ -114,37 +114,37 @@
     z-index: 1;
 
     @media(max-width: 519px) {
-        bottom: -50px;
+        bottom: -56px;
         height: 128px;
         width: 128px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        bottom: -63px;
+        bottom: -70px;
         height: 158px;
         width: 158px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        bottom: -76px;
+        bottom: -82px;
         height: 188px;
         width: 188px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        bottom: -50px;
+        bottom: -56px;
         height: 128px;
         width: 128px;
     }
     
     @media(min-width: 820px) and (max-width: 919px) {
-        bottom: -63px;
+        bottom: -70px;
         height: 158px;
         width: 158px;
     }
 
     @media(min-width: 920px) {
-        bottom: -76px;
+        bottom: -82px;
         height: 188px;
         width: 188px;
     }
