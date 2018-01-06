@@ -23,8 +23,8 @@ export const works: Array<IWork> = [
     // },
     {
         name: "Stack Overflow User Research",
-        excerpt: "CSS at Scale.",
-        introduction: "CSS at Scale.",
+        excerpt: "Stack Overflow User Research.",
+        introduction: "Stack Overflow User Research.",
         date: '2017-12-19T20:00:00-05:00',
         url: "stack-overflow-user-research",
         defaultImage: "2017/12/stack-overflow-user-research",
