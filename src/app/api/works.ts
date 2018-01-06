@@ -22,6 +22,16 @@ export const works: Array<IWork> = [
     //     ]
     // },
     {
+        name: "Stack Overflow User Research",
+        excerpt: "CSS at Scale.",
+        introduction: "CSS at Scale.",
+        date: '2017-12-19T20:00:00-05:00',
+        url: "stack-overflow-user-research",
+        defaultImage: "2017/12/stack-overflow-user-research",
+        media: [
+        ]
+    },
+    {
         name: "UWM Mobile",
         excerpt: "Designed UI, UX and interactions along with in app prototyping.",
         introduction: "I was given the task of completely redesigning the UWM Mobile app and decided to create a highly interactive experience. The home screen presents users with fresh data relevant to campus life. Where the previous version relied on text, the new version adds graphics and icons allowing users to quickly glean information while hastily rushing to class.",
