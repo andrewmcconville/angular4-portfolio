@@ -20,7 +20,7 @@
                 <h1 class="article__header-title">{{work.name}}</h1>
                 <h2 class="article__header-subtitle">{{work.excerpt}}</h2>
                 <div class="article__header-meta flex flex-start-stretch">
-                    <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'yMMMMd'}}</time>                    
+                    <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
                     <span class="article__header-divider flex-noshrink"></span>
                     <a href="https://plus.google.com/+AndrewMcConville/" rel="author" itemprop="author" target="_blank">Andrew McConville</a>
                 </div>
