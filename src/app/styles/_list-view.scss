@@ -31,7 +31,7 @@
 
 .list-view__link {
 	cursor: pointer;
-	padding: 4px;
+	padding: 8px;
 	transition: background-color 240ms ease-in-out;
 
 	&:focus {
@@ -63,35 +63,37 @@
 
 .list-view__poster {
 	background-color: #9dc2e8;
-	height: 120px;
+	height: 80px;
 	opacity: .9;
 	transition: opacity 240ms ease-in-out;
-	width: 120px;
+	width: 80px;
 }
 
 .live-view__copy {
-	max-height: 120px;
-	margin: 0 28px 0 14px;
+	max-height: 80px;
+	margin: 0 8px;
 	overflow: hidden;
 }
 
 .list-view__name {
 	color: rgba(0, 0, 0, .6);
-	line-height: 18px;
-	margin: 0 0 4px 0;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1;
+	margin: 0 0 6px 0;
 	transition: color 240ms ease-in-out;
 }
 
-.list-view__excerpt {
-	color: rgba(0, 0, 0, 0.5);
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 16px;
-	margin: 0;
-	max-height: 50px;
-	overflow: hidden;
-	transition: color 240ms ease-in-out;
-}
+// .list-view__excerpt {
+// 	color: rgba(0, 0, 0, 0.5);
+// 	font-size: 16px;
+// 	font-weight: 300;
+// 	line-height: 18px;
+// 	margin: 0;
+// 	max-height: 36px;
+// 	overflow: hidden;
+// 	transition: color 240ms ease-in-out;
+// }
 
 .list-view__end-of-list-message {
 	color: rgba(0, 0, 0, .6);
