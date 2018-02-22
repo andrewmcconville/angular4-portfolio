@@ -32,40 +32,23 @@
                         <h3 class="article__subheading">{{section.name}}</h3>
                         <p class="article__paragraph" *ngFor="let paragraph of section.content">{{paragraph}}</p>
                     </div>
-                    <figure class="article__figure" *ngIf="section.image">
-                        <div class="article__image-container flex flex-center-start" *ngIf="section.image.type !== 'video'">
+                    <figure class="article__figure" *ngIf="section.media">
+                        <div class="article__image-container flex flex-center-start" *ngIf="section.media.type !== 'video'">
                             <img class="article__image"
-                                [ngClass]="{'article__image-shadow': section.image.shadow}"
-                                [src]="'/wp-content/uploads/' + section.image.src"
-                                [alt]="section.image.caption"
-                                [height]="section.image.height" width="1500" />
+                                [ngClass]="{'article__image-shadow': section.media.shadow}"
+                                [src]="'/wp-content/uploads/' + section.media.src"
+                                [alt]="section.media.caption"
+                                [height]="section.media.height" width="1500" />
                         </div>
-                        <div class="article__image-container flex flex-center-start" *ngIf="section.image.type === 'video'">
-                            <video class="article__image" controls loop autoplay height]="section.image.height" width="1500">
-                                <source [src]="'/wp-content/uploads/' + section.image.src" type="video/mp4">
+                        <div class="article__image-container flex flex-center-start" *ngIf="section.media.type === 'video'">
+                            <video class="article__image" controls loop autoplay [height]="section.media.height" width="1500">
+                                <source [src]="'/wp-content/uploads/' + section.media.src" type="video/mp4">
                                 Your browser does not support HTML5 video.
                             </video>
                         </div>
-                        <figcaption class="article__caption caption-text flex-noshrink">{{section.image.caption}}</figcaption>
+                        <figcaption class="article__caption caption-text flex-noshrink">{{section.media.caption}}</figcaption>
                     </figure>
                 </section>
-
-                <figure class="article__figure" *ngFor="let image of work.media">
-                    <div class="article__image-container flex flex-center-start" *ngIf="image.type !== 'video'">
-                        <img class="article__image"
-                            [src]="'/wp-content/uploads/' + image.src"
-                            [alt]="image.caption"
-                            [height]="image.height" width="1500" />
-                    </div>
-                    <div  class="article__image-container flex flex-center-start" *ngIf="image.type === 'video'">
-                        <video class="article__image" controls loop autoplay
-                            [height]="image.height" width="1500">
-                            <source [src]="'/wp-content/uploads/' + image.src" type="video/mp4">
-                            Your browser does not support HTML5 video.
-                        </video>
-                    </div>
-                    <figcaption class="article__caption caption-text flex-noshrink">{{image.caption}}</figcaption>
-                </figure>
 
                 <div class="flex flex-center-center" *ngIf="work.link">
                     <a [href]="work.link" target="_blank" rel="noopener">View it live</a>

@@ -8,7 +8,7 @@ export const works: Array<IWork> = [
     //     date: '2017-10-12T18:00:00-05:00',
     //     url: "css-at-scale",
     //     defaultImage: "2017/10/css-at-scale",
-    //     media: [
+    //     sections: [
     //     ]
     // },
     // {
@@ -18,7 +18,7 @@ export const works: Array<IWork> = [
     //     date: '2017-06-12T18:00:00-05:00',
     //     url: "standing-desk",
     //     defaultImage: "2017/06/standing-desk",
-    //     media: [
+    //     sections: [
     //     ]
     // },
     {
@@ -35,7 +35,7 @@ export const works: Array<IWork> = [
                     "Stack Overflow’s greatest strength is offering free access to questions and answers from the world’s greatest technical talent. This has lead Stack to opportunities in developer marketing, technical recruiting, market research, and enterprise knowledge sharing.",
                     "Defining business goals along with conducting a SWOT, PEST and Five Forces analysis"
                 ],
-                image: {
+                media: {
                     src: "2017/12/stack-overflow-user-research-goals.jpg",
                     caption: "Pages five and six, from the final report delivered to Stack Overflow, summarizing business goals, product value and industry conditions",
                     height: 580,
@@ -105,33 +105,53 @@ export const works: Array<IWork> = [
         date: '2013-09-23T20:07:54-05:00',
         url: "uwm-mobile",
         defaultImage: "2013/10/uwm-mobile",
-        media: [
+        sections: [
             {
-                src: "2013/10/uwm-mobile-app.jpg",
-                caption: "UI, UX and interactions designed from the ground up. Programmed several interaction prototypes in app for testing across multiple mobile platforms.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/uwm-mobile-app.jpg",
+                    caption: "UI, UX and interactions designed from the ground up. Programmed several interaction prototypes in app for testing across multiple mobile platforms.",
+                    height: 1000
+                }
             },
             {
-                src: "2013/10/home-screen-menu.gif",
-                caption: "Pseudo parallax home screen user interface. The static photo changes based on the users location, featuring various UWM landmarks.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/home-screen-menu.gif",
+                    caption: "Pseudo parallax home screen user interface. The static photo changes based on the users location, featuring various UWM landmarks.",
+                    height: 1000
+                }
             },
             {
-                src: "2013/10/slide-menu.gif",
-                caption: "Side by Side of actual interaction and testing prototype. I designed a horizontal menu system, then programmed a demo of it for iOS and Android.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/slide-menu.gif",
+                    caption: "Side by Side of actual interaction and testing prototype. I designed a horizontal menu system, then programmed a demo of it for iOS and Android.",
+                    height: 1000
+                }
             },
             {
-                src: "2013/10/shuttle-bus-status.jpg",
-                caption: "UWM shuttle status",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/shuttle-bus-status.jpg",
+                    caption: "UWM shuttle status",
+                    height: 1000
+                }
             },
             {
-                src: "2013/10/laundry-status.jpg",
-                caption: "Prototyping possible display output of laundry services across campus.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/laundry-status.jpg",
+                    caption: "Prototyping possible display output of laundry services across campus.",
+                    height: 1000
+                }
             }
-        ]
+        ],
     },
     {
         name: "DK Handbook",
@@ -141,31 +161,51 @@ export const works: Array<IWork> = [
         url: "dk-handbook",
         link: "http://dkmodules.andrewmcconville.com/",
         defaultImage: "2013/05/dk-handbook",
-        media: [
+        sections: [
             {
-                src: "2013/05/dk-handbook-revision.jpg",
-                caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
-                height: 1174
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/05/dk-handbook-revision.jpg",
+                    caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
+                    height: 1174
+                }
             },
             {
-                src: "2013/05/dk-handbook-kinds-of-sources.jpg",
-                caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
-                height: 1174
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/05/dk-handbook-kinds-of-sources.jpg",
+                    caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
+                    height: 1174
+                }
             },
             {
-                src: "2013/05/dk-handbook-evaluating-sources.jpg",
-                caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
-                height: 1174
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/05/dk-handbook-evaluating-sources.jpg",
+                    caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
+                    height: 1174
+                }
             },
             {
-                src: "2013/05/dk-handbook-sample-papers.jpg",
-                caption: "DK Handbook Sample Papers module. Students are presented with a research paper and sidebar with buttons that toggle writing features (introduction, transitions, conclusion). Each feature can then be clicked to read notes describing the highlighted area.",
-                height: 1174
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/05/dk-handbook-sample-papers.jpg",
+                    caption: "DK Handbook Sample Papers module. Students are presented with a research paper and sidebar with buttons that toggle writing features (introduction, transitions, conclusion). Each feature can then be clicked to read notes describing the highlighted area.",
+                    height: 1174
+                }
             },
             {
-                src: "2013/05/dk-handbook.jpg",
-                caption: "The handbook modules are part of a larger, interactive version of the book currently under development.",
-                height: 1174
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/05/dk-handbook.jpg",
+                    caption: "The handbook modules are part of a larger, interactive version of the book currently under development.",
+                    height: 1174
+                }
             }
         ]
     },
@@ -177,46 +217,78 @@ export const works: Array<IWork> = [
         url: "mesmer-interactive-degree-builder",
         link: "http://mesmer.ly",
         defaultImage: "2012/09/mesmer",
-        media: [
+        sections: [
             {
-                src: "2012/09/mesmer-ipad.png",
-                caption: "Mesmer Interactive Degree Builder iPad interface",
-                height: 846
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-ipad.png",
+                    caption: "Mesmer Interactive Degree Builder iPad interface",
+                    height: 846
+                }
             },
             {
-                src: "2012/09/mesmer-sidebar.png",
-                caption: "Slide out sidebar containing the university course catalog. Departments and courses are quickly searchable via filtering search field.",
-                height: 846
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-sidebar.png",
+                    caption: "Slide out sidebar containing the university course catalog. Departments and courses are quickly searchable via filtering search field.",
+                    height: 846
+                }
             },
             {
-                src: "2012/09/mesmer-progress.png",
-                caption: "Slide down menu revels detail progress view.",
-                height: 846
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-progress.png",
+                    caption: "Slide down menu revels detail progress view.",
+                    height: 846
+                }
             },
             {
-                src: "2012/09/brand-book-cover.jpg",
-                caption: "Mesmer brand book cover. Featuring logo design, color inspiration, branding and user interface screenshots.",
-                height: 1020
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/brand-book-cover.jpg",
+                    caption: "Mesmer brand book cover. Featuring logo design, color inspiration, branding and user interface screenshots.",
+                    height: 1020
+                }
             },
             {
-                src: "2012/09/mesmer-is-an-aerial-view.jpg",
-                caption: "Mesmer is an aerial view. Every project needs a road map. Visualizing complex systems requires an elegant and intuitive user interface.",
-                height: 510
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-is-an-aerial-view.jpg",
+                    caption: "Mesmer is an aerial view. Every project needs a road map. Visualizing complex systems requires an elegant and intuitive user interface.",
+                    height: 510
+                }
             },
             {
-                src: "2012/09/mesmer-is-finely-tuned-precision.jpg",
-                caption: "Mesmer is finely tuned precision. Intuitively organizing and beautifully presented information systems with user friendly, interactive interfaces.",
-                height: 510
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-is-finely-tuned-precision.jpg",
+                    caption: "Mesmer is finely tuned precision. Intuitively organizing and beautifully presented information systems with user friendly, interactive interfaces.",
+                    height: 510
+                }
             },
             {
-                src: "2012/09/mesmer-focus-group.jpg",
-                caption: "Focus groups, personas, beta testers and general review by students and faculty helped refine ease of use and feature set.",
-                height: 510
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-focus-group.jpg",
+                    caption: "Focus groups, personas, beta testers and general review by students and faculty helped refine ease of use and feature set.",
+                    height: 510
+                }
             },
             {
-                src: "2012/09/mesmer-is-your-personal-guide.jpg",
-                caption: "Mesmer is your personal guide. Transforming project management into a visual, interactive experience by connecting people and data across time.",
-                height: 510
+                name: "",
+                content: [],
+                media: {
+                    src: "2012/09/mesmer-is-your-personal-guide.jpg",
+                    caption: "Mesmer is your personal guide. Transforming project management into a visual, interactive experience by connecting people and data across time.",
+                    height: 510
+                }
             }
         ]
     },
@@ -227,26 +299,42 @@ export const works: Array<IWork> = [
         date: '2013-10-11T18:00:00-05:00',
         url: "1000-books-kindergarten",
         defaultImage: "2013/11/1000-books-kindergarten",
-        media: [
+        sections: [
             {
-                src: "2013/11/1000-books-before-kindergarten-app.jpg",
-                caption: "1000 Books Before Kindergarten startup screen.",
-                height: 500
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/11/1000-books-before-kindergarten-app.jpg",
+                    caption: "1000 Books Before Kindergarten startup screen.",
+                    height: 500
+                }
             },
             {
-                src: "2013/11/1000-books-before-kindergarten-state-map.jpg",
-                caption: "Information architecture, overview of app beta progress.",
-                height: 380
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/11/1000-books-before-kindergarten-state-map.jpg",
+                    caption: "Information architecture, overview of app beta progress.",
+                    height: 380
+                }
             },
             {
-                src: "2013/11/1000-books-before-kindergarten-readers.jpg",
-                caption: "Readers selection and milestone overview. As milestones are met the app is brought to the readers local library for prizes.",
-                height: 500
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/11/1000-books-before-kindergarten-readers.jpg",
+                    caption: "Readers selection and milestone overview. As milestones are met the app is brought to the readers local library for prizes.",
+                    height: 500
+                }
             },
             {
-                src: "2013/11/1000-books-before-kindergarten-home-and-account.jpg",
-                caption: "Home page featuring library news feed. Account screen utilizes direct barcode scanning interaction.",
-                height: 500
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/11/1000-books-before-kindergarten-home-and-account.jpg",
+                    caption: "Home page featuring library news feed. Account screen utilizes direct barcode scanning interaction.",
+                    height: 500
+                }
             }
         ]
     },
@@ -258,19 +346,27 @@ export const works: Array<IWork> = [
         url: "stack-overflow-angular-animate",
         link: "https://andrewmcconville.com/acculynx/stackoverflow",
         defaultImage: "2015/03/stack-overflow-angular-animate",
-        media: [
+        sections: [
             {
-                src: "2015/03/stack-overflow-angular-animate-expand.mp4",
-                type: "video",
-                caption: "Answer expanding.",
-                height: 900
+                name: "",
+                content: [],
+                media: {
+                    src: "2015/03/stack-overflow-angular-animate-expand.mp4",
+                    type: "video",
+                    caption: "Answer expanding.",
+                    height: 900
+                }
             },
             {
-                src: "2015/03/stack-overflow-angular-animate-drop.mp4",
-                type: "video",
-                caption: "User dropping.",
-                height: 900
-            },
+                name: "",
+                content: [],
+                media: {
+                    src: "2015/03/stack-overflow-angular-animate-drop.mp4",
+                    type: "video",
+                    caption: "User dropping.",
+                    height: 900
+                }
+            }
         ]
     },
     // {
@@ -281,7 +377,7 @@ export const works: Array<IWork> = [
     //     url: "stack-vote-live",
     //     link: "https://stack-vote-live.firebaseapp.com/",
     //     defaultImage: "2017/04/stack-vote-live",
-    //     media: []
+    //     sections: []
     // },
     {
         name: "Mesmer Infographic",
@@ -290,26 +386,42 @@ export const works: Array<IWork> = [
         date: '2012-09-24T19:31:37-05:00',
         url: "mesmer-infographic",
         defaultImage: "2013/10/mesmer-infographic",
-        media: [
+        sections: [
             {
-                src: "2013/10/mesmer-infographic.jpg",
-                caption: "The information in this infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
-                height: 3200
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/mesmer-infographic.jpg",
+                    caption: "The information in this infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
+                    height: 3200
+                }
             },
             {
-                src: "2013/10/mesmer-degree-planning-software.jpg",
-                caption: "About one third of students use UWM’s PAWS software to plan their degree, but the software is not kept up to date and the interface often confuses students. This results in students taking courses that don’t count toward their degree, delaying graduation.",
-                height: 751
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/mesmer-degree-planning-software.jpg",
+                    caption: "About one third of students use UWM’s PAWS software to plan their degree, but the software is not kept up to date and the interface often confuses students. This results in students taking courses that don’t count toward their degree, delaying graduation.",
+                    height: 751
+                }
             },
             {
-                src: "2013/10/mesmer-advisor.jpg",
-                caption: "Only about two thirds of students meet with their advisers on a regular basis.",
-                height: 750
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/mesmer-advisor.jpg",
+                    caption: "Only about two thirds of students meet with their advisers on a regular basis.",
+                    height: 750
+                }
             },
             {
-                src: "2013/10/mesmer-technology.jpg",
-                caption: "Not surprisingly, students own, a wide variety of technology. Most own a laptop and a smart phone or tablet.",
-                height: 750
+                name: "",
+                content: [],
+                media: {
+                    src: "2013/10/mesmer-technology.jpg",
+                    caption: "Not surprisingly, students own, a wide variety of technology. Most own a laptop and a smart phone or tablet.",
+                    height: 750
+                }
             }
         ]
     },
@@ -320,36 +432,60 @@ export const works: Array<IWork> = [
         date: '2011-12-21T11:34:06-05:00',
         url: "energy-life-cycle-of-coal-infographic",
         defaultImage: "2011/12/great-lakes-infographic",
-        media: [
+        sections: [
             {
-                src: "2011/12/great-lakes-infographic.png",
-                caption: "Infographic on Great Lakes coal energy use.",
-                height: 844
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic.png",
+                    caption: "Infographic on Great Lakes coal energy use.",
+                    height: 844
+                }
             },
             {
-                src: "2011/12/great-lakes-infographic-powder-river-basin.png",
-                caption: "Coal life-cycle shown as 4 step narrative.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic-powder-river-basin.png",
+                    caption: "Coal life-cycle shown as 4 step narrative.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/great-lakes-infographic-coal-sources.png",
-                caption: "Wyoming's Powder River Basin leads coal extraction in U.S.",
-                height: 800
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic-coal-sources.png",
+                    caption: "Wyoming's Powder River Basin leads coal extraction in U.S.",
+                    height: 800
+                }
             },
             {
-                src: "2011/12/great-lakes-infographic-electricity-from-coal.png",
-                caption: "Circular bar graph showing Indiana as top Great Lake coal user.",
-                height: 800
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic-electricity-from-coal.png",
+                    caption: "Circular bar graph showing Indiana as top Great Lake coal user.",
+                    height: 800
+                }
             },
             {
-                src: "2011/12/great-lakes-infographic-food-carbon.png",
-                caption: "Food groups with highest carbon footprint.",
-                height: 800
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic-food-carbon.png",
+                    caption: "Food groups with highest carbon footprint.",
+                    height: 800
+                }
             },
             {
-                src: "2011/12/great-lakes-infographic-city-data.png",
-                caption: "Data featuring energy use by metropolitan area.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/great-lakes-infographic-city-data.png",
+                    caption: "Data featuring energy use by metropolitan area.",
+                    height: 1000
+                }
             }
         ]
     },
@@ -360,26 +496,42 @@ export const works: Array<IWork> = [
         date: '2011-06-25T12:58:36-05:00',
         url: "demographics-supersized-infographic",
         defaultImage: "2011/12/demographics-supersized-infographic",
-        media: [
+        sections: [
             {
-                src: "2011/12/demographics-supersized-infographic.png",
-                caption: "Demographics supersized infographic overview.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/demographics-supersized-infographic.png",
+                    caption: "Demographics supersized infographic overview.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/demographics-supersized-infographic-graphs.png",
-                caption: "City demographics as bar graph placed side by side for fast comparison.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/demographics-supersized-infographic-graphs.png",
+                    caption: "City demographics as bar graph placed side by side for fast comparison.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/demographics-supersized-infographic-city-data.png",
-                caption: "McDonald's locations compared to Milwaukee county city demographics.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/demographics-supersized-infographic-city-data.png",
+                    caption: "McDonald's locations compared to Milwaukee county city demographics.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/demographics-supersized-infographic-national-state.png",
-                caption: "U.S. and Wisconsin demographic comparison.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/demographics-supersized-infographic-national-state.png",
+                    caption: "U.S. and Wisconsin demographic comparison.",
+                    height: 1000
+                }
             }
         ]
     },
@@ -390,90 +542,63 @@ export const works: Array<IWork> = [
         date: '2009-05-06T18:00:00-05:00',
         url: "water-cooled-wood-computer",
         defaultImage: "2011/12/water-cooled-wood-computer",
-        media: [
+        sections: [
             {
-                src: "2011/12/wood-computer-front-sides-on.jpg",
-                caption: "Water cooled wood computer front and left sides with doors on.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-front-sides-on.jpg",
+                    caption: "Water cooled wood computer front and left sides with doors on.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/wood-computer-front-sides-off.jpg",
-                caption: "Wood computer front left with sides off showing water cooled interior.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-front-sides-off.jpg",
+                    caption: "Wood computer front left with sides off showing water cooled interior.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/wood-computer-rear-sides-off.jpg",
-                caption: "Wood computer rear right with sides off showing radiator and reservoir.",
-                height: 1000
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-rear-sides-off.jpg",
+                    caption: "Wood computer rear right with sides off showing radiator and reservoir.",
+                    height: 1000
+                }
             },
             {
-                src: "2011/12/wood-computer-inside.jpg",
-                caption: "Motherboard and other primary water cooled components.",
-                height: 400
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-inside.jpg",
+                    caption: "Motherboard and other primary water cooled components.",
+                    height: 400
+                }
             },
             {
-                src: "2011/12/wood-computer-cpu-gpu.jpg",
-                caption: "Water cooled video card, chipset and processor close-up.",
-                height: 400
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-cpu-gpu.jpg",
+                    caption: "Water cooled video card, chipset and processor close-up.",
+                    height: 400
+                }
             },
             {
-                src: "2011/12/wood-computer-lights.jpg",
-                caption: "Water cooled video card, chipset and processor with lighting active.",
-                height: 490
+                name: "",
+                content: [],
+                media: {
+                    src: "2011/12/wood-computer-lights.jpg",
+                    caption: "Water cooled video card, chipset and processor with lighting active.",
+                    height: 490
+                }
             }
         ]
     },
-    // {
-    //     name: "Brain Brawn & Body",
-    //     excerpt: "Designed, prototyped and programmed swipe menu interactions.",
-    //     introduction: "Brain Brawn & Body is a website dedicated to the health and wellness of African American men. The app aims to bring targeted news and event information to users along with a journal for health tracking and health care finder.",
-    //     date: '2013-07-07T20:35:04-05:00',
-    //     url: "brain-brawn-body",
-    //     defaultImage: "2013/07/brain-brawn-body",
-    //     media: [
-    //         {
-    //             src: "2013/07/brain-brawn-and-body-app.jpg",
-    //             caption: "Brain Brawn and Body app startup screen.",
-    //             height: 1000
-    //         },
-    //         {
-    //             src: "2013/07/brain-brawn-and-body-app-blog.jpg",
-    //             caption: "Website blog integration with mobile app.",
-    //             height: 1000
-    //         },
-    //         {
-    //             src: "2013/07/brain-brawn-body-health.jpg",
-    //             caption: "User maintained health journal.",
-    //             height: 1000
-    //         },
-    //         {
-    //             src: "2013/07/brain-brawn-body-screenings.jpg",
-    //             caption: "Medical information featuring: physician finder, prescription pricing, health surveys and health screening information.",
-    //             height: 1000
-    //         }
-    //     ]
-    // },
-    // {
-    //     name: "Census Viewer",
-    //     excerpt: "Interactive infographic to U.S. census API in HTML, CSS & JS.",
-    //     introduction: "Interactive web-app featuring data from the U.S. Department of Commerce’s Census Bureau API. Census data fetched using AJAX via jQuery. Interactive map is rendered using SVG and the Raphaël.js data rendering library.",
-    //     date: '2013-05-19T20:05:31-05:00',
-    //     url: "u-s-census-data-viwer",
-    //     defaultImage: "2013/05/census-data",
-    //     link: "censusdata.andrewmcconville.com",
-    //     media: [
-    //         {
-    //             src: "2013/05/us-census-data-viwer.jpg",
-    //             caption: "Data pulled in via the Census API.",
-    //             height: 840
-    //         },
-    //         {
-    //             src: "2013/05/census-data-closeup.jpg",
-    //             caption: "SVG and the Raphaël.js map create a truly scalable and pixel perfect interaction.",
-    //             height: 840
-    //         }
-    //     ]
-    // },
     // {
     //     name: "Personal Timeline",
     //     excerpt: "Income and expense vs hours worked and credits enrolled.",
@@ -481,7 +606,7 @@ export const works: Array<IWork> = [
     //     date: '2011-06-18T12:17:41-05:00',
     //     url: "personal-timeline-infographic",
     //     defaultImage: "2011/12/personal-timeline",
-    //     media: [
+    //     sections: [
     //         {
     //             src: "2011/12/personal-timeline.png",
     //             caption: "13 year snapshot of work and school with imagery on left building metaphoric narrative.",
