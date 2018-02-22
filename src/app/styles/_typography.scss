@@ -18,5 +18,12 @@
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-style: italic;
-    line-height: 1.5;
+
+    @media(max-width: 1349px) {
+        line-height: 1.25;
+    }
+
+    @media(min-width: 1350px) {
+        line-height: 1.5;
+    }
 }

@@ -7,5 +7,6 @@ export interface IWork {
     url: string;
 
     media?: Array<any>;
+    sections?: Array<{}>;
     link?: string;
 }

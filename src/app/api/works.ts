@@ -23,12 +23,79 @@ export const works: Array<IWork> = [
     // },
     {
         name: "Stack Overflow User Research",
-        excerpt: "Stack Overflow User Research.",
-        introduction: "Stack Overflow User Research.",
+        excerpt: "Understanding the goals and motivations of Stack Overflow users.",
+        introduction: "I started conducting user research with Stack Overflow in 2017 for my graduate certificate in user experience at the University of Wisconsin-Madison. The project involved feedback and mentorship from Stack Overflow’s product and user research team. The research included defining business goals, interviewing users, building personas and identifying areas of product improvement. The final product was a twenty four page report summarizing my research.",
         date: '2017-12-19T20:00:00-05:00',
         url: "stack-overflow-user-research",
         defaultImage: "2017/12/stack-overflow-user-research",
-        media: [
+        sections: [
+            {
+                name: "Defining Business Goals",
+                content: [
+                    "Stack Overflow’s greatest strength is offering free access to questions and answers from the world’s greatest technical talent. This has lead Stack to opportunities in developer marketing, technical recruiting, market research, and enterprise knowledge sharing.",
+                    "Defining business goals along with conducting a SWOT, PEST and Five Forces analysis"
+                ],
+                image: {
+                    src: "2017/12/stack-overflow-user-research-goals.jpg",
+                    caption: "Pages five and six, from the final report delivered to Stack Overflow, summarizing business goals, product value and industry conditions",
+                    height: 580,
+                    shadow: true
+                }
+            },
+            {
+                name: "Competitive Analysis",
+                content: [
+                    "Competitive Analysis"
+                ]
+            },
+            {
+                name: "User Interviews",
+                content: [
+                    "User Interviews"
+                ]
+            },
+            {
+                name: "Personas",
+                content: [
+                    "Personas"
+                ]
+            },
+            {
+                name: "Identifying Areas of Improvement",
+                content: [
+                    "Identifying Areas of Improvement"
+                ]
+            },
+            {
+                name: "Task Analysis",
+                content: [
+                    "Task Analysis"
+                ]
+            },
+            {
+                name: "The Happy Path",
+                content: [
+                    "The Happy Path"
+                ]
+            },
+            {
+                name: "Journey Map",
+                content: [
+                    "Journey Map"
+                ]
+            },
+            {
+                name: "Scenarios",
+                content: [
+                    "Scenarios"
+                ]
+            },
+            {
+                name: "Conclusions",
+                content: [
+                    "Conclusions"
+                ]
+            }
         ]
     },
     {
