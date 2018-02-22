@@ -13,8 +13,7 @@
         <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()" role="button" aria-label="Next page">next</button>
     </nav>
     <article id="router-view"
-            class="flex-grow flex-scroll--y article__scrollbar"
-            [style.marginRight]="0 - scrollbarWidth + 'px'">
+            class="flex-grow flex-scroll--y article__scrollbar">
         <div class="article__shadow-box">
             <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
                 <h1 class="article__header-title">{{work.name}}</h1>
