@@ -1,23 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    background: -moz-linear-gradient(top, #fff 20%, $slate-50 100%);
-    background: -webkit-linear-gradient(top, #fff 20%, $slate-50 100%);
-    background: linear-gradient(to bottom, #fff 20%, $slate-50 100%);
-    min-height: 100%;
-}
-
-body {
-    color: rgba(0, 0, 0, 0.8);
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
-    margin: 0;
-}
-
 p {
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0;
 }
 

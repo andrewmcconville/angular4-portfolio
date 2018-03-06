@@ -60,6 +60,8 @@
 
 .list-view__poster {
 	background-color: #9dc2e8;
+	background-image: url(/assets/thumbnail-sprite.jpg);
+	background-size: 80px auto;
 	height: 80px;
 	opacity: .8;
 	transition: opacity 240ms ease-in-out;

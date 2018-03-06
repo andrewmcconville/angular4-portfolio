@@ -1,43 +1,26 @@
 .home__work-snippet {
-    @media(max-width: 599px) {
-        &:first-child {
-            margin-bottom: 24px;
-        }
-
-        &:last-child {
-            margin-bottom: 12px;
-        }
-    }
+    margin-bottom: 24px;
 
     @media(min-width: 600px) and (max-width: 719px) {
         width: 50%;
         
-        &:first-child {
+        &:nth-child(odd) {
             padding-right: 8px;
         }
 
-        &:last-child {
+        &:nth-child(even) {
             padding-left: 8px;
-        }
-    }
-    @media(min-width: 720px) and (max-width: 969px) {
-        &:first-child {
-            margin-bottom: 24px;
-        }
-        
-        &:last-child {
-            margin-bottom: 12px;
         }
     }
 
     @media(min-width: 970px) {
         width: 50%;
         
-        &:first-child {
+        &:nth-child(odd) {
             padding-right: 8px;
         }
 
-        &:last-child {
+        &:nth-child(even) {
             padding-left: 8px;
         }
     }
