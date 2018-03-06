@@ -21,9 +21,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "pofo",
       "serviceWorker": true,
-      "styles": [
-        "styles.css"
-      ],
+      "styles": [],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
