@@ -1,12 +1,12 @@
 export interface IWork {
     name: string;
-    excerpt: string;
+    description: string;
     introduction: string;
     date: string;
-    defaultImage: string;
+    backgroundBlur: string;
     url: string;
 
-    media?: Array<any>;
+    media?: {};
     sections?: Array<{}>;
     link?: string;
 }

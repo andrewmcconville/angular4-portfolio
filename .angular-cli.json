@@ -11,7 +11,9 @@
         "assets",
         "wp-content",
         "favicon.ico",
-        "manifest.json"
+        "manifest.json",
+        "browserconfig.xml",
+        "meta-data.php"
       ],
       "index": "index.html",
       "main": "main.ts",
