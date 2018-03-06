@@ -37,6 +37,13 @@
             "canonical" => "/stack-overflow-user-research",
             "date" => "2017-12-19T20:00:00-05:00"
         ],
+        "stack-overflow-angular-animate" => [
+            "title" => "Animating Interactions and UI State",
+            "description" => "Transitioning interface components between simple and detailed or collapsed and expanded states is an opportunity to add meaningful animation to an interface.",
+            "image" => "/wp-content/uploads/2015/03/stack-overflow-angular-animate-social-media.png",
+            "canonical" => "/stack-overflow-angular-animate",
+            "date" => "2015-03-31T18:00:00-05:00"
+        ],
         "" => [
             "title" => "Andrew McConville - Portfolio",
             "description" => "Hi, I’m Andrew McConville; I work with product & design on creating user workflows, wireframes and adhering to user interface consistency.",

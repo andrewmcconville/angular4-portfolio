@@ -138,38 +138,43 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "Angular Animate Prototype",
-        description: "Interaction design exploration using Angular Animate.",
-        introduction: "An expirement using AngularJS and its ngAnimate module paired with CSS animations. This was an excersise in both learning Angular and how it can be used with CSS to trigger animations based on state and data powered by the Stack Overflow API.",
+        name: "Animating Interactions and UI State",
+        description: "Interaction prototype using Angular Animate with CSS transitions.",
+        introduction: "Transitioning interface components between simple and detailed or collapsed and expanded states is an opportunity to add meaningful animation to an interface. This prototype is built using the AngularJS framework and the ngAnimate module paired with CSS transition to create smooth 60fps animations on desktop and mobile devices.",
         date: '2015-03-31T18:00:00-05:00',
         url: "stack-overflow-angular-animate",
         link: "https://andrewmcconville.com/acculynx/stackoverflow",
         backgroundBlur: "2015/03/stack-overflow-angular-animate",
         sections: [
             {
-                name: "",
-                content: [],
+                name: "Transitioning Between Simple and Detailed Views",
+                content: [
+                    "The Stack Overflow question and answer API was used for its multiple data points. When browsing questions users are initially presented with just a few pieces of data, the question's title, how many answers it has and who posted the question. The goal is to present a user with much more information on screen when the question is selected while not taking them to an entirely new UI which would distract from being able to quickly browse the list of questions.",
+                    "This was done by expanding the selected card using an animation so a user could follow where existing components were being moved to and where new information was being added. Animating between two states prevents users from having to relearn the new layout, saving time and reducing cognitive load."
+                ],
                 media: {
                     src: "2015/03/stack-overflow-angular-animate-expand.mp4",
                     type: "video",
-                    caption: "Answer expanding.",
+                    caption: "Stack Overflow question card transitioning from simple to detailed state.",
                     height: 900
                 }
             },
             {
-                name: "",
-                content: [],
+                name: "Graceful Popup",
+                content: [
+                    "Another interaction design pattern is the classic popup, here it's used to show additional user data. Instead of a traditional, fullscreen UI blocking, modal window a small fly-out drops down from the top of the screen with enough animation to draw attention to its presence. By not blocking the underlying interface users can continue to browse the list and even open additional user detail modals without having to close existing modals."
+                ],
                 media: {
                     src: "2015/03/stack-overflow-angular-animate-drop.mp4",
                     type: "video",
-                    caption: "User dropping.",
+                    caption: "Stack Overflow user card sliding into view.",
                     height: 900
                 }
             }
         ]
     },
     {
-        name: "1000 Books Before Kindergarten IA",
+        name: "1000 Books Information Architecture",
         description: "Information architecture, color, and interface design.",
         introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes. The app will help parents and local libraries track and maintain milestone progress and while keeping parents up to date on local library news and events.",
         date: '2013-10-11T18:00:00-05:00',
@@ -270,7 +275,7 @@ export const works: Array<IWork> = [
         ],
     },
     {
-        name: "DK Handbook Prototype",
+        name: "DK Handbook",
         description: "College level English-102 e-handbook for tablet.",
         introduction: "College level English-102 handbook in tablet format. Featuring highly interactive content and games.",
         date: '2013-05-28T19:00:00-05:00',
@@ -326,7 +331,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "Mesmer Prototype",
+        name: "Mesmer",
         description: "Interactive, drag and drop, web-app providing students real-time data manipulation.",
         introduction: "Interactive, drag and drop, web-app that assists students and academic advisers with course planning and meeting degree requirements.",
         date: '2012-09-27T18:21:30-05:00',

@@ -31,7 +31,7 @@
 
 .list-view__link {
 	cursor: pointer;
-	padding: 8px;
+	padding: 8px 64px 8px 8px;
 	transition: background-color 240ms ease-in-out;
 
 	&:focus {
@@ -63,6 +63,7 @@
 	background-image: url(/assets/thumbnail-sprite.jpg);
 	background-size: 80px auto;
 	height: 80px;
+	margin-right: 8px;
 	opacity: .8;
 	transition: opacity 240ms ease-in-out;
 	width: 80px;
@@ -70,29 +71,14 @@
 
 .live-view__copy {
 	max-height: 80px;
-	margin: 0 8px;
 	overflow: hidden;
 }
 
 .list-view__name {
 	color: rgba(0, 0, 0, .6);
-	font-size: 22px;
-	font-weight: 300;
-	line-height: 1;
-	margin: 0 0 6px 0;
+	line-height: 1.1;
 	transition: color 240ms ease-in-out;
 }
-
-// .list-view__excerpt {
-// 	color: rgba(0, 0, 0, 0.5);
-// 	font-size: 16px;
-// 	font-weight: 300;
-// 	line-height: 18px;
-// 	margin: 0;
-// 	max-height: 36px;
-// 	overflow: hidden;
-// 	transition: color 240ms ease-in-out;
-// }
 
 .list-view__end-of-list-message {
 	color: rgba(0, 0, 0, .6);
