@@ -12,17 +12,17 @@
         <span class="nav-bar__divider flex-noshrink"></span>
         <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/reading-list']" role="button" aria-label="Next page">next</button>
     </nav>
-    <article class="flex-grow flex-scroll--y flex flex-col">
+    <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article"> 
         <div class="article__shadow-box flex-grow">
             <header class="article__header">
-                <h1 class="article__header-title">Andrew McConville</h1>
+                <h1 class="article__header-title" itemprop="name">Andrew McConville</h1>
                 <h2 class="article__header-subtitle"><a href="mailto:andrew@andrewmcconville.com">andrew@andrewmcconville.com</a></h2>
                 <h2 class="article__header-subtitle"><a href="tel:12628937157">262-893-7157</a></h2>
             </header>
             <div class="article__body">
                 <div class="article__copy">
                     <div class="resume__download-link-container flex flex-end-center">
-                        <a href="http://andrewmcconville.com/resume-mcconville.pdf" class="resume__download-link flex flex-center-center" target="_blank" rel="noopener">
+                        <a href="https://andrewmcconville.com/resume-mcconville.pdf" class="resume__download-link flex flex-center-center" target="_blank" rel="noopener" title="download resume">
                             <svg class="resume__icon--pdf">
                                 <use xlink:href="/assets/icons/icon-sprite.svg#pdf"></use>
                             </svg>

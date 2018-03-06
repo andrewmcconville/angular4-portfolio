@@ -11,11 +11,11 @@ export class ResumeComponent implements OnInit {
     constructor(
         private portfolioUIService: PortfolioUIService,
     ) { }
-    
+
     ngOnInit(): void {
         this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
-    
+
     openAppMenu(): void {
         this.portfolioUIService.changeAppMenuOpen(true);
     }

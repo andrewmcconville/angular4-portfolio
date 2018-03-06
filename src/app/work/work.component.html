@@ -12,19 +12,18 @@
         <span class="nav-bar__divider flex-noshrink"></span>
         <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()" role="button" aria-label="Next page">next</button>
     </nav>
-    <article id="router-view"
-            class="flex-grow flex-scroll--y article__scrollbar">
+    <article id="router-view" class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
-            <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.defaultImage + '-blur.jpg)'">
-                <h1 class="article__header-title">{{work.name}}</h1>
-                <h2 class="article__header-subtitle">{{work.excerpt}}</h2>
+            <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.backgroundBlur + '-blur.jpg)'">
+                <h1 class="article__header-title" itemprop="name">{{work.name}}</h1>
+                <h2 class="article__header-subtitle" itemprop="description">{{work.description}}</h2>
                 <div class="article__header-meta flex flex-start-stretch">
                     <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
                     <span class="article__header-divider flex-noshrink"></span>
                     <a href="https://plus.google.com/+AndrewMcConville/" rel="author noopener" itemprop="author" target="_blank">Andrew McConville</a>
                 </div>
             </header>
-            <div class="article__body">
+            <div class="article__body" itemprop="articleBody">
                 <p class="article__copy">{{work.introduction}}</p>
 
                 <section *ngFor="let section of work.sections">
@@ -51,7 +50,7 @@
                 </section>
 
                 <div class="flex flex-center-center" *ngIf="work.link">
-                    <a [href]="work.link" target="_blank" rel="noopener">View it live</a>
+                    <a [href]="work.link" target="_blank" rel="noopener">View it here</a>
                 </div>
             </div>
         </div>

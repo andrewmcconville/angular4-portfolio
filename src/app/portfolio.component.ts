@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/core';
-import { Router, NavigationEnd }  from "@angular/router";
+import { Router, NavigationEnd } from '@angular/router';
 
 import { PortfolioUIService } from './portfolio-ui.service';
 import { WorkService } from './work/work.service';
@@ -18,7 +18,7 @@ export class PortfolioComponent implements OnInit {
     scrollbarWidth: number;
     appMenuOpen: boolean;
     appMenuList: HTMLElement;
- 
+
     constructor(
         private portfolioUIService: PortfolioUIService,
         private workService: WorkService,

@@ -15,23 +15,23 @@ export class PortfolioUIService {
 
     getScrollbarWidth(): number {
         // create scrolling div
-        let outer: HTMLElement = document.createElement("div");
-        outer.style.visibility = "hidden";
-        outer.style.width = "100px";
-        outer.style.msOverflowStyle = "scrollbar";
-        outer.style.overflow = "scroll";
+        const outer: HTMLElement = document.createElement('div');
+        outer.style.visibility = 'hidden';
+        outer.style.width = '100px';
+        outer.style.msOverflowStyle = 'scrollbar';
+        outer.style.overflow = 'scroll';
 
         // create scrollbar offset div
-        let inner: HTMLElement = document.createElement("div");
-        inner.style.width = "100%";
-        
+        const inner: HTMLElement = document.createElement('div');
+        inner.style.width = '100%';
+
         document.body.appendChild(outer);
-        outer.appendChild(inner); 
-    
-        let scrollbarWidth: number = outer.offsetWidth - inner.offsetWidth;
-    
+        outer.appendChild(inner);
+
+        const scrollbarWidth: number = outer.offsetWidth - inner.offsetWidth;
+
         outer.parentNode.removeChild(outer);
-    
+
         return scrollbarWidth;
     }
 }

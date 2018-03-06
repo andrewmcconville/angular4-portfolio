@@ -16,8 +16,8 @@ export class WorkComponent implements OnInit {
     detailContainer: HTMLElement;
     currentWorkURL: string;
     scrollbarWidth: number;
-    //appMenuOpen: boolean;
-    
+    // appMenuOpen: boolean;
+
     constructor(
         private router: Router,
         private portfolioUIService: PortfolioUIService,
@@ -33,7 +33,7 @@ export class WorkComponent implements OnInit {
         // });
 
         this.detailContainer = document.getElementById('router-view');
-        
+
         this.router.events.subscribe((evt) => {
             if (!(evt instanceof NavigationEnd)) {
                 return;
@@ -52,7 +52,7 @@ export class WorkComponent implements OnInit {
             this.currentWorkURL = params.url;
         });
     }
-    
+
     openAppMenu(): void {
         this.portfolioUIService.changeAppMenuOpen(true);
     }

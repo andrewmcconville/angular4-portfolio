@@ -1,10 +1,9 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 import { PortfolioUIService } from '../portfolio-ui.service';
 
 @Component({
     selector: 'portfolio-about-list',
-    templateUrl: './about-list.component.html',
-    //styleUrls: ['./about-list.component.scss']
+    templateUrl: './about-list.component.html'
 })
 export class AboutListComponent {
     @Input() menuStateOverride: string;
@@ -12,7 +11,7 @@ export class AboutListComponent {
     constructor(
         private portfolioUIService: PortfolioUIService
     ) {}
-    
+
     closeAppMenu(): void {
         this.portfolioUIService.changeAppMenuOpen(false);
     }
