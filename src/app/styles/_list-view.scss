@@ -17,7 +17,7 @@
 }
 
 .list-view__list {
-	padding: 4px 0 200px 4px;
+	padding: 4px 0 200px 0;
 	
 	@media(max-width: 719px) {
 		background-color: $slate-50;
@@ -30,17 +30,19 @@
 }
 
 .list-view__link {
+	border-left: 4px solid transparent;
 	cursor: pointer;
 	padding: 8px 64px 8px 8px;
-	transition: background-color 240ms ease-in-out;
+	transition: 160ms ease-in-out;
 
 	&:focus {
-		outline: 1px solid orange;
-		outline-offset: -2px;
+		border-left-color: $slate-500;
 	}
 }
 
 .list-view__link--active {
+	border-left-color: $slate-500;
+
 	.list-view__name {
 		color: rgba(0, 0, 0, .8);
 	}
