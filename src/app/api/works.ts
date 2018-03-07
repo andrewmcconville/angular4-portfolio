@@ -138,7 +138,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "Animating Interactions and UI State",
+        name: "Animating Interactions",
         description: "Interaction prototype using Angular Animate with CSS transitions.",
         introduction: "Transitioning interface components between simple and detailed or collapsed and expanded states is an opportunity to add meaningful animation to an interface. This prototype is built using the AngularJS framework and the ngAnimate module paired with CSS transition to create smooth 60fps animations on desktop and mobile devices.",
         date: '2015-03-31T18:00:00-05:00',
@@ -460,7 +460,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "Energy Life Cycle of Coal Research",
+        name: "Energy Life Cycle of Coal",
         description: "Visualizing the movement and consumption of coal reserves.",
         introduction: "The Great Lakes infographic highlights the lifecycle of coal, from extraction to use, and the dependency of the Great Lakes states on Wyoming coal. The map of Wyoming and the Great Lakes connected by railways creates a narrative of process and shows dependency from one region to another. Color is used heavily to unite spatially diffused data objects; connecting, for example, red colored power plant locations on the map to red data relating to power production.",
         date: '2011-12-21T11:34:06-05:00',
@@ -524,7 +524,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "Demographics Supersized Research",
+        name: "Demographics Supersized",
         description: "City demographics in Milwaukee vs McDonald’s spatial density.",
         introduction: "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county along side the geographical locations of McDonald’s restaurants.",
         date: '2011-06-25T12:58:36-05:00',
