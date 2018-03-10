@@ -12,6 +12,35 @@ export class WorkService {
         return works;
     }
 
+    getWorkPosition(url: string): string {
+        let workPosition: string;
+        let workIndex: number;
+
+        works.map((work: IWork, index: number) => {
+            if (work.url === url) {
+                workIndex = index;
+            }
+        });
+
+        if (workIndex === 0) {
+            workPosition = 'first';
+        } else if (workIndex === works.length - 1) {
+            workPosition = 'last';
+        } else {
+            workPosition = workIndex.toString();
+        }
+
+        return workPosition
+    }
+
+    getFirstWorkURL(): string {
+        return works[0].url;
+    }
+
+    getLastWorkURL(): string {
+        return works[works.length - 1].url;
+    }
+
     getWorkByURL(url: string): IWork {
         let match: IWork;
 

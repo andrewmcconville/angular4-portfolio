@@ -28,10 +28,6 @@ export class WorkComponent implements OnInit {
     ngOnInit(): void {
         this.getWorkByRouteParam();
 
-        // this.portfolioUIService.currentAppMenuOpen.subscribe(appMenuOpen => {
-        //     this.appMenuOpen = appMenuOpen;
-        // });
-
         this.detailContainer = document.getElementById('router-view');
 
         this.router.events.subscribe((evt) => {
@@ -57,15 +53,23 @@ export class WorkComponent implements OnInit {
         this.portfolioUIService.changeAppMenuOpen(true);
     }
 
-    prevWork(): void {
-        this.router.navigate([
-            this.workService.getPrevWorkURL(this.currentWorkURL)
-        ]);
+    prevWork(): string {
+        console.log(this.workService.getWorkPosition(this.currentWorkURL));
+
+        if(this.workService.getWorkPosition(this.currentWorkURL) === 'first') {
+            return 'contact'
+        } else {
+            return this.workService.getPrevWorkURL(this.currentWorkURL);
+        }
     }
 
-    nextWork(): void {
-        this.router.navigate([
-            this.workService.getNextWorkURL(this.currentWorkURL)
-        ]);
+    nextWork(): string {
+        console.log(this.workService.getWorkPosition(this.currentWorkURL));
+        
+        if(this.workService.getWorkPosition(this.currentWorkURL) === 'last') {
+            return 'home'
+        } else {
+            return this.workService.getNextWorkURL(this.currentWorkURL);
+        }
     }
 }

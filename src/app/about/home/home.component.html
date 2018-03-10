@@ -8,9 +8,9 @@
         <h1 class="header-bar__title">Home</h1>
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/contact']" role="button" aria-label="Previous page">prev</button>
+        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', prevURL]" aria-label="Previous page">prev</a>
         <span class="nav-bar__divider flex-noshrink"></span>
-        <button class="nav-bar__tab flex-grow flex-50" [routerLink]="['/resume']" role="button" aria-label="Next menu">next</button>
+        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/resume']" aria-label="Next menu">next</a>
     </nav>
     <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box flex-grow">

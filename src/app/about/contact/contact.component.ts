@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { PortfolioUIService } from '../../portfolio-ui.service';
+import { WorkService } from '../../work/work.service';
 
 @Component({
     templateUrl: './contact.component.html',
@@ -7,9 +9,11 @@ import { PortfolioUIService } from '../../portfolio-ui.service';
 })
 export class ContactComponent implements OnInit {
     scrollbarWidth: number;
+    nextURL: string = this.workService.getFirstWorkURL();
 
     constructor(
         private portfolioUIService: PortfolioUIService,
+        private workService: WorkService
     ) { }
 
     ngOnInit(): void {

@@ -8,9 +8,9 @@
         <h1 class="header-bar__title">{{work.name}}</h1>
     </header>
     <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <button class="nav-bar__tab flex-grow flex-50" (click)="prevWork()" role="button" aria-label="Previous page">prev</button>
+        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', prevWork()]" aria-label="Previous page">prev</a>
         <span class="nav-bar__divider flex-noshrink"></span>
-        <button class="nav-bar__tab flex-grow flex-50" (click)="nextWork()" role="button" aria-label="Next page">next</button>
+        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', nextWork()]" aria-label="Next page">next</a>
     </nav>
     <article id="router-view" class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
