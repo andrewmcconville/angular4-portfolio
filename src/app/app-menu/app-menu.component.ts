@@ -1,24 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { IWork } from '../work/work.model';
 import { WorkService } from '../work/work.service';
 import { PortfolioUIService } from '../portfolio-ui.service';
 
 @Component({
-    selector: 'portfolio-work-list',
-    templateUrl: './work-list.component.html'
+    selector: 'portfolio-app-menu',
+    templateUrl: './app-menu.component.html'
 })
-export class WorkListComponent implements OnInit {
+export class AppMenuComponent {
     public works: Array<IWork> = this.workService.getWorks();
-    @Input() menuStateOverride: string;
 
     constructor(
         private portfolioUIService: PortfolioUIService,
         private workService: WorkService
-    ) { }
-
-    ngOnInit() {
-    }
+    ) {}
 
     closeAppMenu(): void {
         this.portfolioUIService.changeAppMenuOpen(false);

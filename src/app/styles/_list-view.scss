@@ -1,21 +1,5 @@
 @import "../styles/_shadows.scss";
 
-.list-view {
-	display: none;
-}
-
-.list-view--active {
-    display: flex;
-}
-
-.list-view--force-hide.list-view--active {
-    display: none;
-}
-
-.list-view--force-show.list-view {
-    display: flex;
-}
-
 .list-view__list {
 	padding: 4px 0 200px 0;
 	
@@ -27,6 +11,11 @@
 	@media(min-width: 720px) {
 		width: 100%;
 	}
+}
+
+.list-view__divider {
+	border-top: 1px solid $slate-100;
+    margin: 8px 24px 8px 16px;
 }
 
 .list-view__link {

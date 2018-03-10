@@ -8,10 +8,11 @@
 
 .nav-bar--article {
     background-color: $slate-500;
+    box-shadow: $shadow-z-1;
     
     @media(min-width: 720px) {
         position: fixed;
-        top: 54px;
+        top: 16px;
         width: 160px;
     }
     
@@ -30,7 +31,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
-    height: 50px;
+    height: 48px;
 
     &:hover {
         background-color: transparent;

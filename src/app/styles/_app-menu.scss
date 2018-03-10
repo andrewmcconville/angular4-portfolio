@@ -29,7 +29,17 @@
 }
 
 .app-menu__close {
+    padding: 12px;
+
     @media(min-width: 720px) {
+        display: none;
+    }
+}
+
+.app-menu__home {
+    padding: 12px;
+
+    @media(max-width: 719px) {
         display: none;
     }
 }
@@ -38,12 +48,6 @@
     fill: $slate-50;
     height: 18px;
     width: 18px;
-}
-
-.app-menu__home {
-    @media(max-width: 719px) {
-        display: none;
-    }
 }
 
 .app-menu__mask {

@@ -14,13 +14,8 @@
             <a [routerLink]="['/home']" tabindex="-1" >Andrew McConville</a>
         </h1>
     </header>
-    <nav class="nav-bar--menu flex flex-between-stretch flex-noshrink" (click)="$event.stopPropagation()">
-        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('about')" role="button">About</button>
-        <button class="nav-bar__tab flex-grow flex-50" (click)="toggleMenuStateOverride('work')" role="button">Work</button>
-    </nav>
     <div id="app-menu-list" class="app-menu__menu flex-grow flex-scroll--y" [style.marginRight]="0 - scrollbarWidth + 'px'">
-        <portfolio-about-list [menuStateOverride]="menuStateOverride"></portfolio-about-list>
-        <portfolio-work-list [menuStateOverride]="menuStateOverride"></portfolio-work-list>
+        <portfolio-app-menu></portfolio-app-menu>
     </div>
 </nav>
 <div class="app-menu__mask" [ngClass]="{'app-menu__mask--show': appMenuOpen}"></div>

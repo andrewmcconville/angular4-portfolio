@@ -1,0 +1,45 @@
+<div class="list-view__list">
+    <ul>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/home']"
+                routerLinkActive="list-view__link--active">
+                <p class="list-view__name">Home</p>
+            </a>
+        </li>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/resume']"
+                routerLinkActive="list-view__link--active">
+                <p class="list-view__name">Resume</p>
+            </a>
+        </li>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/reading-list']"
+                routerLinkActive="list-view__link--active">
+                <p class="list-view__name">Reading list</p>
+            </a>
+        </li>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/contact']"
+                routerLinkActive="list-view__link--active">
+                    <p class="list-view__name">Contact</p>
+            </a>
+        </li>
+    </ul>
+    <div class="list-view__divider"></div>
+    <ul>
+        <li *ngFor="let work of works; let i = index">
+            <a class="list-view__link flex"
+                [routerLink]="['/', work.url]"
+                routerLinkActive="list-view__link--active">
+                <div class="list-view__poster flex-noshrink" [style.backgroundPosition]="'0 -' + i * 80 + 'px'"></div>
+                <div class="live-view__copy flex flex-col flex-center-start">
+                    <p class="list-view__name">{{work.name}}</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
