@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router, NavigationEnd } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
 
 import { IWork } from './work.model';
 import { WorkService } from './work.service';
@@ -14,7 +12,6 @@ import { PortfolioUIService } from '../portfolio-ui.service';
 export class WorkComponent implements OnInit {
     work: IWork;
     detailContainer: HTMLElement;
-    currentWorkURL: string;
     scrollbarWidth: number;
     // appMenuOpen: boolean;
 
@@ -41,11 +38,8 @@ export class WorkComponent implements OnInit {
     }
 
     getWorkByRouteParam(): void {
-        this.activatedRoute.params.map((params: Params) => {
-            return { url: params['url'] };
-        }).subscribe((params: Params) => {
+        this.activatedRoute.params.subscribe((params: Params) => {
             this.work = this.workService.getWorkByURL(params.url);
-            this.currentWorkURL = params.url;
         });
     }
 
@@ -54,18 +48,18 @@ export class WorkComponent implements OnInit {
     }
 
     prevWork(): string {
-        if(this.workService.getWorkPosition(this.currentWorkURL) === 'first') {
+        if(this.workService.getWorkPosition(this.work.url) === 'first') {
             return 'contact'
         } else {
-            return this.workService.getPrevWorkURL(this.currentWorkURL);
+            return this.workService.getPrevWorkURL(this.work.url);
         }
     }
 
     nextWork(): string {
-        if(this.workService.getWorkPosition(this.currentWorkURL) === 'last') {
+        if(this.workService.getWorkPosition(this.work.url) === 'last') {
             return 'home'
         } else {
-            return this.workService.getNextWorkURL(this.currentWorkURL);
+            return this.workService.getNextWorkURL(this.work.url);
         }
     }
 }

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -34,7 +34,7 @@ import { PortfolioUIService } from './portfolio-ui.service';
     BrowserModule,
     RouterModule,
     routing,
-    HttpModule,
+    HttpClientModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [
