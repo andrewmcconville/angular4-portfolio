@@ -309,3 +309,15 @@
         display: none;
     }
 }
+
+.article__live-project-link {
+    background-color: $slate-500;
+    color: #fff;
+    margin-top: 48px;
+    padding: 16px 24px;
+
+    &:hover {
+        background-color: $slate-500;
+        color: #fff;
+    }
+}

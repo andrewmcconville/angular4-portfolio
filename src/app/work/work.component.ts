@@ -54,8 +54,6 @@ export class WorkComponent implements OnInit {
     }
 
     prevWork(): string {
-        console.log(this.workService.getWorkPosition(this.currentWorkURL));
-
         if(this.workService.getWorkPosition(this.currentWorkURL) === 'first') {
             return 'contact'
         } else {
@@ -64,8 +62,6 @@ export class WorkComponent implements OnInit {
     }
 
     nextWork(): string {
-        console.log(this.workService.getWorkPosition(this.currentWorkURL));
-        
         if(this.workService.getWorkPosition(this.currentWorkURL) === 'last') {
             return 'home'
         } else {

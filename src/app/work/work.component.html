@@ -33,11 +33,13 @@
                     </div>
                     <figure class="article__figure" *ngIf="section.media">
                         <div class="article__image-container flex flex-center-start" *ngIf="section.media.type !== 'video'">
-                            <img class="article__image"
-                                [ngClass]="{'article__image-shadow': section.media.shadow}"
-                                [src]="'/wp-content/uploads/' + section.media.src"
-                                [alt]="section.media.caption"
-                                [height]="section.media.height" width="1500" />
+                            <a href="/wp-content/uploads/{{section.media.src}}" target="_blank">
+                                <img class="article__image"
+                                    [ngClass]="{'article__image-shadow': section.media.shadow}"
+                                    [src]="'/wp-content/uploads/' + section.media.src"
+                                    [alt]="section.media.caption"
+                                    [height]="section.media.height" width="1500" />
+                            </a>
                         </div>
                         <div class="article__image-container flex flex-center-start" *ngIf="section.media.type === 'video'">
                             <video class="article__image" controls loop autoplay [height]="section.media.height" width="1500">
@@ -50,7 +52,7 @@
                 </section>
 
                 <div class="flex flex-center-center" *ngIf="work.link">
-                    <a [href]="work.link" target="_blank" rel="noopener">View it here</a>
+                    <a class="button article__live-project-link" [href]="work.link" target="_blank" rel="noopener">View it here</a>
                 </div>
             </div>
         </div>
