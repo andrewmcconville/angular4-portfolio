@@ -21,100 +21,100 @@ export const works: Array<IWork> = [
     //     sections: [
     //     ]
     // },
-    {
-        name: "Stack Overflow UX Design",
-        description: "Ideate, Prototype, Test: Generating ideas and iterating quickly.",
-        introduction: "This is a continuation of the UX work I have been conducting with Stack Overflow for my Graduate Certificate in User Experience at the University of Wisconsin-Madison. This report picks up where my user research stopped and walks through ideation, prototyping, and early usability testing. The final artifact of my UX design is a twenty three page summary outlining my design process.",
-        date: '2018-05-09T13:35:00-05:00',
-        url: "stack-overflow-ux-design",
-        backgroundBlur: "2018/05/stack-overflow-ux-design",
-        sections: [
-            {
-                name: "Defining the Scenario",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-scenario.jpg",
-                    caption: "",
-                    height: 580,
-                    shadow: true
-                }
-            },
-            {
-                name: "Diverging & Converging Ideation",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-ideation.jpg",
-                    caption: "",
-                    height: 386,
-                    shadow: true
-                }
-            },
-            {
-                name: "Lo-fi Prototyping",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-lo-fi-prototyping.jpg",
-                    caption: "",
-                    height: 290,
-                    shadow: true
-                }
-            },
-            {
-                name: "Wireframing",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-wireframing.jpg",
-                    caption: "",
-                    height: 500,
-                    shadow: true
-                }
-            },
-            {
-                name: "Vertical Slice",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-vertical-slice.jpg",
-                    caption: "",
-                    height: 580,
-                    shadow: true
-                }
-            },
-            {
-                name: "Usability Testing",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-usability-testing.jpg",
-                    caption: "",
-                    height: 580,
-                    shadow: true
-                }
-            },
-            {
-                name: "Quantitative & Qualitative Metrics",
-                content: [
-                    "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
-                ],
-                media: {
-                    src: "2018/05/stack-overflow-ux-design-metrics.jpg",
-                    caption: "",
-                    height: 580,
-                    shadow: true
-                }
-            }
-        ]
-    },
+    // {
+    //     name: "Stack Overflow UX Design",
+    //     description: "Ideate, Prototype, Test: Generating ideas and iterating quickly.",
+    //     introduction: "This is a continuation of the UX work I have been conducting with Stack Overflow for my Graduate Certificate in User Experience at the University of Wisconsin-Madison. This report picks up where my user research stopped and walks through ideation, prototyping, and early usability testing. The final artifact of my UX design is a twenty three page summary outlining my design process.",
+    //     date: '2018-05-09T13:35:00-05:00',
+    //     url: "stack-overflow-ux-design",
+    //     backgroundBlur: "2018/05/stack-overflow-ux-design",
+    //     sections: [
+    //         {
+    //             name: "Defining the Scenario",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-scenario.jpg",
+    //                 caption: "",
+    //                 height: 580,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Diverging & Converging Ideation",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-ideation.jpg",
+    //                 caption: "",
+    //                 height: 386,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Lo-fi Prototyping",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-lo-fi-prototyping.jpg",
+    //                 caption: "",
+    //                 height: 290,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Wireframing",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-wireframing.jpg",
+    //                 caption: "",
+    //                 height: 500,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Vertical Slice",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-vertical-slice.jpg",
+    //                 caption: "",
+    //                 height: 580,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Usability Testing",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-usability-testing.jpg",
+    //                 caption: "",
+    //                 height: 580,
+    //                 shadow: true
+    //             }
+    //         },
+    //         {
+    //             name: "Quantitative & Qualitative Metrics",
+    //             content: [
+    //                 "I spent several months understanding Stack Overflow as a business and how their business model aligns with their customers, competitors, stakeholders, and partners. This involved performing a competitive analysis, comparing Stack Overflow against platforms such as Quora, and conducting SWOT, PEST and Five Forces analysis to gain an understanding of how Stack Overflow's goals align with the company's direction."
+    //             ],
+    //             media: {
+    //                 src: "2018/05/stack-overflow-ux-design-metrics.jpg",
+    //                 caption: "",
+    //                 height: 580,
+    //                 shadow: true
+    //             }
+    //         }
+    //     ]
+    // },
     {
         name: "Stack Overflow User Research",
         description: "Understanding the goals and motivations of Stack Overflow users.",
