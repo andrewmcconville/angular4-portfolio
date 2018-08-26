@@ -9,6 +9,10 @@ ul {
     padding: 0;
 }
 
+ol > li {
+    margin-bottom: 24px;
+}
+
 a {
     color: $slate-500;
     cursor: pointer;
