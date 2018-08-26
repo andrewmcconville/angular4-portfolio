@@ -30,6 +30,13 @@
             "canonical" => "/resume",
             "date" => "2018-03-02T18:00:00-05:00"
         ],
+        "stack-overflow-ux-design" => [
+            "title" => "Stack Overflow UX Design",
+            "description" => "Ideate, Prototype, Test: Generating ideas and iterating quickly. This is a continuation of the UX work I have been conducting with Stack Overflow for my Graduate Certificate in User Experience at the University of Wisconsin-Madison.",
+            "image" => "/wp-content/uploads/2018/05/stack-overflow-ux-design-social-media.png",
+            "canonical" => "/stack-overflow-ux-design",
+            "date" => "2018-05-09T13:35:00-05:00"
+        ],
         "stack-overflow-user-research" => [
             "title" => "Stack Overflow User Research",
             "description" => "Understanding the goals and motivations of Stack Overflow users. I started conducting user research with Stack Overflow in 2017 for my Graduate Certificate in User Experience at the University of Wisconsin-Madison.",
