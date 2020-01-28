@@ -108,7 +108,7 @@
             "date" => "2009-05-06T18:00:00-05:00"
         ],
         "infographics" => [
-            "title" => "infographics",
+            "title" => "Information Design",
             "description" => "If a picture is worth a thousand words, an infographic's worth is in the data points.",
             "image" => "/wp-content/uploads/2011/12/demographics-supersized-infographic-social-media.png",
             "canonical" => "/infographics",
