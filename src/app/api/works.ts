@@ -268,7 +268,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "1000 Books Information Architecture",
+        name: "1000 Books Before Kindergarten",
         description: "Information architecture for the 1000 Books Before Kindergarten program.",
         introduction: "The 1000 Books Before Kindergarten program is organized by the Waukesha County Federated Library System. The program encourages parents to read to their children and upon successful milestone completion children are awarded prizes at their local library branch. The app is designed to help parents and local libraries track and maintain milestone progress while keeping parents up to date on local library news and events.",
         date: '2013-10-11T18:00:00-05:00',
@@ -321,7 +321,7 @@ export const works: Array<IWork> = [
         ]
     },
     {
-        name: "UWM Mobile Prototype",
+        name: "UWM Mobile App",
         description: "Prototyping interactions, information architecture and user experience.",
         introduction: "UW-Milwaukee was launching a completely new mobile app starting from a brand new code base and we wanted to include several new features such as live shuttle bus tracking, real-time status for laundry and computer availability, photo sharing of in-progress student work, and campus weather provided by UWM's Innovative Weather Center.",
         date: '2013-09-23T20:07:54-05:00',
@@ -384,66 +384,66 @@ export const works: Array<IWork> = [
             }
         ],
     },
+    // {
+    //     name: "DK Handbook Prototype",
+    //     description: "Reimagining an English 102 textbook in digital form for tablets.",
+    //     introduction: "The print edition of the DK Handbook is a college level English 102 textbook by Anne Frances Wysocki and‎ Dennis Lynch that combines text alongside visuals in easy-to-read two page spreads. Producing a digital version for tablets allowed for the use of animations, audio, video, and mini-games at a high level of interactivity.",
+    //     date: '2013-05-28T19:00:00-05:00',
+    //     url: "dk-handbook",
+    //     link: "http://dkmodules.andrewmcconville.com/",
+    //     backgroundBlur: "2013/05/dk-handbook",
+    //     sections: [
+    //         {
+    //             name: "Metaphors, Make the Unfamiliar Familiar",
+    //             content: [
+    //                 "Editing and revising an english paper is a process that is much easier to show than to describe. Presenting users with a draft paper chunked onto pages depicted as visual sheets of paper gives users a contextual interface they are similar with."
+    //             ],
+    //             media: {
+    //                 src: "2013/05/dk-handbook-revision.jpg",
+    //                 caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
+    //                 height: 1174
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2013/05/dk-handbook-kinds-of-sources.jpg",
+    //                 caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
+    //                 height: 1174
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2013/05/dk-handbook-evaluating-sources.jpg",
+    //                 caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
+    //                 height: 1174
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2013/05/dk-handbook-sample-papers.jpg",
+    //                 caption: "DK Handbook Sample Papers module. Students are presented with a research paper and sidebar with buttons that toggle writing features (introduction, transitions, conclusion). Each feature can then be clicked to read notes describing the highlighted area.",
+    //                 height: 1174
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2013/05/dk-handbook.jpg",
+    //                 caption: "The handbook modules are part of a larger, interactive version of the book currently under development.",
+    //                 height: 1174
+    //             }
+    //         }
+    //     ]
+    // },
     {
-        name: "DK Handbook Prototype",
-        description: "Reimagining an English 102 textbook in digital form for tablets.",
-        introduction: "The print edition of the DK Handbook is a college level English 102 textbook by Anne Frances Wysocki and‎ Dennis Lynch that combines text alongside visuals in easy-to-read two page spreads. Producing a digital version for tablets allowed for the use of animations, audio, video, and mini-games at a high level of interactivity.",
-        date: '2013-05-28T19:00:00-05:00',
-        url: "dk-handbook",
-        link: "http://dkmodules.andrewmcconville.com/",
-        backgroundBlur: "2013/05/dk-handbook",
-        sections: [
-            {
-                name: "Metaphors, Make the Unfamiliar Familiar",
-                content: [
-                    "Editing and revising an english paper is a process that is much easier to show than to describe. Presenting users with a draft paper chunked onto pages depicted as visual sheets of paper gives users a contextual interface they are similar with."
-                ],
-                media: {
-                    src: "2013/05/dk-handbook-revision.jpg",
-                    caption: "DK Handbook Revision module. Students see two sets of thumbnails which illustrate the changes from draft to revised draft. Clicking a page thumbnail displays the paper full size (shown).",
-                    height: 1174
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2013/05/dk-handbook-kinds-of-sources.jpg",
-                    caption: "DK Handbook Kinds of Sources module. Students click on various sources (web, book, magazine) to reveal information distinguishing the differences between various kinds of sources.",
-                    height: 1174
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2013/05/dk-handbook-evaluating-sources.jpg",
-                    caption: "DK Handbook Evaluating Sources module. Students drag sources which then become MLA formatted citations. After citation building is complete a teacher assess your choices via HTML Audio.",
-                    height: 1174
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2013/05/dk-handbook-sample-papers.jpg",
-                    caption: "DK Handbook Sample Papers module. Students are presented with a research paper and sidebar with buttons that toggle writing features (introduction, transitions, conclusion). Each feature can then be clicked to read notes describing the highlighted area.",
-                    height: 1174
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2013/05/dk-handbook.jpg",
-                    caption: "The handbook modules are part of a larger, interactive version of the book currently under development.",
-                    height: 1174
-                }
-            }
-        ]
-    },
-    {
-        name: "Mesmer",
+        name: "Mesmer Degree Planner",
         description: "Interactive, drag and drop, web-app providing students real-time data manipulation.",
         introduction: "Mesmer aims to help students visualize their degree progress by organizing courses within semesters and allowing students the ability to quickly rearrange courses, add hypothetical grades and graph credit count.",
         date: '2012-09-27T18:21:30-05:00',
@@ -480,240 +480,283 @@ export const works: Array<IWork> = [
             }
         ]
     },
+    // {
+    //     name: "Mesmer User Research",
+    //     description: "Information gathering on the viability and need for interactive degree tracking software.",
+    //     introduction: "Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education. The data gathered in this infographic was used to determine the need for a degree planning web app and if students have access to the technology required to use the app.",
+    //     date: '2012-09-24T19:31:37-05:00',
+    //     url: "mesmer-infographic",
+    //     backgroundBlur: "2013/10/mesmer-infographic",
+    //     sections: [
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2013/10/mesmer-infographic.jpg",
+    //                 caption: "The information in this infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
+    //                 height: 3200
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2012/09/brand-book-cover.jpg",
+    //                 caption: "Mesmer user research report cover. Contains logo design, color inspiration, personas and user interface screenshots.",
+    //                 height: 1020
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2012/09/mesmer-is-an-aerial-view.jpg",
+    //                 caption: "Mesmer is an aerial view. Every project needs a road map. Visualizing complex systems requires an elegant and intuitive user interface.",
+    //                 height: 510
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2012/09/mesmer-is-finely-tuned-precision.jpg",
+    //                 caption: "Mesmer is finely tuned precision. Intuitively organizing and beautifully presented information systems with user friendly, interactive interfaces.",
+    //                 height: 510
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2012/09/mesmer-focus-group.jpg",
+    //                 caption: "Personas, beta testers and general review by students and faculty helped refine ease of use and feature set.",
+    //                 height: 510
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2012/09/mesmer-is-your-personal-guide.jpg",
+    //                 caption: "Mesmer is your personal guide. Transforming project management into a visual, interactive experience by connecting people and data across time.",
+    //                 height: 510
+    //             }
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Life Cycle of Coal",
+    //     description: "Visualizing the movement and consumption of coal reserves.",
+    //     introduction: "The Great Lakes infographic highlights the lifecycle of coal, from extraction to use, and the dependency of the Great Lakes states on Wyoming coal. The map of Wyoming and the Great Lakes connected by railways creates a narrative of process and shows dependency from one region to another. Color is used heavily to unite spatially diffused data objects; connecting, for example, red colored power plant locations on the map to red data relating to power production.",
+    //     date: '2011-12-21T11:34:06-05:00',
+    //     url: "energy-life-cycle-of-coal-infographic",
+    //     backgroundBlur: "2011/12/great-lakes-infographic",
+    //     sections: [
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic.png",
+    //                 caption: "Infographic on Great Lakes coal energy use.",
+    //                 height: 844
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic-powder-river-basin.png",
+    //                 caption: "Coal life-cycle shown as 4 step narrative.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic-coal-sources.png",
+    //                 caption: "Wyoming's Powder River Basin leads coal extraction in U.S.",
+    //                 height: 800
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic-electricity-from-coal.png",
+    //                 caption: "Circular bar graph showing Indiana as top Great Lake coal user.",
+    //                 height: 800
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic-food-carbon.png",
+    //                 caption: "Food groups with highest carbon footprint.",
+    //                 height: 800
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/great-lakes-infographic-city-data.png",
+    //                 caption: "Data featuring energy use by metropolitan area.",
+    //                 height: 1000
+    //             }
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Demographics Supersized",
+    //     description: "City demographics in Milwaukee vs McDonald’s spatial density.",
+    //     introduction: "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants.",
+    //     date: '2011-06-25T12:58:36-05:00',
+    //     url: "demographics-supersized-infographic",
+    //     backgroundBlur: "2011/12/demographics-supersized-infographic",
+    //     sections: [
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/demographics-supersized-infographic.png",
+    //                 caption: "Demographics supersized infographic overview.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/demographics-supersized-infographic-graphs.png",
+    //                 caption: "City demographics as bar graph placed side by side for fast comparison.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/demographics-supersized-infographic-city-data.png",
+    //                 caption: "McDonald's locations compared to Milwaukee county city demographics.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/demographics-supersized-infographic-national-state.png",
+    //                 caption: "U.S. and Wisconsin demographic comparison.",
+    //                 height: 1000
+    //             }
+    //         }
+    //     ]
+    // },
+    // {
+    //     name: "Water Cooled Wood Computer",
+    //     description: "Crafting a silent computing experience.",
+    //     introduction: "The quest for processing speed and complete silence led to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
+    //     date: '2009-05-06T18:00:00-05:00',
+    //     url: "water-cooled-wood-computer",
+    //     backgroundBlur: "2011/12/water-cooled-wood-computer",
+    //     sections: [
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-front-sides-on.jpg",
+    //                 caption: "Water cooled wood computer front and left sides with doors on.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-front-sides-off.jpg",
+    //                 caption: "Wood computer front left with sides off showing water cooled interior.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-rear-sides-off.jpg",
+    //                 caption: "Wood computer rear right with sides off showing radiator and reservoir.",
+    //                 height: 1000
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-inside.jpg",
+    //                 caption: "Motherboard and other primary water cooled components.",
+    //                 height: 400
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-cpu-gpu.jpg",
+    //                 caption: "Water cooled video card, chipset and processor close-up.",
+    //                 height: 400
+    //             }
+    //         },
+    //         {
+    //             name: "",
+    //             content: [],
+    //             media: {
+    //                 src: "2011/12/wood-computer-lights.jpg",
+    //                 caption: "Water cooled video card, chipset and processor with lighting active.",
+    //                 height: 490
+    //             }
+    //         }
+    //     ]
+    // }
     {
-        name: "Mesmer User Research",
-        description: "Information gathering on the viability and need for interactive degree tracking software.",
-        introduction: "Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education. The data gathered in this infographic was used to determine the need for a degree planning web app and if students have access to the technology required to use the app.",
-        date: '2012-09-24T19:31:37-05:00',
-        url: "mesmer-infographic",
-        backgroundBlur: "2013/10/mesmer-infographic",
+        name: "Information Design",
+        description: "If a picture is worth a thousand words, an infographic's worth is in the data points.",
+        introduction: "I have created many infographics, yet with each project I enjoy the of excitement of uncovering a story and telling it in a new way. The data, how the data is represented, and how the two come together through design to form a narrative does just this, tells a story through facts.",
+        date: '2011-06-25T12:58:36-05:00',
+        url: "infographics",
+        backgroundBlur: "2011/12/demographics-supersized-infographic",
         sections: [
             {
-                name: "",
-                content: [],
+                name: "Demographics Supersized",
+                content: [
+                    "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants."
+                ],
+                media: {
+                    src: "2011/12/demographics-supersized-infographic.png",
+                    caption: "City demographics in Milwaukee vs McDonald’s spatial density.",
+                    height: 1000
+                }
+            },
+            {
+                name: "Mesmer User Research",
+                content: [
+                    "Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education. The data gathered in this infographic was used to determine the need for a degree planning web app and if students have access to the technology required to use the app."
+                ],
                 media: {
                     src: "2013/10/mesmer-infographic.jpg",
-                    caption: "The information in this infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
+                    caption: "This infographic was compiled from a student survey I conducted with over 250 participants. The information was used to gauge the need of an interactive degree planning web app",
                     height: 3200
                 }
             },
             {
-                name: "",
-                content: [],
-                media: {
-                    src: "2012/09/brand-book-cover.jpg",
-                    caption: "Mesmer user research report cover. Contains logo design, color inspiration, personas and user interface screenshots.",
-                    height: 1020
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2012/09/mesmer-is-an-aerial-view.jpg",
-                    caption: "Mesmer is an aerial view. Every project needs a road map. Visualizing complex systems requires an elegant and intuitive user interface.",
-                    height: 510
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2012/09/mesmer-is-finely-tuned-precision.jpg",
-                    caption: "Mesmer is finely tuned precision. Intuitively organizing and beautifully presented information systems with user friendly, interactive interfaces.",
-                    height: 510
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2012/09/mesmer-focus-group.jpg",
-                    caption: "Personas, beta testers and general review by students and faculty helped refine ease of use and feature set.",
-                    height: 510
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2012/09/mesmer-is-your-personal-guide.jpg",
-                    caption: "Mesmer is your personal guide. Transforming project management into a visual, interactive experience by connecting people and data across time.",
-                    height: 510
-                }
-            }
-        ]
-    },
-    {
-        name: "Life Cycle of Coal",
-        description: "Visualizing the movement and consumption of coal reserves.",
-        introduction: "The Great Lakes infographic highlights the lifecycle of coal, from extraction to use, and the dependency of the Great Lakes states on Wyoming coal. The map of Wyoming and the Great Lakes connected by railways creates a narrative of process and shows dependency from one region to another. Color is used heavily to unite spatially diffused data objects; connecting, for example, red colored power plant locations on the map to red data relating to power production.",
-        date: '2011-12-21T11:34:06-05:00',
-        url: "energy-life-cycle-of-coal-infographic",
-        backgroundBlur: "2011/12/great-lakes-infographic",
-        sections: [
-            {
-                name: "",
-                content: [],
+                name: "Life Cycle of Coal",
+                content: [
+                    "The Great Lakes infographic highlights the lifecycle of coal, from extraction to use, and the dependency of the Great Lakes states on Wyoming coal. The map of Wyoming and the Great Lakes connected by railways creates a narrative of process and shows dependency from one region to another. Color is used heavily to unite spatially diffused data objects; connecting, for example, red colored power plant locations on the map to red data relating to power production."
+                ],
                 media: {
                     src: "2011/12/great-lakes-infographic.png",
-                    caption: "Infographic on Great Lakes coal energy use.",
+                    caption: "Visualizing the movement and consumption of coal reserves.",
                     height: 844
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/great-lakes-infographic-powder-river-basin.png",
-                    caption: "Coal life-cycle shown as 4 step narrative.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/great-lakes-infographic-coal-sources.png",
-                    caption: "Wyoming's Powder River Basin leads coal extraction in U.S.",
-                    height: 800
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/great-lakes-infographic-electricity-from-coal.png",
-                    caption: "Circular bar graph showing Indiana as top Great Lake coal user.",
-                    height: 800
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/great-lakes-infographic-food-carbon.png",
-                    caption: "Food groups with highest carbon footprint.",
-                    height: 800
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/great-lakes-infographic-city-data.png",
-                    caption: "Data featuring energy use by metropolitan area.",
-                    height: 1000
-                }
-            }
-        ]
-    },
-    {
-        name: "Demographics Supersized",
-        description: "City demographics in Milwaukee vs McDonald’s spatial density.",
-        introduction: "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants.",
-        date: '2011-06-25T12:58:36-05:00',
-        url: "demographics-supersized-infographic",
-        backgroundBlur: "2011/12/demographics-supersized-infographic",
-        sections: [
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/demographics-supersized-infographic.png",
-                    caption: "Demographics supersized infographic overview.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/demographics-supersized-infographic-graphs.png",
-                    caption: "City demographics as bar graph placed side by side for fast comparison.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/demographics-supersized-infographic-city-data.png",
-                    caption: "McDonald's locations compared to Milwaukee county city demographics.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/demographics-supersized-infographic-national-state.png",
-                    caption: "U.S. and Wisconsin demographic comparison.",
-                    height: 1000
-                }
-            }
-        ]
-    },
-    {
-        name: "Water Cooled Wood Computer",
-        description: "Crafting a silent computing experience.",
-        introduction: "The quest for processing speed and complete silence led to the building of a wood computer case with water cooled internal components. The oak case was built over a six week period to house the components necessary for water cooling the video card, chipset and processor. Two radiators, equipped with dual 120mm fans, cool the water along with four passively cooled, aluminum reservoirs. Wood was chosen for the computer case because it is much easier to work with when compared to metal and has the benefit of deadening the noise by the fans inside.",
-        date: '2009-05-06T18:00:00-05:00',
-        url: "water-cooled-wood-computer",
-        backgroundBlur: "2011/12/water-cooled-wood-computer",
-        sections: [
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-front-sides-on.jpg",
-                    caption: "Water cooled wood computer front and left sides with doors on.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-front-sides-off.jpg",
-                    caption: "Wood computer front left with sides off showing water cooled interior.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-rear-sides-off.jpg",
-                    caption: "Wood computer rear right with sides off showing radiator and reservoir.",
-                    height: 1000
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-inside.jpg",
-                    caption: "Motherboard and other primary water cooled components.",
-                    height: 400
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-cpu-gpu.jpg",
-                    caption: "Water cooled video card, chipset and processor close-up.",
-                    height: 400
-                }
-            },
-            {
-                name: "",
-                content: [],
-                media: {
-                    src: "2011/12/wood-computer-lights.jpg",
-                    caption: "Water cooled video card, chipset and processor with lighting active.",
-                    height: 490
                 }
             }
         ]
