@@ -9,8 +9,13 @@ ul {
     padding: 0;
 }
 
+ol {
+    padding-inline-start: 32px;
+}
+
 ol > li {
     margin-bottom: 24px;
+    padding-left: 4px;;
 }
 
 a {

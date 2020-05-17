@@ -24,6 +24,10 @@
 .resume__icon-col {
     margin-right: 12px;
     width: 40px;
+
+    @media(max-width: 599px) {
+        display: none;
+    }
 }
 
 .resume__icon {
@@ -107,6 +111,11 @@
         &:before {
             content: "\00B7";
             margin-right: 4px;
+        }
+
+        @media(max-width: 599px) {
+            line-height: 1.4;
+            margin-top: 4px;
         }
     }
 }
