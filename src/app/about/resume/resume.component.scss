@@ -46,6 +46,12 @@
     width: 40px;
 }
 
+.resume__icon--nng {
+    @extend .resume__icon;
+    height: 19px;
+    width: 40px;
+}
+
 .resume__icon--uwm {
     @extend .resume__icon;
     height: 28px;
