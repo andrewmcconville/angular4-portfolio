@@ -33,13 +33,13 @@
 }
 
 .article__shadow-box {
-    background-color: #fff;
+    background-color: #fdfdff;
     max-width: 768px;
     padding-bottom: 160px;
 
     @media(min-width: 720px) {
         box-shadow: $shadow-z-2;
-        margin: 8px 8px 0 8px;
+        margin: 12px 8px 0 8px;
     }
 }
 
@@ -225,6 +225,10 @@
     padding: 0 9px;
 }
 
+.article__section {
+    margin-bottom: 96px;
+}
+
 .article__copy {
     @media(max-width: 719px) {
         margin: 24px 12px;
@@ -236,11 +240,11 @@
 }
 
 .article__subheading {
-    font-size: 20px;
-    font-weight: 600;
+    color: #4369a0;
+    font-size: 30px;
+    font-weight: 200;
     line-height: 1.25;
-    margin: 96px 0 20px 0;
-    text-transform: uppercase;
+    margin: 0 0 16px 0;
 }
 
 .article__subheading--home {
@@ -252,13 +256,7 @@
 }
 
 .article__figure {
-    @media(max-width: 719px) {
-        margin: 0 0 24px 0;
-    }
-
-    @media(min-width: 720px) {
-        margin: 0 0 40px 0;
-    }
+    margin: 0;
 
     @media(min-width: 1350px) {
         align-items: flex-start;
@@ -274,7 +272,7 @@
 .article__image {
     display: block;
     height: auto;
-    max-height: 750px;
+    max-height: 640px;
     max-width: 100%;
     width: auto;
 }

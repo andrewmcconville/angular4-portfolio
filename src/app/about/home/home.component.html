@@ -7,11 +7,6 @@
         </button>
         <h1 class="header-bar__title">Home</h1>
     </header>
-    <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', prevURL]" aria-label="Previous page">prev</a>
-        <span class="nav-bar__divider flex-noshrink"></span>
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/resume']" aria-label="Next menu">next</a>
-    </nav>
     <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box flex-grow">
             <header class="article__header--has-cover-iamge article__header--home flex flex-center-end">
@@ -22,7 +17,7 @@
                     <p>
                         Hi, I’m Andrew McConville.
                         <br />
-                        I'm a UX professional with a background in B2B SaaS applications. I enjoy playing an integral role on cross functional teams that are dedicated to user-centered design.
+                        I'm a UX professional with a background in B2B SaaS applications. I enjoy playing an integral role in cross functional teams that are dedicated to user-centered design.
                     </p>
                 </div>
                 
@@ -37,31 +32,31 @@
                         Good UX should be invisible.
                     </p>
                     
-                    <h2 class="article__subheading article__subheading--home">I believe in knowing...</h2>
+                    <h2 class="article__subheading article__subheading--home">I Believe in Knowing...</h2>
                     <ul class="home__list">
                         <li>My users</li>
                         <li>Their needs and goals</li>
                         <li>Their daily minutiae</li>
-                        <li>You are not your user</li>
+                        <li>That I am not my user</li>
                         <li>Business goals</li>
                     </ul>
                     
-                    <h2 class="article__subheading article__subheading--home">Because UX research de-risks projects</h2>
+                    <h2 class="article__subheading article__subheading--home">Because UX Research De-risks Projects</h2>
                     <p class="article__paragraph">
-                        By having a deep understanding of the problem space, we minimize risk and assumptions we bring into the solution space.
+                        By having a deep understanding of the problem space, we minimize the risk and assumptions we bring into the solution space.
                     </p>
-                    <figure class="article__figure">
-                        <div class="article__image-container flex flex-center-start">
-                            <a href="/wp-content/uploads/{{section.media.src}}" target="_blank">
-                                <img class="article__image article__image-shadow"
-                                    src="/assets/about/home-double-diamond.png"
-                                    alt="Andrew McConville's double diamond sketch showing UX reseach as de-risking project"
-                                    width="1500" height="650"  />
-                            </a>
-                        </div>
-                        <figcaption class="article__caption caption-text flex-noshrink">Andrew McConville's double diamond sketch showing UX reseach as de-risking projects</figcaption>
-                    </figure>
                 </div>
+                <figure class="article__figure">
+                    <div class="article__image-container flex flex-center-start">
+                        <a href="/assets/about/home-double-diamond.png" target="_blank">
+                            <img class="article__image"
+                                src="/assets/about/home-double-diamond.png"
+                                alt="Andrew McConville's double diamond sketch showing UX reseach as de-risking project"
+                                width="1500" height="650"  />
+                        </a>
+                    </div>
+                    <figcaption class="article__caption caption-text flex-noshrink">Andrew McConville's double diamond sketch showing UX reseach as de-risking projects</figcaption>
+                </figure>
             </div>
         </div>
     </article>

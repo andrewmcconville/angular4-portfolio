@@ -9,11 +9,9 @@ import { WorkService } from '../../work/work.service';
 })
 export class ContactComponent implements OnInit {
     scrollbarWidth: number;
-    nextURL: string = this.workService.getFirstWorkURL();
 
     constructor(
         private portfolioUIService: PortfolioUIService,
-        private workService: WorkService
     ) { }
 
     ngOnInit(): void {

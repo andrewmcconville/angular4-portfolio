@@ -5,40 +5,43 @@
                 <use xlink:href="/assets/icons/icon-sprite.svg#hamburger-menu"></use>
             </svg>
         </button>
-        <h1 class="header-bar__title">{{work.name}}</h1>
+        <h1 class="header-bar__title">{{work.name}} {{work.name2}}</h1>
     </header>
-    <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', prevWork()]" aria-label="Previous page">prev</a>
-        <span class="nav-bar__divider flex-noshrink"></span>
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/', nextWork()]" aria-label="Next page">next</a>
-    </nav>
     <article id="router-view" class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
             <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.backgroundBlur + '-blur.jpg)'">
-                <h1 class="article__header-title" itemprop="name">{{work.name}}</h1>
+                <h1 class="article__header-title" itemprop="name">{{work.name}} {{work.name2}}</h1>
                 <h2 class="article__header-subtitle" itemprop="description">{{work.description}}</h2>
                 <div class="article__header-meta flex flex-start-stretch">
                     <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
                     <span class="article__header-divider flex-noshrink"></span>
-                    <a href="https://plus.google.com/+AndrewMcConville/" rel="author noopener" itemprop="author" target="_blank">Andrew McConville</a>
+                    <span itemprop="author" >Andrew McConville</span>
                 </div>
             </header>
             <div class="article__body" itemprop="articleBody">
-                <p class="article__copy">{{work.introduction}}</p>
-
-                <section *ngFor="let section of work.sections">
+                <section class="article__section" *ngFor="let section of work.sections">
                     <div class="article__copy">
                         <h3 class="article__subheading">{{section.name}}</h3>
                         <p class="article__paragraph" *ngFor="let paragraph of section.content">{{paragraph}}</p>
                     </div>
+                    <blockquote class="blockquote" *ngIf="section.quote">
+                        {{section.quote}}
+                    </blockquote>
                     <figure class="article__figure" *ngIf="section.media">
                         <div class="article__image-container flex flex-center-start" *ngIf="section.media.type !== 'video'">
-                            <a href="/wp-content/uploads/{{section.media.src}}" target="_blank">
+                            <a href="/wp-content/uploads/{{section.media.src}}" target="_blank" *ngIf="!section.media.hires">
                                 <img class="article__image"
                                     [ngClass]="{'article__image-shadow': section.media.shadow}"
                                     [src]="'/wp-content/uploads/' + section.media.src"
                                     [alt]="section.media.caption"
                                     [height]="section.media.height" width="1500" />
+                            </a>
+                            <a href="/wp-content/uploads/{{section.media.hires}}" target="_blank" *ngIf="section.media.hires">
+                                <img class="article__image"
+                                    [ngClass]="{'article__image-shadow': section.media.shadow}"
+                                    [src]="'/wp-content/uploads/' + section.media.src"
+                                    [alt]="section.media.caption"
+                                    [height]="section.media.height" width="1920" />
                             </a>
                         </div>
                         <div class="article__image-container flex flex-center-start" *ngIf="section.media.type === 'video'">

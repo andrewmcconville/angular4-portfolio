@@ -37,7 +37,10 @@
                 routerLinkActive="list-view__link--active">
                 <div class="list-view__poster flex-noshrink" [style.backgroundPosition]="'0 -' + i * 80 + 'px'"></div>
                 <div class="live-view__copy flex flex-col flex-center-start">
-                    <p class="list-view__name">{{work.name}}</p>
+                    <p class="list-view__name">
+                        <span>{{work.name}}</span>
+                        <span>{{work.name2}}</span>
+                    </p>
                 </div>
             </a>
         </li>

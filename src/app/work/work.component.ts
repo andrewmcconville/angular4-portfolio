@@ -46,20 +46,4 @@ export class WorkComponent implements OnInit {
     openAppMenu(): void {
         this.portfolioUIService.changeAppMenuOpen(true);
     }
-
-    prevWork(): string {
-        if(this.workService.getWorkPosition(this.work.url) === 'first') {
-            return 'contact'
-        } else {
-            return this.workService.getPrevWorkURL(this.work.url);
-        }
-    }
-
-    nextWork(): string {
-        if(this.workService.getWorkPosition(this.work.url) === 'last') {
-            return 'home'
-        } else {
-            return this.workService.getNextWorkURL(this.work.url);
-        }
-    }
 }

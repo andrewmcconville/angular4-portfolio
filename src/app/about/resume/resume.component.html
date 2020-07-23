@@ -7,11 +7,6 @@
         </button>
         <h1 class="header-bar__title">Resume</h1>
     </header>
-    <nav class="nav-bar--article flex flex-between-stretch flex-noshrink">
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/home']" aria-label="Previous page">prev</a>
-        <span class="nav-bar__divider flex-noshrink"></span>
-        <a class="nav-bar__tab button flex-grow flex-50" [routerLink]="['/reading-list']" aria-label="Next page">next</a>
-    </nav>
     <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article"> 
         <div class="article__shadow-box flex-grow">
             <header class="article__header">
@@ -29,7 +24,7 @@
                         </a>
                     </div>
                     <section class="resume__section">
-                        <h3 class="resume__title">Experience</h3>
+                        <h3 class="article__subheading">Experience</h3>
                         
                         <div class="flex flex-start-start">
                             <div class="resume__icon-col flex-noshrink">
@@ -115,7 +110,7 @@
                     </section>
 
                     <section class="resume__section">
-                        <h3 class="resume__title">Education</h3>
+                        <h3 class="article__subheading">Education</h3>
                         
                         <div class="flex flex-start-start">
                             <div class="resume__icon-col flex-noshrink">
@@ -178,7 +173,7 @@
                     </section>
 
                     <section class="resume__section">
-                        <h3 class="resume__title">Certifications</h3>
+                        <h3 class="article__subheading">Certifications</h3>
 
                         <div class="flex flex-start-start">
                             <div class="resume__icon-col flex-noshrink">

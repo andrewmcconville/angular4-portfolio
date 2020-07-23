@@ -15,6 +15,7 @@
 
 .caption-text {
     color: rgba(0, 0, 0, 0.6);
+    font-family: 'Tinos', serif;
     font-size: 16px;
     font-style: italic;
 
@@ -26,3 +27,22 @@
         line-height: 1.5;
     }
 }
+
+.blockquote{
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
+    font-family: 'Tinos', serif;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0;
+    padding: 24px 72px;
+}
+
+.blockquote:before {
+    color: #4369a0;
+    content: open-quote;
+    font-size: 80px;
+    line-height: 0;
+    margin-left: -54px;
+    vertical-align: -34px;
+  }
