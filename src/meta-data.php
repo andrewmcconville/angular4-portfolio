@@ -60,7 +60,7 @@
         ],
         "" => [
             "title" => "Andrew McConville - Portfolio",
-            "description" => "Hi, I’m Andrew McConville; I work with product & design on creating user workflows, wireframes and adhering to user interface consistency.",
+            "description" => "UX professional with a background in B2B SaaS applications.",
             "image" => "/assets/about/home-social-media.png",
             "canonical" => "/",
             "date" => "2018-03-02T18:00:00-05:00"
