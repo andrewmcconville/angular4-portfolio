@@ -42,7 +42,7 @@
         margin: 12px 8px 0 8px;
     }
     
-    @media(min-width: 1550px) {
+    @media(min-width: 1570px) {
         margin: 12px 210px 0 8px;
     }
 }
@@ -161,32 +161,32 @@
     transition: padding 320ms ease-in-out;
 
     @media(max-width: 519px) {
-        margin: -8px 4px 24px 4px;
+        margin: -40px 4px 24px 4px;
         padding: 80px 12px 12px 12px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        margin: -8px 4px 24px 4px;
+        margin: -40px 4px 24px 4px;
         padding: 90px 12px 12px 12px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        margin: -8px 4px 24px 4px;
+        margin: -40px 4px 24px 4px;
         padding: 105px 12px 12px 12px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        margin: -12px 8px 48px 8px;
+        margin: -48px 8px 48px 8px;
         padding: 90px 16px 16px 16px;
     }
 
     @media(min-width: 820px) and (max-width: 919px) {
-        margin: -12px 8px 48px 8px;
+        margin: -48px 8px 48px 8px;
         padding: 105px 16px 16px 16px;
     }
     
     @media(min-width: 920px) {
-        margin: -12px 8px 48px 8px;
+        margin: -48px 8px 48px 8px;
         padding: 120px 16px 16px 16px;
     }
 }
@@ -269,7 +269,7 @@
 .article__figure {
     margin: 0;
 
-    @media(min-width: 1550px) {
+    @media(min-width: 1570px) {
         align-items: flex-start;
         display: flex;
         justify-content: center;
@@ -293,12 +293,12 @@
 }
 
 .article__caption {    
-    @media(max-width: 1549px) {
+    @media(max-width: 1569px) {
         border-bottom: 2px solid $slate-50;
         padding: 8px 4px;
     }
 
-    @media(min-width: 1550px) {
+    @media(min-width: 1570px) {
         margin-left: 20px;
         width: 180px;
         margin-right: -200px;
