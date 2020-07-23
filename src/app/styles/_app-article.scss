@@ -55,46 +55,30 @@
     display: flex;
     min-height: 320px;
     padding: 24px 24px 32px 24px;
-}
+    transition: min-height 320ms ease-in-out;
 
-.article__header-inner {
-    flex-grow: 1;
-    margin: 0 auto;
-    max-width: 752px;
-}
-
-.article__header--has-cover-iamge {
-    background-color: #f0f0f0;
-    background-position: center;
-    background-size: cover;
-    transition: height 320ms ease-in-out;
-
-    @media(max-width: 419px) {
-        height: 128px;
+    @media(max-width: 519px) {
+        min-height: 160px;
     }
     
-    @media(min-width: 420px) and (max-width: 519px) {
-        height: 160px;
-    }
-
     @media(min-width: 520px) and (max-width: 619px) {
-        height: 208px;
+        min-height: 240px;
     }
-    
+
     @media(min-width: 620px) and (max-width: 719px) {
-        height: 256px;
+        min-height: 320px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        height: 160px;
-    }
-
-    @media(min-width: 820px) and (max-width: 919px) {
-        height: 208px;
+        min-height: 160px;
     }
     
+    @media(min-width: 820px) and (max-width: 919px) {
+        min-height: 240px;
+    }
+
     @media(min-width: 920px) {
-        height: 256px;
+        min-height: 320px;
     }
 }
 
@@ -108,6 +92,12 @@
 
 .article__header--reading-list {
     background-image: url("/assets/about/reading-list-cover.jpg");
+}
+
+.article__header-inner {
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 752px;
 }
 
 .article__photo {
