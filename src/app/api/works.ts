@@ -139,7 +139,7 @@ export const works: Array<IWork> = [
             {
                 name: "My Role",
                 content: [
-                    "This project was for my Graduate Capstone Certificate in UX from the University of Wisconsin-Madison. Focus was on UX research and design thinking methodologies; I preformed background research, competitive analysis, SWOT and PEST analysis, user interviews, task analysis, journey mapping, created persons, made prototypes, and gathered participants for usability testing and surveys.",
+                    "This project was for my Graduate Capstone Certificate in UX from the University of Wisconsin-Madison. The focus was on UX research and design thinking methodologies; I preformed background research, competitive analysis, SWOT and PEST analysis, user interviews, task analysis, journey mapping, created persons, made prototypes, and gathered participants for usability testing and surveys.",
                     "Stack Overflow was great to work with and provided a diverse team of UX professionals that gave feedback throughout the program; these included: a UX researcher, UX designer, and a Product Designer."
                 ]
             },            {
@@ -159,7 +159,7 @@ export const works: Array<IWork> = [
             {
                 name: "User Interviews",
                 content: [
-                    "I started my research by interviewing Stack Overflow users. A question I asked participants early in the interview process was if they had ever posted a question on Stack Overflow and if not, why? I used this question to give me a general level of involvement the participant had with Stack, but I would come to find that it was one of the most reveling and insightful questions I would ask.",
+                    "I started my research by interviewing Stack Overflow users. A question I asked participants early in the interview process was if they had ever posted a question on Stack Overflow and if not, why? Initially I used this question to give me a general level of involvement the participant had with Stack, but I would come to find that it was one of the most reveling and insightful questions I would ask.",
                     "The responses were quite varied and portrayed the personalities of Stack users in many different ways. One user got a kick out of the question and responded with a boastful \"I don't ask the questions on Stack, I answer the questions.\" Another user, however, answered quite the opposite, highlighting their reluctance to interact with the Stack Overflow community. This quote was the insight that set the direction for my work."
                 ],
                 quote: "Whenever I think about asking a question on Stack Overflow, I think about how my question might not come out right, or that it might have already been asked by someone else, and asking it again might get everyone all ‘internet angry’ at me."
@@ -181,7 +181,7 @@ export const works: Array<IWork> = [
             {
                 name: "Journey Map",
                 content: [
-                    "Journey maps are great at sharing findings with team members that were not part of the research process, like engineers and QA. I find them to be a helpful visual aid and very approachable for coworkers. I also use journey maps to show how users have a life outside of the product and that triggers outside of the product are what bring them in."
+                    "Journey maps are great for sharing findings with team members that were not part of the research process, like engineers and QA. I find them to be a helpful visual aid and very approachable for coworkers. Journey maps highlight triggers for using the product, such as when users encounter roadblocks in their routine."
                 ],
                 media: {
                     src: "2017/12/stack-overflow-user-research-journey-map.jpg",
@@ -207,7 +207,7 @@ export const works: Array<IWork> = [
             {
                 name: "Defining the Problem",
                 content: [
-                    "Part of Stack's \"unwelcoming environment\" problem is when a uses posts a duplicate question. Instead of the duplicate question being closed, the questions are sometimes met with toxic replies in the comment section. Because these questions are replied to instead of closed, this behavior is public for anyone visiting the site."
+                    "Part of Stack's \"unwelcoming environment\" problem is when a user posts a duplicate question. Instead of the duplicate question being closed, the questions are sometimes met with toxic replies in the comment section. Because these questions are replied to instead of closed, this behavior is public for anyone visiting the site."
                 ]
             },
             {
@@ -245,7 +245,7 @@ export const works: Array<IWork> = [
             {
                 name: "Hi-fi Prototype",
                 content: [
-                    "I then created a wireframe in adobe xd so I would have something I could get in front of participants for testing."
+                    "I then created a wireframe in Adobe XD so I would have something I could put in front of participants for testing."
                 ],
                 media: {
                     src: "2017/12/stack-overflow-ux-design-wireframing.jpg",
@@ -258,13 +258,13 @@ export const works: Array<IWork> = [
             {
                 name: "Testing",
                 content: [
-                    "Guerrilla testing has a special kind of exhilaration to it. Up until now I've been researching, ideating, and building—what I think is a great—prototype. But within minutes of putting a prototype in front of a participant all the flaws come to the surface, its a very \"real\" learning experience."
+                    "Guerrilla testing has a special kind of exhilaration to it. Up until now I've been researching, ideating, and building—what I think is a great—prototype. But within minutes of putting a prototype in front of a participant all the flaws come to the surface, it's a very \"real\" learning experience."
                 ]
             },
             {
                 name: "Testing Metrics",
                 content: [
-                    "I had three \"happy path\" scenarios for participants to complete, followed by a SUS survey, and then a desirability study. I later swapped out the SUS survey for a PSSUQ survey as the PSSUQ collects more detailed feedback. Though the PSSUQ requires more effort from participants, I felt this was ok because the effort and time involved going through the test scenarios was so short."
+                    "I had three \"happy path\" scenarios for participants to complete, followed by a SUS survey, and then a desirability study. I later swapped out the SUS survey for a PSSUQ survey as the PSSUQ collects more detailed feedback. Though the PSSUQ requires more effort from participants, I felt this was okay because the effort and time involved going through the test scenarios was so short."
                 ],
                 media: {
                     src: "2017/12/stack-overflow-ux-design-metrics.jpg",
@@ -277,7 +277,7 @@ export const works: Array<IWork> = [
             {
                 name: "Outcomes",
                 content: [
-                    "At the end of the day my metrics were for a wireframe and not a true browser experience. I would have liked to have tested with a working prototype in the browser to collet more accurate data and to compare against the existing process for posting a question. Implementing and A/B testing would have also been able to confirm if the number of duplicate posts was reduced and if the amount of participation from new users was increased.",
+                    "At the end of the day my metrics were for a wireframe and not a true browser experience. I would have liked to have tested with a working prototype in the browser to collect more accurate data and to compare against the existing process for posting a question. Implementing and A/B testing would have also been able to confirm if the number of duplicate posts were reduced and if the amount of participation from new users was increased.",
                     "However, I would like to think that I was on the right track; as my time with Stack Overflow was coming to an end they showed me a very similar solution they had in the works."
                 ]
             }
@@ -307,7 +307,7 @@ export const works: Array<IWork> = [
             {
                 name: "Solution",
                 content: [
-                    "A q-tip adapter in the shape for a caterpillar allows children to grasp and manipulate a q-tip white preventing the swab from entering the ear canal.",
+                    "A q-tip adapter in the shape of a caterpillar allows children to grasp and manipulate a q-tip while preventing the swab from entering the ear canal.",
                 ],
                 media: {
                     src: "2020/03/universal-design-q-tip-grip-bathroom.jpg",
@@ -346,8 +346,8 @@ export const works: Array<IWork> = [
             {
                 name: "Prototype Testing: Round One",
                 content: [
-                    "Up until this point I made the mistake of only testing my prototype with adults! As many moments of realization go, I was in bed one day and realized I need to get my prototype into the hands of kids. I 3D printed twelve prototypes and sent them home with coworkers who had children ranging from one to fifteen years old.",
-                    "This turned out to be incredibly insightful because young children held the prototype in so many different ways. Looking at the pictures they do everything from eat it, to gripping it like the handle bars of a bike, to using two hands to hold it. It isn't until about the age of five that children begin to hold the prototype like an adult; with a pencil like grip."
+                    "Up until this point I made the mistake of only testing my prototype with adults! As many moments of realization, I was in bed one day and realized I need to get my prototype into the hands of kids. I 3D printed twelve prototypes and sent them home with coworkers who had children ranging from one to fifteen years old.",
+                    "This turned out to be incredibly insightful because young children held the prototype in so many different ways. Looking at the pictures they tried everything from eating it, to gripping it like the handle bars of a bike, to using two hands to hold it. It isn't until about the age of five that children begin to hold the prototype like an adult; with a pencil like grip."
                 ],
                 media: {
                     src: "2020/03/universal-design-q-tip-grip-testing-one.jpg",
@@ -360,7 +360,7 @@ export const works: Array<IWork> = [
             {
                 name: "Metrics",
                 content: [
-                    "Plotting the three major grip styles by age delineates how a child holds the prototype verses an adult. This could be attributed to several factors such as hand size, dexterity, familiarity with q-tips, or other factors.",
+                    "Plotting the three major grip styles by age delineates how a child holds the prototype versus an adult. This could be attributed to several factors such as hand size, dexterity, familiarity with q-tips, or other factors.",
                     "This data was collected in an unmoderated test where the prototype was given to parents to try at home with their kids. Because of this, there could have been coaching or other unknown factors not accounted for."
                 ],
                 media: {
@@ -400,15 +400,15 @@ export const works: Array<IWork> = [
             {
                 name: "Outcomes & Metrics",
                 content: [
-                    "Unfortunately, loading was still difficult for children as the magnets used were far to strong. Only two out of nine participants successfully loaded on the first try and another three were successful on their second attempt; the rest took multiple attempts or need the help of an adult. The attraction of the two halves was so strong the two halves would aggressively pull together within an inch, causing the q-tip to fall out.",
+                    "Unfortunately, loading was still difficult for children as the magnets used were far too strong. Only two out of nine participants successfully loaded on the first try and another three were successful on their second attempt; the rest took multiple attempts or needed the help of an adult. The attraction of the two halves was so strong the two halves would aggressively pull together within an inch, causing the q-tip to fall out.",
                     "Seven of the nine participants identifies the prototype as a caterpillar, and none were afraid or standoffish."
                 ]
             },
             {
                 name: "Next Steps",
                 content: [
-                    "Using a less powerful magnet or maybe not a magnet at all could be an option. There is a danger with magnets be swallowed and the prototypes has them secured with friction. Exploring shapes beyond a caterpillar would also be fun.",
-                    "Gathering more participants was also intended, but did not happen because of COVID-19. I experimented with several colors and filament types, hoping to test with far more than nine children, but that was not to be."
+                    "Using a less powerful magnet, or maybe not a magnet at all could be an option. There is a danger that magnets could be swallowed and the prototypes has them secured with friction. Exploring shapes beyond a caterpillar would also be fun.",
+                    "Gathering more participants was also intended, but did not happen do to COVID-19. I experimented with several colors and filament types, hoping to test with far more than nine children, but that was not to be."
                 ],
                 // media: {
                 //     src: "2020/03/universal-design-q-tip-grip-caterpillars.jpg",
@@ -444,7 +444,7 @@ export const works: Array<IWork> = [
             {
                 name: "My Hats",
                 content: [
-                    "AccuLynx is a B2B SaaS startup in the roofing industry. I have been a UX engineer with AccuLynx since January 2014 and in that time I have worked on dashboards, reporting tools, e-sign documents, calendaring, material ordering, insurance modules, and more; AccuLynx enables customers to run every aspect of a roofing company.",
+                    "When I started at AccuLynx there was only one team, and zero UX roles. Over the years I have worn many hats; I have interviewed users, participated in remote usability studies, and on bigger projects contributed to design sprints. As we grew into multiple teams, I began documenting our design language to ensure a consistent user experience. Recently, much of my time has been spent building prototypes and components for our web app."
                 ],
                 media: {
                     src: "2019/04/ux-engineering-ideate.jpg",
@@ -470,7 +470,7 @@ export const works: Array<IWork> = [
             {
                 name: "UX Engineering",
                 content: [
-                    "At the end of the day, UX engineering is an end to end catch all spanning research, design, testing, and development. One of the biggest takes aways from contributing to a product across several UX disciplines has been the old cliche: You are not your user. By having a deep understanding of users and the problem space, we minimize the risk and assumptions we bring into the solution space.",
+                    "At the end of the day, UX engineering is an end to end catch all; it spans research, design, testing, and development. One of the biggest takeaways from contributing to a product across several UX disciplines has been the old cliche: You are not your user. By having a deep understanding of users and the problem space, we minimize the risk and assumptions we bring into the solution space.",
                 ]
             }
         ]
@@ -974,13 +974,13 @@ export const works: Array<IWork> = [
                 name: "The Projects",
                 content: [
                     "Maps, data, and information design.",
-                    "In my free times I tinker with open source data sets from the USGS and other sources. I typically take these data sets into QGIS where I overlay them on a map. I then render the mapped layers in various programs such as Illustrator or Blender."
+                    "In my free time, I tinker with open source data sets from the USGS and other sources. I typically take these data sets into QGIS where I overlay them on a map. I then render the mapped layers in various programs such as Illustrator or Blender."
                 ]
             },
             {
                 name: "Demographics Supersized",
                 content: [
-                    "Demographics supersized is an infographic comparing the income, education, unemployment and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants."
+                    "Demographics Supersized is an infographic comparing the income, education, unemployment, and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants."
                 ],
                 media: {
                     src: "2011/12/demographics-supersized-infographic.png",
