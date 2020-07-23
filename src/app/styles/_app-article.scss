@@ -299,19 +299,6 @@
     }
 }
 
-.article__caption-mask {
-    background-color: $slate-500;
-    height: 64px;
-    left: 1137px;
-    position: fixed;
-    top: 0;
-    width: 180px;
-    
-    @media(max-width: 1349px) {
-        display: none;
-    }
-}
-
 .article__live-project-link {
     background-color: $slate-500;
     color: #fff;
