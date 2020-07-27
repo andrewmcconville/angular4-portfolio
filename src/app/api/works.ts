@@ -978,6 +978,18 @@ export const works: Array<IWork> = [
                 ]
             },
             {
+                name: "Wisconsin Rail Map, Year 1900",
+                content: [
+                    "This map combines elevation data from the U.S. Geological Survey and a railroad map from the Library of Congress archives. The two were brought to gather and rendered in Blender."
+                ],
+                media: {
+                    src: "2020/06/wisconsin-1900-railroad-map.jpg",
+                    hires: "2020/06/wisconsin-1900-railroad-map-hi-res.jpg",
+                    caption: "Wisconsin rail map from year 1900 overlaid on USGS elevation data.",
+                    height: 1080
+                }
+            },
+            {
                 name: "Demographics Supersized",
                 content: [
                     "Demographics Supersized is an infographic comparing the income, education, unemployment, and crime rates of the cities in Milwaukee county alongside the geographical locations of McDonald’s restaurants."
