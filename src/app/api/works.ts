@@ -980,7 +980,7 @@ export const works: Array<IWork> = [
             {
                 name: "Wisconsin Rail Map, Year 1900",
                 content: [
-                    "This map combines elevation data from the U.S. Geological Survey and a railroad map from the Library of Congress archives. The two were brought to gather and rendered in Blender."
+                    "This map combines elevation data from the U.S. Geological Survey and a railroad map from the Library of Congress archives. The two were rendered with Blender."
                 ],
                 media: {
                     src: "2020/06/wisconsin-1900-railroad-map.jpg",
