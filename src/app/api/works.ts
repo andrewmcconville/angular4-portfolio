@@ -468,6 +468,19 @@ export const works: Array<IWork> = [
                 }
             },
             {
+                name: "UX Explorations",
+                content: [
+                    "Have you ever thought to yourself \"what would we do if we delete what we have and start from scratch?\" After working on AccuLynx for a few years and gaining a deep understanding of our users, I spent a weekend coming up with a freemium experience for our SaaS app. I focused on self on boarding and simplicity, while offering high value features. We ultimately did not move forward with the project; but when exploring new ideas, some eventually make their way into production.",
+                ],
+                media: {
+                    src: "2019/04/ux-engineering-material.jpg",
+                    hires: "2019/04/ux-engineering-material-hi-res.jpg",
+                    caption: "Freemium experience.",
+                    height: 615,
+                    shadow: true
+                }
+            },
+            {
                 name: "UX Engineering",
                 content: [
                     "At the end of the day, UX engineering is an end to end catch all; it spans research, design, testing, and development. One of the biggest takeaways from contributing to a product across several UX disciplines has been the old cliche: You are not your user. By having a deep understanding of users and the problem space, we minimize the risk and assumptions we bring into the solution space.",
