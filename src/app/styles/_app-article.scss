@@ -286,10 +286,20 @@
     box-shadow: $shadow-z-1;
 }
 
-.article__caption {    
+.article__caption {
+    @media(max-width: 719px) {
+        padding: 8px 12px;
+    }
+
+    @media(min-width: 720px) and (max-width: 1569px) {
+        padding: 8px 24px;
+    }
+
     @media(max-width: 1569px) {
-        border-bottom: 2px solid $slate-50;
-        padding: 8px 4px;
+        //border-bottom: 2px solid $slate-50;
+        margin: 0 auto;
+        max-width: 800px;
+        //padding: 8px 4px;
     }
 
     @media(min-width: 1570px) {
