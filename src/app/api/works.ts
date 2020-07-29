@@ -146,7 +146,7 @@ export const works: Array<IWork> = [
                 name: "Solution",
                 content: [
                     "Through user interviews I discovered that duplicate questions were a reoccurring point of tension between new and veteran users. To reduce the likelihood of duplicate questions being posted, I rethought the process for composing a question.",
-                    "Users are taken through a wizard like experience where they are initially presented with minimal UI. As they add content to their post, a list of existing questions is presented offering users the potential to identify an existing post that may be similar to theirs."
+                    "My solution takes users through a wizard like experience where they are initially presented with minimal UI. As they add content to their post, a list of existing questions is presented offering users the potential to identify an existing post that may be similar to theirs."
                 ],
                 media: {
                     src: "2017/12/stack-overflow-ux-design-solution.png",
@@ -207,7 +207,7 @@ export const works: Array<IWork> = [
             {
                 name: "Defining the Problem",
                 content: [
-                    "Part of Stack's \"unwelcoming environment\" problem is when a user posts a duplicate question. Instead of the duplicate question being closed, the questions are sometimes met with toxic replies in the comment section. Because these questions are replied to instead of closed, this behavior is public for anyone visiting the site."
+                    "Research revealed that part of Stack's \"unwelcoming environment\" problem is when a user posts a duplicate question. Instead of the duplicate question being closed, the questions are sometimes met with toxic replies in the comment section. Because these questions are replied to instead of closed, this behavior is public for anyone visiting the site."
                 ]
             },
             {
@@ -277,7 +277,7 @@ export const works: Array<IWork> = [
             {
                 name: "Outcomes",
                 content: [
-                    "At the end of the day my metrics were for a wireframe and not a true browser experience. I would have liked to have tested with a working prototype in the browser to collect more accurate data and to compare against the existing process for posting a question. Implementing and A/B testing would have also been able to confirm if the number of duplicate posts were reduced and if the amount of participation from new users was increased.",
+                    "At the end of the day my metrics were for a wireframe and not a true browser experience. I would have liked to have tested with a working prototype in the browser to collect more accurate data and to compare against the existing process for posting a question. A/B testing would have also been able to confirm if the number of duplicate posts were reduced and if the amount of participation from new users was increased.",
                     "However, I would like to think that I was on the right track; as my time with Stack Overflow was coming to an end they showed me a very similar solution they had in the works."
                 ]
             }
