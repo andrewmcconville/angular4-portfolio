@@ -139,7 +139,8 @@ export const works: Array<IWork> = [
             {
                 name: "My Role",
                 content: [
-                    "This project was for my Graduate Capstone Certificate in UX from the University of Wisconsin-Madison. The focus was on UX research and design thinking methodologies; I preformed background research, competitive analysis, SWOT and PEST analysis, user interviews, task analysis, journey mapping, created persons, made prototypes, and gathered participants for usability testing and surveys.",
+                    "UX Researcher",
+                    "In Fall 2017 I enrolled in UW-Madison's Graduate Capstone Certificate in UX; my work was in UX research and design thinking methodologies; I preformed background research, competitive analysis, SWOT and PEST analysis, user interviews, task analysis, journey mapping, created persons, made prototypes, and gathered participants for usability testing and surveys.",
                     "Stack Overflow was great to work with and provided a diverse team of UX professionals that gave feedback throughout the program; these included: a UX researcher, UX designer, and a Product Designer."
                 ]
             },            {
@@ -294,7 +295,6 @@ export const works: Array<IWork> = [
             {
                 name: "Project Overview",
                 content: [
-                    "In Spring 2020 I enrolled in UW-Milwaukee's Universal Design and Digital Fabrication course as a graduate special student. My work applied user research and design thinking methodologies to physical objects and included prototypes modeled in Rhino 3D which were then 3D printed.",
                     "This project attempts to make q-tips easier to hold and safer to use, while making them fun and inviting for children."
                 ]
             },
@@ -304,6 +304,13 @@ export const works: Array<IWork> = [
                     "Toddlers and young children demand independence, however, q-tips can be hard to control and dangerous if inserted too far into the ear.",
                 ]
             },
+            {
+                name: "My Role",
+                content: [
+                    "Product Designer",
+                    "In Spring 2020 I enrolled in UW-Milwaukee's Universal Design and Digital Fabrication course as a graduate special student. My work applied user research and design thinking methodologies to physical objects and included prototypes modeled in Rhino 3D which were then 3D printed.",
+                ]
+            },  
             {
                 name: "Solution",
                 content: [
@@ -429,9 +436,14 @@ export const works: Array<IWork> = [
         backgroundBlur: "2019/04/ux-engineering",
         sections: [
             {
+                content: [
+                    "AccuLynx is a privately held SaaS startup, images may be blurred and details omitted.",
+                ]
+            },
+            {
                 name: "Overview",
                 content: [
-                    "AccuLynx is a B2B SaaS startup in the roofing industry. I have been a UX engineer with AccuLynx since January 2014 and in that time I have worked on dashboards, reporting tools, e-sign documents, calendaring, material ordering, insurance modules, and more; AccuLynx enables customers to run every aspect of a roofing company.",
+                    "I have been a UX engineer with AccuLynx since January 2014 and in that time I have worked on dashboards, reporting tools, e-sign documents, calendaring, material ordering, insurance modules, and more; our software enables customers to run every aspect of a roofing company.",
                 ],
                 media: {
                     src: "2019/04/ux-engineering-slide.jpg",
@@ -442,9 +454,10 @@ export const works: Array<IWork> = [
                 }
             },
             {
-                name: "My Hats",
+                name: "My Role, My UX Hats",
                 content: [
-                    "When I started at AccuLynx there was only one team, and zero UX roles. Over the years I have worn many hats; I have interviewed users, participated in remote usability studies, and on bigger projects contributed to design sprints. As we grew into multiple teams, I began documenting our design language to ensure a consistent user experience. Recently, much of my time has been spent building prototypes and components for our web app."
+                    "UX Engineer",
+                    "When I started at AccuLynx there was only one team, and zero UX roles. Over the years I have worn many UX hats; I have interviewed users, participated in remote usability studies, and on bigger projects contributed to design sprints. As we grew into multiple teams, I began documenting our design language to ensure a consistent user experience. Recently, much of my time has been spent building prototypes and components for our web app."
                 ],
                 media: {
                     src: "2019/04/ux-engineering-ideate.jpg",
@@ -470,7 +483,7 @@ export const works: Array<IWork> = [
             {
                 name: "UX Explorations",
                 content: [
-                    "Have you ever thought to yourself \"what would we do if we delete what we have and start from scratch?\" After working on AccuLynx for a few years and gaining a deep understanding of our users, I spent a weekend coming up with a freemium experience for our SaaS app. I focused on self on boarding and simplicity, while offering high value features. We ultimately did not move forward with the project; but when exploring new ideas, some eventually make their way into production.",
+                    "Have you ever thought to yourself \"knowing what I know now, what would I do differently if I could start from scratch?\" After working on AccuLynx for a few years and gaining a deep understanding of our users, I spent a weekend coming up with a freemium experience for our SaaS app. I focused on self-onboarding and simplicity, while offering high value features. We ultimately did not move forward with the project; but when exploring new ideas, some eventually make their way into production.",
                 ],
                 media: {
                     src: "2019/04/ux-engineering-material.jpg",
@@ -1016,7 +1029,7 @@ export const works: Array<IWork> = [
             {
                 name: "Mesmer User Research",
                 content: [
-                    "Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education. The data gathered in this infographic was used to determine the need for a degree planning web app and if students have access to the technology required to use the app."
+                    "The data gathered in this infographic was used to determine the need for a degree planning web app and if students have access to the technology required to use the app. Degree planning has yet to be modernized and is still largely done with pen and paper. Many students even choose to rely solely on what their advisers recommend, which can vary widely given that more than 75% of students will have multiple advisers over the course of their education."
                 ],
                 media: {
                     src: "2013/10/mesmer-infographic.jpg",
