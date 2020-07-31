@@ -496,7 +496,7 @@ export const works: Array<IWork> = [
             {
                 name: "UX Explorations",
                 content: [
-                    "Have you ever thought to yourself \"knowing what I know now, what would I do differently if I could start from scratch?\" After working on AccuLynx for a few years and building a deep understanding of our users, I used my 20% time to prototype on a freemium experience for our SaaS app. I focused on self-onboarding and simplicity, while incentivising with high value features. We ultimately did not move forward with the project; but when exploring new ideas, some eventually make their way into production.",
+                    "Have you ever thought to yourself \"knowing what I know now, what would I do differently if I could start from scratch?\" After working on AccuLynx for a few years and building a deep understanding of our users, I used my 20% time to prototype a freemium experience for our SaaS app. I focused on self-onboarding and simplicity, while incentivising with high value features. We ultimately did not move forward with the project.",
                 ],
                 media: {
                     src: "2019/04/ux-engineering-material.jpg",
@@ -509,7 +509,7 @@ export const works: Array<IWork> = [
             {
                 name: "UX Engineering",
                 content: [
-                    "At the end of the day, UX engineering is an end to end catch all; it spans research, design, testing, and development. One of the biggest takeaways from contributing to a product across several UX disciplines has been the old cliche: You are not your user. By having a deep understanding of users and the problem space, we minimize the risk and assumptions we bring into the solution space.",
+                    "At the end of the day, UX engineering is an end to end catch all; it spans research, design, testing, and development. One of the biggest takeaways from contributing to a product across several UX disciplines has been the old cliche: You are not your user. By having a deep understanding of users and the problem space, I minimize the risk and assumptions I bring into the solution space.",
                 ]
             }
         ]
