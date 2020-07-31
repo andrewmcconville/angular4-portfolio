@@ -9,7 +9,7 @@
     </header>
     <article id="router-view" class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
-            <header class="article__header" [style.backgroundImage]="'url(/wp-content/uploads/' + work.backgroundBlur + '-blur-hi-res.jpg)'">
+            <header class="article__header" [style.backgroundImage]="work.backgroundBlur">
                 <div class="article__header-inner">
                     <h1 class="article__header-title" itemprop="name">
                         <div>{{work.name}}</div>
