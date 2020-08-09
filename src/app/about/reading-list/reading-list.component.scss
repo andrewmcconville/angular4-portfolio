@@ -1,12 +1,19 @@
 @import "../../styles/_colors.scss";
 
+:host {
+    flex-grow: 1;
+}
+
 .reading-list__item {
+    align-items: center;
+    display: flex;
+    justify-items: flex-start;
     margin-bottom: 24px;
 }
 
 .reading-list__image {
     background-color: $slate-50;
-    background-image: url("/assets/about/reading-list-book-covers-2.jpg");
+    background-image: url("/assets/about/reading-list-book-covers-3.jpg");
     background-size: 100px;
     display: block;
     height: 100px;

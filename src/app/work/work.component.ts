@@ -11,9 +11,6 @@ import { PortfolioUIService } from '../portfolio-ui.service';
 })
 export class WorkComponent implements OnInit {
     work: IWork;
-    detailContainer: HTMLElement;
-    scrollbarWidth: number;
-    // appMenuOpen: boolean;
 
     constructor(
         private router: Router,
@@ -24,17 +21,6 @@ export class WorkComponent implements OnInit {
 
     ngOnInit(): void {
         this.getWorkByRouteParam();
-
-        this.detailContainer = document.getElementById('router-view');
-
-        this.router.events.subscribe((evt) => {
-            if (!(evt instanceof NavigationEnd)) {
-                return;
-            }
-            this.detailContainer.scrollTop = 0;
-        });
-
-        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     getWorkByRouteParam(): void {

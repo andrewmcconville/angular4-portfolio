@@ -1,5 +1,4 @@
 .header-bar {
-    background-color: $slate-500;
     color: #fff;
     height: 64px;
 }
@@ -8,12 +7,17 @@
     @extend .header-bar;
 
     @media(max-width: 719px) {
+        background-color: $slate-500;
         width: 320px;
     }
 }
 
 .header-bar--article {
     @extend .header-bar;
+    background-color: $slate-500;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     
     @media(min-width: 720px) {
         display: none;

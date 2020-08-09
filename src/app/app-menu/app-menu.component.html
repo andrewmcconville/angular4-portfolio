@@ -7,30 +7,8 @@
                 <p class="list-view__name">Home</p>
             </a>
         </li>
-        <li>
-            <a class="list-view__link flex"
-                [routerLink]="['/resume']"
-                routerLinkActive="list-view__link--active">
-                <p class="list-view__name">Resume</p>
-            </a>
-        </li>
-        <li>
-            <a class="list-view__link flex"
-                [routerLink]="['/reading-list']"
-                routerLinkActive="list-view__link--active">
-                <p class="list-view__name">Reading list</p>
-            </a>
-        </li>
-        <li>
-            <a class="list-view__link flex"
-                [routerLink]="['/contact']"
-                routerLinkActive="list-view__link--active">
-                    <p class="list-view__name">Contact</p>
-            </a>
-        </li>
     </ul>
-    <div class="list-view__divider"></div>
-    <ul>
+    <ul class="list-view__works">
         <li *ngFor="let work of works; let i = index">
             <a class="list-view__link flex"
                 [routerLink]="['/', work.url]"
@@ -42,6 +20,29 @@
                         <span>{{work.name2}}</span>
                     </p>
                 </div>
+            </a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/resume']"
+                routerLinkActive="list-view__link--active">
+                <p class="list-view__name">Resume</p>
+            </a>
+        </li>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/about']"
+                routerLinkActive="list-view__link--active">
+                    <p class="list-view__name">About</p>
+            </a>
+        </li>
+        <li>
+            <a class="list-view__link flex"
+                [routerLink]="['/reading-list']"
+                routerLinkActive="list-view__link--active">
+                <p class="list-view__name">Reading list</p>
             </a>
         </li>
     </ul>

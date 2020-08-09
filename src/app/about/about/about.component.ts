@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+
 import { PortfolioUIService } from '../../portfolio-ui.service';
 
 @Component({
-    templateUrl: './reading-list.component.html',
-    styleUrls: ['./reading-list.component.scss']
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.scss']
 })
-export class ReadingListComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
     constructor(
         private portfolioUIService: PortfolioUIService,

@@ -1,4 +1,4 @@
-<div class="article flex flex-col flex-grow">
+<div class="article">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()" role="button" aria-label="Main menu">
             <svg class="app-menu__icon">
@@ -7,7 +7,7 @@
         </button>
         <h1 class="header-bar__title">{{work.name}} {{work.name2}}</h1>
     </header>
-    <article id="router-view" class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
+    <article id="router-view" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
             <header class="article__header" [style.backgroundImage]="work.backgroundBlur">
                 <div class="article__header-inner">
@@ -16,10 +16,9 @@
                         <div>{{work.name2}}</div>
                     </h1>
                     <h2 class="article__header-subtitle" itemprop="description">{{work.description}}</h2>
-                    <div class="article__header-meta flex flex-start-stretch">
+                    <div class="article__header-meta">
+                        <div itemprop="author">Role: {{work.role}}</div>
                         <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
-                        <span class="article__header-divider flex-noshrink"></span>
-                        <span itemprop="author" >Andrew McConville</span>
                     </div>
                 </div>
             </header>

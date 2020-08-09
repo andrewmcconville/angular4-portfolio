@@ -1,0 +1,79 @@
+<div class="article">
+    <header class="header-bar--article flex-noshrink flex flex-start-center">
+        <button (click)="openAppMenu()" role="button" aria-label="Main menu">
+            <svg class="app-menu__icon">
+                <use xlink:href="/assets/icons/icon-sprite.svg#hamburger-menu"></use>
+            </svg>
+        </button>
+        <h1 class="header-bar__title">About</h1>
+    </header>
+    <article itemscope itemtype="https://schema.org/Article">
+        <div class="article__shadow-box">
+            <header class="article__header article__header--contact flex flex-center-end">
+                <img class="article__photo" src="/assets/about/home-avatar-2.jpg" alt="Andrew McConville" height="180" width="180" />
+            </header>
+            <div class="article__body">
+                <div class="article__callout">
+                    <div class="article__callout-inner">
+                        <div class="flex flex-center-center">
+                            <a href="https://www.linkedin.com/in/andrewmcconville" target="_blank" style="color: #0077b5;" class="flex flex-center-center">
+                                <svg class="linkedin__icon">
+                                    <use xlink:href="/assets/icons/icon-sprite.svg#linkedin"></use>
+                                </svg>
+                                linkedin.com/in/andrewmcconville
+                            </a>
+                        </div>
+                        <div class="flex flex-center-center"><a href="mailto:andrew@andrewmcconville.com">andrew@andrewmcconville.com</a></div>
+                        <div class="flex flex-center-center"><a href="tel:12628937157">262-893-7157</a></div>
+                    </div>
+                </div>
+
+                <section class="article__section">
+                    <div class="article__copy">
+                        <h2 class="article__subheading">I Believe in Knowing...</h2>
+                        <ul class="about__list">
+                            <li>My users</li>
+                            <li>Their needs and goals</li>
+                            <li>Their daily minutiae</li>
+                            <li>That I am not my user</li>
+                            <li>Business goals</li>
+                        </ul>
+                    </div>
+                </section>
+                    
+                <section class="article__section">
+                    <div class="article__copy">
+                        <h2 class="article__subheading">...Because UX Research De-risks Projects</h2>
+                        <p class="article__paragraph">
+                            By having a deep understanding of the problem space, I minimize the risk and assumptions I bring to the solution space.
+                        </p>
+                    </div>
+                    <figure class="article__figure">
+                        <div class="article__image-container flex flex-center-start">
+                            <a href="/assets/about/home-double-diamond.png" target="_blank">
+                                <img class="article__image"
+                                    src="/assets/about/home-double-diamond.png"
+                                    alt="Andrew McConville's double diamond sketch showing UX reseach as de-risking project"
+                                    width="1500" height="650"  />
+                            </a>
+                        </div>
+                    </figure>
+                </section>
+                
+                <section class="article__section">
+                    <div class="article__copy">
+                        <h2 class="article__subheading">UX Philosophy</h2>
+                        <p class="article__paragraph">
+                            I’ve always been curious why an experience can delight one person yet bring anxiety and frustration to another.
+                            I believe discovering user needs and pain points through formative research is critical in creating experiences that empower users to fulfill their goals.                    </p>
+                        <p class="article__paragraph">
+                            I'm also a stickler for consistency and feel great UX comes from adhering to a well documented and maintained design system.
+                            Teach users your design language once, then stay out of their way.
+                            Good UX should be invisible.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </article>
+</div>

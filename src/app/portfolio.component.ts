@@ -21,7 +21,6 @@ export class PortfolioComponent implements OnInit {
 
     constructor(
         private portfolioUIService: PortfolioUIService,
-        private workService: WorkService,
         public router: Router
     ) {
         this.router.events.subscribe(event => {
@@ -38,8 +37,6 @@ export class PortfolioComponent implements OnInit {
         });
 
         this.appMenuList = document.getElementById('app-menu-list');
-
-        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     closeAppMenu(): void {

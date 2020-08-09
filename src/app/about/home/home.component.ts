@@ -1,21 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 
-import { PortfolioUIService } from '../../portfolio-ui.service';
+import { IWork } from '../../work/work.model';
 import { WorkService } from '../../work/work.service';
+import { PortfolioUIService } from '../../portfolio-ui.service';
 
 @Component({
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-    scrollbarWidth: number;
+    public works: Array<IWork> = this.workService.getWorks();
 
     constructor(
-        private portfolioUIService: PortfolioUIService
+        private portfolioUIService: PortfolioUIService,
+        private workService: WorkService
     ) { }
 
     ngOnInit(): void {
-        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     openAppMenu(): void {

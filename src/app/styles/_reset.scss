@@ -1,5 +1,15 @@
+body {
+    @media(max-width: 519px) {
+        font-size: 18px;
+    }
+
+    @media(min-width: 520px) {
+        font-size: 20px;
+    }
+}
+
 p {
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
 }
 

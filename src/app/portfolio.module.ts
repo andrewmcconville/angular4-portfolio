@@ -10,6 +10,7 @@ import { routing, portfolioRoutingProviders } from './portfolio.routes';
 import { PortfolioComponent } from './portfolio.component';
 import { AppMenuComponent } from './app-menu/app-menu.component';
 
+import { AboutComponent } from './about/about/about.component';
 import { ContactComponent } from './about/contact/contact.component';
 import { HomeComponent } from './about/home/home.component';
 import { ReadingListComponent } from './about/reading-list/reading-list.component';
@@ -23,6 +24,7 @@ import { PortfolioUIService } from './portfolio-ui.service';
 @NgModule({
   declarations: [
     AppMenuComponent,
+    AboutComponent,
     ContactComponent,
     HomeComponent,
     ReadingListComponent,
@@ -34,8 +36,11 @@ import { PortfolioUIService } from './portfolio-ui.service';
     BrowserModule,
     RouterModule,
     routing,
+    RouterModule.forRoot(portfolioRoutingProviders, {
+      scrollPositionRestoration: 'enabled'
+    }),
     HttpClientModule,
-    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
   ],
   providers: [
     portfolioRoutingProviders,

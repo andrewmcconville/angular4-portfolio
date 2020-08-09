@@ -1,4 +1,4 @@
-<div class="article flex flex-col flex-grow">
+<div class="article">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()" role="button" aria-label="Main menu">
             <svg class="app-menu__icon">
@@ -7,13 +7,27 @@
         </button>
         <h1 class="header-bar__title">Resume</h1>
     </header>
-    <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article"> 
-        <div class="article__shadow-box flex-grow">
+    <article itemscope itemtype="https://schema.org/Article"> 
+        <div class="article__shadow-box">
             <header class="article__header">
                 <div class="article__header-inner">
                     <h1 class="article__header-title" itemprop="name">Andrew McConville</h1>
-                    <h2 class="article__header-subtitle"><a href="mailto:andrew@andrewmcconville.com">andrew@andrewmcconville.com</a></h2>
-                    <h2 class="article__header-subtitle"><a href="tel:12628937157">262-893-7157</a></h2>
+                    <div class="article__header-subtitle">
+                        <div>
+                            <a href="https://www.linkedin.com/in/andrewmcconville" target="_blank" style="color: #0077b5;" class="flex flex-start-center">
+                                <svg class="linkedin__icon">
+                                    <use xlink:href="/assets/icons/icon-sprite.svg#linkedin"></use>
+                                </svg>
+                                linkedin.com/in/andrewmcconville
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:andrew@andrewmcconville.com">andrew@andrewmcconville.com</a>
+                        </div>
+                        <div>
+                            <a href="tel:12628937157">262-893-7157</a>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="article__body">
@@ -35,16 +49,19 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="resume__heading">User Experience Engineer</h4>
+                                <h4 class="resume__heading">UX Engineer</h4>
                                 <h5 class="resume__subheading">
                                     <div>AccuLynx</div>
                                     <div>Jan 2014 - Present</div>
                                 </h5>
                                 <div class="resume__text">B2B SaaS startup in roofing industry</div>
                                 <ul class="resume__list">
-                                    <li>Built working prototypes in browser for usability testing</li>
-                                    <li>Design sprint: ideate, story map, lo-fi prototype in Illustrator, Sketch, and InVision</li>
-                                    <li>Created component library doc site synced to live production code for design to view source of truth interactions, QA to validate against, and engineering to quickly build consistent frontends</li>
+                                    <li>Prototype in Chrome for moderated remote usability testing</li>
+                                    <li>Ideate, story map, prototype in Illustrator, Sketch, and InVision</li>
+                                    <li>Collaborate with designers, engineers, and product owners to define requirements, and prioritize release deliverables</li>
+                                    <li>Provide constructive feedback and critique to visual designers on improving interface consistency and promoting pattern reuse</li>
+                                    <li>Present work-in-progress and final production-ready experiences</li>
+                                    <li>Created component library site synced to live production components as source-of-truth documentation</li>
                                 </ul>
                             </div>
                         </div>
@@ -56,15 +73,16 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="resume__heading">User Experience Designer</h4>
+                                <h4 class="resume__heading">UX Designer</h4>
                                 <h5 class="resume__subheading">
                                     <div>University of Wisconsin-Milwaukee</div>
                                     <div>Jan 2013 - Jan 2014</div>
                                  </h5>
-                                <div class="resume__text">In UWM’s startup incubator: The App Brewery</div>
+                                <div class="resume__text">UWM’s startup incubator: The App Brewery</div>
                                 <ul class="resume__list">
                                     <li>Mentored students in product design process</li>
-                                    <li>Conducted user interviews to identify pain points and performed thematic analysis to codify user needs and behaviors resulting in personas and journey maps</li>
+                                    <li>Conducted user interviews to identify pain points and performed thematic analysis to codify needs and behaviors</li>
+                                    <li>Created personas, journey maps and application workflows</li>
                                     <li>Built clickable wireframes and prototypes in Illustrator for guerrilla usability testing</li>
                                 </ul>
                             </div>
@@ -77,7 +95,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="resume__heading">User Interface Designer</h4>
+                                <h4 class="resume__heading">UI Designer</h4>
                                 <h5 class="resume__subheading">
                                     <div>Pearson</div>
                                     <div>Aug 2011 - Jul 2013</div>
@@ -100,12 +118,54 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="resume__heading">Graduate Special Student, Universal Design</h4>
+                                <h4 class="resume__heading">BFA, Design &amp; Visual Communication</h4>
+                                <h5 class="resume__subheading">
+                                    <div>University of Wisconsin-Milwaukee</div>
+                                    <div>Sep 2009 - May 2013</div>
+                                </h5>
+                                <ul class="resume__list">
+                                    <li>Major in UX Design and Research</li>
+                                    <li>Minor in Computer Science</li>
+                                    <li>Certificate in Web Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="resume__section">
+                        <h3 class="article__subheading">Certifications &amp; Courses</h3>
+
+                        <div class="flex flex-start-start">
+                            <div class="resume__icon-col flex-noshrink">
+                                <svg class="resume__icon--nng">
+                                    <use xlink:href="/assets/icons/icon-sprite.svg#nng"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="resume__heading">UX Research</h4>
+                                <h5 class="resume__subheading">
+                                    <div>Nielsen Norman Group</div>
+                                    <div>Jun 2020</div>
+                                </h5>
+                                <ul class="resume__list">
+                                    <li>Certificate ID: 1037493</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex flex-start-start">
+                            <div class="resume__icon-col flex-noshrink">
+                                <svg class="resume__icon--uwm">
+                                    <use xlink:href="/assets/icons/icon-sprite.svg#uwm"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="resume__heading">Universal Design</h4>
                                 <h5 class="resume__subheading">
                                     <div>University of Wisconsin-Milwaukee</div>
                                     <div>Jan 2020 - May 2020</div>
                                 </h5>
                                 <ul class="resume__list">
+                                    <li>Graduate Special Student</li>
                                     <li>Formative & summative research analysis</li>
                                     <li>Digital fabrication, rapid prototyping, 3D printing</li>
                                 </ul>
@@ -119,61 +179,16 @@
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="resume__heading">Graduate Capstone, User Experience</h4>
+                                <h4 class="resume__heading">UX Research &amp; Design</h4>
                                 <h5 class="resume__subheading">
                                     <div>University of Wisconsin-Madison</div>
                                     <div>Sep 2017 - Aug 2018</div>
                                 </h5>
                                 <ul class="resume__list">
+                                    <li>Graduate Capstone Certificate</li>
                                     <li>Design thinking methodologies</li>
-                                    <li>Qualitative & quantitative research methods</li>
-                                    <li>Paper prototyping, wireframing</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="flex flex-start-start">
-                            <div class="resume__icon-col flex-noshrink">
-                                <svg class="resume__icon--uwm">
-                                    <use xlink:href="/assets/icons/icon-sprite.svg#uwm"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="resume__heading">BFA, Design &amp; Visual Communication</h4>
-                                <h5 class="resume__subheading">
-                                    <div>University of Wisconsin-Milwaukee</div>
-                                    <div>Sep 2009 - May 2013</div>
-                                </h5>
-                                <ul class="resume__list">
-                                    <li>Major in UI Design and UX Research</li>
-                                    <li>Minor in Computer Science</li>
-                                    <li>Certificate in Web Development</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="resume__section">
-                        <h3 class="article__subheading">Certifications</h3>
-
-                        <div class="flex flex-start-start">
-                            <div class="resume__icon-col flex-noshrink">
-                                <svg class="resume__icon--nng">
-                                    <use xlink:href="/assets/icons/icon-sprite.svg#nng"></use>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="resume__heading">UX Research</h4>
-                                <h5 class="resume__subheading">
-                                    <div>Nielsen Norman Group, Cert. ID: 1037493</div>
-                                    <div>Jun 2020</div>
-                                </h5>
-                                <ul class="resume__list">
-                                    <li>Discoveries: Building the Right Thing</li>
-                                    <li>User Research Methods</li>
-                                    <li>Assessing UX Designs</li>
-                                    <li>Measuring UX and ROI</li>
-                                    <li>Analytics and User Experience</li>
+                                    <li>Paper prototyping, XD wireframing</li>
+                                    <li>Usability testing, surveys</li>
                                 </ul>
                             </div>
                         </div>

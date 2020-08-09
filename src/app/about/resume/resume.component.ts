@@ -6,14 +6,12 @@ import { PortfolioUIService } from '../../portfolio-ui.service';
     styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-    scrollbarWidth: number;
 
     constructor(
         private portfolioUIService: PortfolioUIService,
     ) { }
 
     ngOnInit(): void {
-        this.scrollbarWidth = this.portfolioUIService.getScrollbarWidth();
     }
 
     openAppMenu(): void {

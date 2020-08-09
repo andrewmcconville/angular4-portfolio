@@ -3,6 +3,7 @@ export interface IWork {
     name2?: string;
     description: string;
     date: string;
+    role: string;
     backgroundBlur: string;
     url: string;
 

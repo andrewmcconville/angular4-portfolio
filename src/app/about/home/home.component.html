@@ -1,4 +1,4 @@
-<div class="article flex flex-col flex-grow">
+<div class="article">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()" role="button" aria-label="Main menu">
             <svg class="app-menu__icon">
@@ -7,8 +7,8 @@
         </button>
         <h1 class="header-bar__title">Home</h1>
     </header>
-    <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
-        <div class="article__shadow-box flex-grow">
+    <article itemscope itemtype="https://schema.org/Article">
+        <div class="article__shadow-box">
             <header class="article__header article__header--home flex flex-center-end">
                 <img class="article__photo" src="/assets/about/home-avatar-2.jpg" alt="Andrew McConville" height="180" width="180" />
             </header>
@@ -17,55 +17,29 @@
                     <p class="article__callout-inner">
                         Hi, I’m Andrew McConville.
                         <br />
-                        I'm a UX professional with a background in B2B SaaS applications. I enjoy playing an integral role in cross functional teams that are dedicated to user-centered design.
+                        I'm a UX Engineer with a background in B2B SaaS applications. I design and build prototypes for usability testing.
                     </p>
                 </div>
-                <section class="article__section">
-                    <div class="article__copy">
-                        <h2 class="article__subheading article__subheading--home">UX Research &amp; Design Philosophy</h2>
-                        <p class="article__paragraph">
-                            I’ve always been curious why an experience can delight one person yet bring anxiety and frustration to another.
-                            I believe discovering user needs and pain points through formative research is critical in creating experiences that empower users to fulfill their goals.                    </p>
-                        <p class="article__paragraph">
-                            I'm also a stickler for consistency and feel great UX comes from adhering to a well documented and maintained design system.
-                            Teach users your design language once, then stay out of their way.
-                            Good UX should be invisible.
-                        </p>
-                    </div>
-                </section>
-                    
-                <section class="article__section">
-                    <div class="article__copy">
-                        <h2 class="article__subheading article__subheading--home">I Believe in Knowing...</h2>
-                        <ul class="home__list">
-                            <li>My users</li>
-                            <li>Their needs and goals</li>
-                            <li>Their daily minutiae</li>
-                            <li>That I am not my user</li>
-                            <li>Business goals</li>
-                        </ul>
-                    </div>
-                </section>
-                    
-                <section class="article__section">
-                    <div class="article__copy">
-                        <h2 class="article__subheading article__subheading--home">Because UX Research De-risks Projects</h2>
-                        <p class="article__paragraph">
-                            By having a deep understanding of the problem space, we minimize the risk and assumptions we bring into the solution space.
-                        </p>
-                    </div>
-                    <figure class="article__figure">
-                        <div class="article__image-container flex flex-center-start">
-                            <a href="/assets/about/home-double-diamond.png" target="_blank">
-                                <img class="article__image"
-                                    src="/assets/about/home-double-diamond.png"
-                                    alt="Andrew McConville's double diamond sketch showing UX reseach as de-risking project"
-                                    width="1500" height="650"  />
-                            </a>
-                        </div>
-                        <figcaption class="article__caption caption-text flex-noshrink">Double Diamond sketch showing UX reseach as de-risking projects</figcaption>
-                    </figure>
-                </section>
+
+                <ul class="home__work-list">
+                    <li class="home__work-snippet" *ngFor="let work of works; let i = index">
+                        <a class="home__work-snippet-inner" [style.backgroundImage]="work.backgroundBlur"
+                            [routerLink]="['/', work.url]"
+                            routerLinkActive="list-view__link--active">
+                            <header class="home__work-headings">
+                                <h2 class="home__work-main-heading">
+                                    <div>{{work.name}}</div>
+                                    <div>{{work.name2}}</div>
+                                </h2>
+                                <h3 class="home__work-sub-heading">
+                                    <div>Role: {{work.role}}</div>
+                                    <div>{{work.date | date:'MMMM d, y'}}</div>
+                                </h3>
+                            </header>
+                            <footer class="home__work-footer"></footer>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </article>

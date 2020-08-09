@@ -1,4 +1,4 @@
-<div class="article flex flex-col flex-grow">
+<div class="article">
     <header class="header-bar--article flex-noshrink flex flex-start-center">
         <button (click)="openAppMenu()" role="button" aria-label="Main menu">
             <svg class="app-menu__icon">
@@ -7,19 +7,19 @@
         </button>
         <h1 class="header-bar__title">Reading List</h1>
     </header>
-    <article class="flex-grow flex-scroll--y" itemscope itemtype="https://schema.org/Article">
-        <div class="article__shadow-box flex-grow">
+    <article itemscope itemtype="https://schema.org/Article">
+        <div class="article__shadow-box">
             <header class="article__header article__header--reading-list flex flex-center-end">
                 <img class="article__photo" src="/assets/about/home-avatar-2.jpg" alt="Andrew McConville" height="180" width="180" />
             </header>
             <div class="article__body">
                 <div class="article__callout">
                     <p class="article__callout-inner" itemprop="description">
-                        I usually stick to non-fiction with my favorite genres being technology, design, physics, history, and biographies; along with anything by Walter Isaacson or Malcolm Gladwell. However, when I do venture into fiction it's almost always science fiction or fantasy. I’m also a big fan of The Great Courses series of lectures. Here are some of my recent favorites in no particular order.
+                        I usually stick to non-fiction and anything by Walter Isaacson or Malcolm Gladwell. However, when I do venture into fiction it's almost always science fiction or fantasy.
                     </p>
                 </div>
                 <ul class="article__copy">
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">About Face</div>
@@ -27,7 +27,7 @@
                             <div class="reading-list__by">by Alan Cooper, Robert Reimann, David Cronin, Christopher Noessel</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Smart and Gets Things Done</div>
@@ -35,7 +35,7 @@
                             <div class="reading-list__by">by Joel Spolsky</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">iWoz</div>
@@ -43,15 +43,15 @@
                             <div class="reading-list__by">by Steve Wozniak, Gina Smith</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">Hackers</div>
-                            <div class="reading-list__subtitle">Heroes of the Computer Revolution: 25th Anniversary Edition</div>
-                            <div class="reading-list__by">by Steven Levy</div>
+                            <div class="reading-list__title">Don't Make Me Think</div>
+                            <div class="reading-list__subtitle">A Common Sense Approach to Web Usability</div>
+                            <div class="reading-list__by">by Steve Krug</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Crossing the Chasm</div>
@@ -59,22 +59,23 @@
                             <div class="reading-list__by">by Geoffrey Moore</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">Ready Player One</div>
-                            <div class="reading-list__by">by Ernest Cline</div>
+                            <div class="reading-list__title">Hacking Growth</div>
+                            <div class="reading-list__subtitle">How Today's Fastest-Growing Companies Drive Breakout Success</div>
+                            <div class="reading-list__by">by Sean Ellis &amp; Morgan Brown</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">Guns, Germs and Steel</div>
-                            <div class="reading-list__subtitle">The Fate of Human Societies</div>
-                            <div class="reading-list__by">by Jared Diamond</div>
+                            <div class="reading-list__title">Emotional Design</div>
+                            <div class="reading-list__subtitle">Why We Love (or Hate) Everyday Things</div>
+                            <div class="reading-list__by">by Don Norman</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Storm in a Teacup</div>
@@ -82,7 +83,7 @@
                             <div class="reading-list__by">by Helen Czerski</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">House of Debt</div>
@@ -90,62 +91,14 @@
                             <div class="reading-list__by">by Atif Mian, Amir Sufi</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">The Hunt for Vulcan</div>
-                            <div class="reading-list__subtitle">And How Albert Einstein Destroyed a Planet, Discovered Relativity, and Deciphered the Universe</div>
-                            <div class="reading-list__by">by Thomas Levenson</div>
+                            <div class="reading-list__title">The Design of Everyday Things</div>
+                            <div class="reading-list__by">by Don Norman</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">The Clockwork Universe</div>
-                            <div class="reading-list__subtitle">Isaac Newton, The Royal Society, and the Birth of the Modern World</div>
-                            <div class="reading-list__by">by Edward Dolnick</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Foundation</div>
-                            <div class="reading-list__subtitle">The Trilogy</div>
-                            <div class="reading-list__by">by Isaac Asimov</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">The Disappearing Spoon</div>
-                            <div class="reading-list__subtitle">And Other True Tales of Madness, Love, and the History of the World from the Periodic Table of the Elements</div>
-                            <div class="reading-list__by">by Sam Kean</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Astrophysics for People in a Hurry</div>
-                            <div class="reading-list__by">by Neil deGrasse Tyson</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">History of Science</div>
-                            <div class="reading-list__subtitle">Antiquity to 1700</div>
-                            <div class="reading-list__by">by Lawrence M. Principe</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">History of Science</div>
-                            <div class="reading-list__subtitle">1700-1900</div>
-                            <div class="reading-list__by">by Frederick Gregory</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">What the Dog Saw</div>
@@ -153,7 +106,7 @@
                             <div class="reading-list__by">by Malcolm Gladwell</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Broad Band</div>
@@ -161,38 +114,21 @@
                             <div class="reading-list__by">by Claire L. Evans</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">The Industrial Revolution</div>
-                            <div class="reading-list__by">by Patrick N. Allitt</div>
+                            <div class="reading-list__title">The Creative Thinker's Toolkit</div>
+                            <div class="reading-list__by">by Gerard Puccio</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">Titan</div>
-                            <div class="reading-list__subtitle">The Life of John D. Rockefeller, Sr.</div>
-                            <div class="reading-list__by">by Ron Chernow</div>
+                            <div class="reading-list__title">Astrophysics for People in a Hurry</div>
+                            <div class="reading-list__by">by Neil deGrasse Tyson</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Masters of Doom</div>
-                            <div class="reading-list__subtitle">How Two Guys Created an Empire and Transformed Pop Culture</div>
-                            <div class="reading-list__by">by David Kushner</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Jacked</div>
-                            <div class="reading-list__subtitle">The Outlaw Story of Grand Theft Auto</div>
-                            <div class="reading-list__by">by David Kushner</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">The Tipping Point</div>
@@ -200,22 +136,14 @@
                             <div class="reading-list__by">by Malcolm Gladwell</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
-                            <div class="reading-list__title">The Creative Thinker's Toolkit</div>
-                            <div class="reading-list__by">by Gerard Puccio</div>
+                            <div class="reading-list__title">The True History of Chocolate</div>
+                            <div class="reading-list__by">by Frederick Gregory</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">David and Goliath</div>
-                            <div class="reading-list__subtitle">Underdogs, Misfits, and the Art of Battling Giants</div>
-                            <div class="reading-list__by">by Malcolm Gladwell</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Outliers</div>
@@ -223,7 +151,7 @@
                             <div class="reading-list__by">by Malcolm Gladwell</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">The Innovators</div>
@@ -231,7 +159,7 @@
                             <div class="reading-list__by">by Walter Isaacson</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">The Innovator's Dilemma</div>
@@ -239,30 +167,14 @@
                             <div class="reading-list__by">by Clayton M. Christensen</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Particle Physics for Non-Physicists</div>
-                            <div class="reading-list__subtitle">A Tour of the Microcosmos</div>
-                            <div class="reading-list__by">by Steven Pollock</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Steve Jobs</div>
                             <div class="reading-list__by">by Walter Isaacson</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
-                        <div class="reading-list__image flex-noshrink"></div>
-                        <div class="reading-list__meta">
-                            <div class="reading-list__title">Mysteries of Modern Physics</div>
-                            <div class="reading-list__subtitle">Time</div>
-                            <div class="reading-list__by">by Sean Carroll</div>
-                        </div>
-                    </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Hooked</div>
@@ -270,7 +182,7 @@
                             <div class="reading-list__by">by Nir Eyal, Ryan Hoover</div>
                         </div>
                     </li>
-                    <li class="reading-list__item flex">
+                    <li class="reading-list__item">
                         <div class="reading-list__image flex-noshrink"></div>
                         <div class="reading-list__meta">
                             <div class="reading-list__title">Viral Loop</div>

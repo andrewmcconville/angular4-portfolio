@@ -1,31 +1,33 @@
 .app-menu {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
     transition: transform 240ms ease-in-out, width 160ms ease-in-out;
 
     @media(max-width: 719px) {
+        bottom: 0;
+        display: flex;
+        left: 0;
+        position: fixed;
+        top: 0;
         transform: translate3d(-100%, 0, 0);
         width: 100%;
         z-index: 3;
     }
 
     @media(min-width: 720px) {
+        flex-shrink: 0;
+        width: 260px;
         z-index: 1;
-    }
-    
-    @media(min-width: 720px) and (max-width: 1099px) {
-        width: 320px;
-    }
-    
-    @media(min-width: 1100px) {
-        width: 360px;
     }
 }
 
 .app-menu--show {
     transform: translate3d(0, 0, 0);
+}
+
+.app-menu__sticky {
+    @media(min-width: 720px) {
+        position: sticky;
+        top: 0;
+    }
 }
 
 .app-menu__close {
@@ -55,7 +57,7 @@
     bottom: 0;
     display: none;
     left: 0;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     z-index: 2;

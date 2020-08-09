@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PortfolioComponent } from './portfolio.component';
 
+import { AboutComponent } from './about/about/about.component';
 import { ContactComponent } from './about/contact/contact.component';
 import { HomeComponent } from './about/home/home.component';
 import { ReadingListComponent } from './about/reading-list/reading-list.component';
@@ -11,6 +12,7 @@ import { ResumeComponent } from './about/resume/resume.component';
 import { WorkComponent } from './work/work.component';
 
 const portfolioRoutes: Routes = [
+    { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
     { path: 'home', component: HomeComponent },
     { path: 'reading-list', component: ReadingListComponent },
