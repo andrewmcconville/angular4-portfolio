@@ -9,20 +9,35 @@
     </header>
     <article id="router-view" itemscope itemtype="https://schema.org/Article">
         <div class="article__shadow-box">
-            <header class="article__header" [style.backgroundImage]="work.backgroundBlur">
-                <div class="article__header-inner">
-                    <h1 class="article__header-title" itemprop="name">
-                        <div>{{work.name}}</div>
-                        <div>{{work.name2}}</div>
-                    </h1>
-                    <h2 class="article__header-subtitle" itemprop="description">{{work.description}}</h2>
-                    <div class="article__header-meta">
-                        <div itemprop="author">Role: {{work.role}}</div>
-                        <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
+            <header class="article__header" [style.background]="work.gradient">
+                <div class="article__header-inner flex flex-between-end">
+                    <div class="article__header-copy">
+                        <h1 class="article__header-title" itemprop="name">
+                            <div>{{work.name}}</div>
+                            <div>{{work.name2}}</div>
+                        </h1>
+                        <h2 class="article__header-subtitle" itemprop="description">{{work.description}}</h2>
+                        <div class="article__header-meta">
+                            <div itemprop="author">Role: {{work.role}}</div>
+                            <time [attr.datetime]="work.date" itemprop="datePublished" [attr.content]="work.date">{{work.date | date:'MMMM d, y'}}</time>                    
+                        </div>
                     </div>
-                </div>
+                    <div class="article__work-hero-container">
+                        <img src="{{work.hero}}" class="article__work-hero" />
+                    </div>
+                </div>                                
+                <svg class="article__header-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 3">
+                    <polygon points="50 3 0 3 0 0 50 3"/>
+                </svg>
             </header>
-            <div class="article__body" itemprop="articleBody">
+            
+            <div class="article__body" itemprop="articleBody" [ngSwitch]="work.url">
+                <universal-design-q-tip-grip *ngSwitchCase="'universal-design-q-tip-grip'"></universal-design-q-tip-grip>
+                <stack-overflow-user-research *ngSwitchCase="'stack-overflow-user-research'"></stack-overflow-user-research>
+                <ux-engineering *ngSwitchCase="'ux-engineering'"></ux-engineering>
+            </div>
+
+            <!-- <div class="article__body" itemprop="articleBody">
                 <section class="article__section" *ngFor="let section of work.sections">
                     <div class="article__copy">
                         <h3 class="article__subheading">{{section.name}}</h3>
@@ -61,7 +76,7 @@
                 <div class="flex flex-center-center" *ngIf="work.link">
                     <a class="button article__live-project-link" [href]="work.link" target="_blank" rel="noopener">View it here</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </article>
 </div>

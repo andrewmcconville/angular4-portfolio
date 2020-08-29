@@ -19,6 +19,10 @@ import { ResumeComponent } from './about/resume/resume.component';
 import { WorkService } from './work/work.service';
 import { WorkComponent } from './work/work.component';
 
+import { StackOverflowUserResearchComponent } from './work/stack-overflow-user-research/stack-overflow-user-research.component';
+import { UniversalDesignQTipGripComponent } from './work/universal-design-q-tip-grip/universal-design-q-tip-grip.component';
+import { UXEngineeringComponent } from './work/ux-engineering/ux-engineering.component';
+
 import { PortfolioUIService } from './portfolio-ui.service';
 
 @NgModule({
@@ -30,7 +34,10 @@ import { PortfolioUIService } from './portfolio-ui.service';
     ReadingListComponent,
     ResumeComponent,
     WorkComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    StackOverflowUserResearchComponent,
+    UniversalDesignQTipGripComponent,
+    UXEngineeringComponent
   ],
   imports: [
     BrowserModule,

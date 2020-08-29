@@ -1,48 +1,52 @@
 <div class="list-view__list">
     <ul>
         <li>
-            <a class="list-view__link flex"
+            <a class="list-view__link"
                 [routerLink]="['/home']"
                 routerLinkActive="list-view__link--active">
+                <div class="list-view__marker"></div>
                 <p class="list-view__name">Home</p>
             </a>
         </li>
     </ul>
     <ul class="list-view__works">
         <li *ngFor="let work of works; let i = index">
-            <a class="list-view__link flex"
+            <a class="list-view__link"
                 [routerLink]="['/', work.url]"
-                routerLinkActive="list-view__link--active">
-                <div class="list-view__poster flex-noshrink" [style.backgroundPosition]="'0 -' + i * 80 + 'px'"></div>
-                <div class="live-view__copy flex flex-col flex-center-start">
-                    <p class="list-view__name">
-                        <span>{{work.name}}</span>
-                        <span>{{work.name2}}</span>
-                    </p>
-                </div>
+                routerLinkActive="list-view__link--active"
+                [style.color]="work.color">
+                <div class="list-view__marker" [style.backgroundColor]="work.color"></div>
+                <div class="list-view__number">{{i + 1}}</div>
+                <p class="list-view__name">
+                    <span>{{work.name}}</span>
+                    <span>{{work.name2}}</span>
+                </p>
             </a>
         </li>
     </ul>
     <ul>
         <li>
-            <a class="list-view__link flex"
+            <a class="list-view__link"
                 [routerLink]="['/resume']"
                 routerLinkActive="list-view__link--active">
+                <div class="list-view__marker"></div>
                 <p class="list-view__name">Resume</p>
             </a>
         </li>
         <li>
-            <a class="list-view__link flex"
+            <a class="list-view__link"
                 [routerLink]="['/about']"
                 routerLinkActive="list-view__link--active">
-                    <p class="list-view__name">About</p>
+                <div class="list-view__marker"></div>
+                <p class="list-view__name">About</p>
             </a>
         </li>
         <li>
-            <a class="list-view__link flex"
+            <a class="list-view__link"
                 [routerLink]="['/reading-list']"
                 routerLinkActive="list-view__link--active">
-                <p class="list-view__name">Reading list</p>
+                <div class="list-view__marker"></div>
+                <p class="list-view__name">Reading List</p>
             </a>
         </li>
     </ul>

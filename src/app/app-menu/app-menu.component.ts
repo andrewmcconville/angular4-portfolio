@@ -5,7 +5,7 @@ import { WorkService } from '../work/work.service';
 import { PortfolioUIService } from '../portfolio-ui.service';
 
 @Component({
-    selector: 'portfolio-app-menu',
+    selector: 'app-menu',
     templateUrl: './app-menu.component.html'
 })
 export class AppMenuComponent {

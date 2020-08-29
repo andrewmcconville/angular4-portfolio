@@ -4,7 +4,10 @@ export interface IWork {
     description: string;
     date: string;
     role: string;
-    backgroundBlur: string;
+    hero: string;
+    backgroundBlur?: string;
+    gradient?: string;
+    color?: string;
     url: string;
 
     media?: {};

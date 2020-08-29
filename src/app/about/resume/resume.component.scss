@@ -4,21 +4,11 @@
 :host {
     flex-grow: 1;
 }
-
 .article__header {
-    background-color: #fff;
-    //border-bottom: 1px solid $slate-100;
-    box-shadow: $shadow-z-1;
-}
-
-.resume__download-link-container {
-    margin-top: -78px;
+    background: #fff;
 }
 
 .resume__download-link {
-    background-color: #fff;
-    border: 1px solid $slate-100;
-    border-radius: 100%;
     height: 100px;
     width: 100px;
 }

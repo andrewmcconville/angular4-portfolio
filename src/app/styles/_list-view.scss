@@ -1,11 +1,13 @@
 @import "../styles/_shadows.scss";
 
 .list-view__list {
-	padding: 8px 0 200px 0;
+	padding: 8px 0 0 0;
 	
 	@media(max-width: 719px) {
 		background-color: $slate-50;
 		min-height: 100%;
+		padding-bottom: 200px;
+		padding-left: 12px;
 		width: 320px;
 	}
 	
@@ -14,80 +16,49 @@
 	}
 }
 
-.list-view__divider {
-	//border-top: 1px solid $slate-100;
-    margin: 8px 0;
-}
-
 .list-view__link {
-	border-left: 4px solid transparent;
+	color: rgb(80, 90, 100);
+	display: flex;
+	opacity: .75;
 	cursor: pointer;
-	padding: 8px;
-	transition: 160ms ease-in-out;
+	padding: 8px 0;
+	transition: all 160ms ease-in-out;
 
-	&:focus {
-		border-left-color: $slate-500;
-	}
-}
+    @media(max-width: 719px) {
+		font-size: 20px;
+    }
 
-.list-view__link--active {
-	//background-color: #f2f4f8;
-	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 75%);
-	border-left-color: $slate-500;
+    @media(min-width: 720px) {
+		font-size: 18px;
+    }
 
-	.list-view__name {
-		color: rgba(0, 0, 0, .8);
-	}
-	
-	.list-view__excerpt {
-		color: rgba(0, 0, 0, 0.6);
-	}
-
-	.list-view__poster {
+	&--active {
 		opacity: 1;
+
+		.list-view__marker {
+			opacity: 1;
+		}
 	}
 }
 
-.list-view__poster-container {
-	overflow: hidden;
+.list-view__marker {
+	background-color: rgb(100, 110, 120);
+	height: 19px;
+	margin-right: 4px;
+	opacity: 0;
+	transition: all 160ms ease-in-out;
+	width: 4px;
 }
 
-.list-view__poster {
-	background-color: #9dc2e8;
-	background-image: url(/assets/thumbnail-sprite-v5.jpg);
-	background-size: 80px auto;
-	height: 80px;
-	margin-right: 8px;
-	opacity: .8;
-	transition: opacity 240ms ease-in-out;
-	width: 80px;
-}
-
-.live-view__copy {
-	max-height: 80px;
-	overflow: hidden;
+.list-view__number {
+	line-height: 1.1;
+	width: 18px;
 }
 
 .list-view__name {
-	color: rgba(0, 0, 0, .6);
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	line-height: 1.1;
 	transition: color 240ms ease-in-out;
-}
-
-.list-view__end-of-list-message {
-	color: rgba(0, 0, 0, .6);
-	margin: auto;
-	padding: 24px 0;
-	text-align: center;
-	width: 208px;
-
-	p {
-		margin-bottom: 16px;
-	}
-
-	button {
-		margin-top: 16px;
-	}
 }

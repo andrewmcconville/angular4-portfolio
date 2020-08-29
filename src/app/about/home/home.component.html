@@ -17,16 +17,31 @@
                     <p class="article__callout-inner">
                         Hi, I’m Andrew McConville.
                         <br />
-                        I'm a UX Engineer with a background in B2B SaaS applications. I design and build prototypes for usability testing.
+                        I'm a UX Engineer with a background in B2B SaaS applications.
                     </p>
                 </div>
 
+                <section class="article__section">
+                    <div class="article__copy">
+                        <p class="article__paragraph">
+                            I'm interested in how design complements routine tasks and behaviors, integrates with practical living, and enhances societal interactions.
+                            I enjoy products that introduce positive lifestyle habits such as Google Maps, Uber, Sonos, and Audible.
+                        </p>
+                    </div>
+                </section>
+
                 <ul class="home__work-list">
                     <li class="home__work-snippet" *ngFor="let work of works; let i = index">
-                        <a class="home__work-snippet-inner" [style.backgroundImage]="work.backgroundBlur"
+                        <a class="home__work-snippet-inner"
                             [routerLink]="['/', work.url]"
                             routerLinkActive="list-view__link--active">
-                            <header class="home__work-headings">
+                            <header class="home__work-header" [style.background]="work.gradient">
+                                <img src="{{work.hero}}" class="home__work-hero" />
+                                <svg class="home__work-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 3">
+                                    <polygon points="50 3 0 3 0 0 50 3"/>
+                                </svg>
+                            </header>
+                            <footer class="home__work-footer">
                                 <h2 class="home__work-main-heading">
                                     <div>{{work.name}}</div>
                                     <div>{{work.name2}}</div>
@@ -35,8 +50,7 @@
                                     <div>Role: {{work.role}}</div>
                                     <div>{{work.date | date:'MMMM d, y'}}</div>
                                 </h3>
-                            </header>
-                            <footer class="home__work-footer"></footer>
+                            </footer>
                         </a>
                     </li>
                 </ul>

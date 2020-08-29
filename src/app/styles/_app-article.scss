@@ -1,36 +1,23 @@
 .article {    
     @media(min-width: 720px) {
-        margin: 12px 0 120px 0;
+        margin: 0 0 120px 0;
     }
 }
 
 .article__shadow-box {
-    background: rgb(248, 250, 252);
+    background: #fff;
     padding-bottom: 80px;
-
-    @media(min-width: 720px) {
-        box-shadow: $shadow-z-2;
-        border-radius: 32px;
-        overflow: hidden;
-    }
 }
 
 .article__header {
-    align-items: flex-end;
-    background-color: #f0f0f0;
+    background: rgb(240, 241, 242);
     background-position: center;
     background-size: cover;
-    display: flex;
-    min-height: 320px;
+    position: relative;
     transition: all 320ms ease-in-out;
 
     @media(max-width: 519px) {
         min-height: 160px;
-        padding: 24px 24px 32px 24px;
-    }
-
-    @media(min-width: 520px) {
-        padding: 24px 32px 32px 32px;
     }
     
     @media(min-width: 520px) and (max-width: 619px) {
@@ -51,6 +38,24 @@
 
     @media(min-width: 920px) {
         min-height: 320px;
+    }
+}
+
+.article__header-inner {
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 860px;
+
+    @media(max-width: 519px) {
+        padding: 32px 24px 0 24px;
+    }
+
+    @media(min-width: 520px) {
+        padding: 80px 32px 0 32px;
+    }
+
+    @media(max-width: 1023px) {
+        flex-wrap: wrap;
     }
 }
 
@@ -66,100 +71,104 @@
     background-image: url("/assets/about/reading-list-cover.jpg");
 }
 
-.article__header-inner {
-    flex-grow: 1;
-    margin: 0 auto;
-    max-width: 752px;
-}
-
 .article__photo {
     background-color: #eee;
     border: 4px solid #fff;
     border-radius: 100px;
-    box-shadow: $shadow-z-2;
     position: relative;
     transition: all 320ms ease-in-out;
     z-index: 1;
 
     @media(max-width: 519px) {
-        bottom: -88px;
+        bottom: -68px;
         height: 128px;
         width: 128px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        bottom: -96px;
+        bottom: -82px;
         height: 158px;
         width: 158px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        bottom: -112px;
+        bottom: -92px;
         height: 188px;
         width: 188px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        bottom: -88px;
+        bottom: -68px;
         height: 128px;
         width: 128px;
     }
     
     @media(min-width: 820px) and (max-width: 919px) {
-        bottom: -96px;
+        bottom: -82px;
         height: 158px;
         width: 158px;
     }
 
     @media(min-width: 920px) {
-        bottom: -112px;
+        bottom: -92px;
         height: 188px;
         width: 188px;
     }
 }
 
 .article__callout {
-    background-color: #fff;
-    box-shadow: $shadow-z-1;
-    margin: -32px 0 48px 0;
+    margin: -48px 0 48px 0;
 
     @media(max-width: 519px) {
-        padding: 72px 16px 32px 16px;
+        padding: 88px 16px 32px 16px;
     }
 
     @media(min-width: 520px) and (max-width: 619px) {
-        padding: 80px 16px 32px 16px;
+        padding: 96px 16px 32px 16px;
     }
     
     @media(min-width: 620px) and (max-width: 719px) {
-        padding: 96px 16px 32px 16px;
+        padding: 112px 16px 32px 16px;
     }
     
     @media(min-width: 720px) and (max-width: 819px) {
-        padding: 72px 16px 32px 16px;
+        padding: 88px 16px 32px 16px;
     }
     
     @media(min-width: 820px) and (max-width: 919px) {
-        padding: 80px 16px 32px 16px;
+        padding: 96px 16px 32px 16px;
     }
 
     @media(min-width: 920px) {
-        padding: 96px 16px 32px 16px;
+        padding: 112px 16px 32px 16px;
     }
 }
 
 .article__callout-inner {
-    font-weight: 300;
-    line-height: 1.25;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.3;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 860px;
+    text-align: center;
     
-    @media(max-width: 719px) {
-        padding: 0 12px;
+    @media(max-width: 519px) {
+        padding: 0 24px;
     }
 
-    @media(min-width: 720px) {
-        padding: 0 24px;
+    @media(min-width: 520px) {
+        padding: 0 32px;
+    }
+}
+
+.article__header-copy {
+    @media(max-width: 1023px) {
+        margin-bottom: 32px;
+    }
+
+    @media(min-width: 1024px) {
+        margin-bottom: 96px;
+        margin-right: 24px;
     }
 }
 
@@ -167,51 +176,68 @@
     font-weight: 100;
     line-height: 1;
     margin: 0 auto 20px auto;
-    max-width: 752px;
     
     @media(max-width: 719px) {
         font-size: 40px;
     }
 
     @media(min-width: 720px) {
-        font-size: 46px;
+        font-size: 48px;
     }
 }
 
 .article__header-subtitle {
-    font-size: 20px;
     font-weight: 300;
     line-height: 1.25;
-    margin: 0 auto 20px auto;
-    max-width: 752px;
+    margin: 0 auto 16px auto;
+
+    @media(max-width: 519px) {
+        font-size: 18px;
+    }
+
+    @media(min-width: 520px) {
+        font-size: 20px;
+    }
 }
 
 .article__header-meta {
     font-size: 16px;
     font-weight: 300;
-    line-height: 1;
+    line-height: 1.3;
     margin: 0 auto;
-    max-width: 752px;
     text-transform: capitalize;
 }
 
-.article__header-divider {
-    background-color: rgba(0, 0, 0, 0.2);
-    margin: 0px 8px;
-    width: 1px;
+.article__work-hero-container {
+    margin: auto;
+    max-width: 360px;
+}
+
+.article__work-hero {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.article__header-slash {
+    bottom: 0;
+    display: block;
+    fill: #fff;
+    left: 0;
+    position: absolute;
 }
 
 .article__body {
-    padding: 32px 0 0 0;
+    padding: 48px 0 0 0;
 }
 
 .article__section {
-    margin-bottom: 96px;
+    margin-bottom: 80px;
 }
 
 .article__copy {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 860px;
 
     @media(max-width: 519px) {
         padding: 0 24px;
@@ -224,10 +250,17 @@
 
 .article__subheading {
     color: #4369a0;
-    font-size: 32px;
     font-weight: 100;
     line-height: 1.25;
     margin: 0 0 12px 0;
+
+    @media(max-width: 519px) {
+        font-size: 32px;
+    }
+
+    @media(min-width: 520px) {
+        font-size: 36px;
+    }
 }
 
 .article__paragraph {
@@ -239,6 +272,7 @@
 }
 
 .article__image-container {
+    padding: 0 10px;
     width: 100%;
 }
 
@@ -256,7 +290,7 @@
 
 .article__caption {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 860px;
 
     @media(max-width: 519px) {
         padding: 8px 24px;
@@ -264,17 +298,5 @@
 
     @media(min-width: 520px) {
         padding: 8px 32px;
-    }
-}
-
-.article__live-project-link {
-    background-color: $slate-500;
-    color: #fff;
-    margin-top: 48px;
-    padding: 16px 24px;
-
-    &:hover {
-        background-color: $slate-500;
-        color: #fff;
     }
 }

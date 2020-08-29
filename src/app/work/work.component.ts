@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router, NavigationEnd } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { IWork } from './work.model';
 import { WorkService } from './work.service';
 import { PortfolioUIService } from '../portfolio-ui.service';
+
+import { UniversalDesignQTipGripComponent } from './universal-design-q-tip-grip/universal-design-q-tip-grip.component';
 
 @Component({
     templateUrl: './work.component.html',
@@ -13,7 +15,6 @@ export class WorkComponent implements OnInit {
     work: IWork;
 
     constructor(
-        private router: Router,
         private portfolioUIService: PortfolioUIService,
         private workService: WorkService,
         private activatedRoute: ActivatedRoute

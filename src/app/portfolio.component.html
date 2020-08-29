@@ -1,6 +1,4 @@
 <div class="portfolio">
-    <router-outlet></router-outlet>
-
     <nav class="app-menu" [ngClass]="{'app-menu--show': appMenuOpen}" (click)="closeAppMenu()">
         <div class="app-menu__sticky flex flex-col flex-grow">
             <header class="header-bar--menu flex-noshrink flex flex-start-center" (click)="$event.stopPropagation()">
@@ -11,9 +9,11 @@
                 </button>
             </header>
             <div id="app-menu-list" class="app-menu__menu flex-grow flex-scroll--y" [style.marginRight]="0 - scrollbarWidth + 'px'">
-                <portfolio-app-menu></portfolio-app-menu>
+                <app-menu></app-menu>
             </div>
         </div>
     </nav>
     <div class="app-menu__mask" [ngClass]="{'app-menu__mask--show': appMenuOpen}"></div>
+
+    <router-outlet></router-outlet>
 </div>
