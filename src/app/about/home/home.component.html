@@ -17,7 +17,7 @@
                     <p class="article__callout-inner">
                         Hi, I’m Andrew McConville.
                         <br />
-                        I'm a UX Engineer with a background in B2B SaaS applications.
+                        I'm a UX Engineer with a background in web applications.
                     </p>
                 </div>
 
@@ -40,7 +40,7 @@
                                 </h2>
                                 <p class="home__work-sub-heading">{{work.description}}</p>
                                 <div class="home__work-meta">
-                                    <div *ngIf="work.role">Role: {{work.role}}</div>
+                                    <div *ngIf="work.role">{{work.role}}</div>
                                     <div>{{work.date | date:'MMMM d, y'}}</div>
                                 </div>
                             </footer>
