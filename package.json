@@ -19,7 +19,7 @@
     "@angular/platform-server": "^13.2.2",
     "@angular/router": "^13.2.2",
     "@angular/service-worker": "^13.2.2",
-    "ajv": "^5.5.2",
+    "ajv": "^6.12.3",
     "core-js": "2.5.1",
     "rxjs": "^6.6.7",
     "tslib": "^2.0.0",
