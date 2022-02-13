@@ -13,9 +13,8 @@
         <li *ngFor="let work of works; let i = index">
             <a class="list-view__link"
                 [routerLink]="['/', work.url]"
-                routerLinkActive="list-view__link--active"
-                [style.color]="work.color">
-                <div class="list-view__marker" [style.backgroundColor]="work.color"></div>
+                routerLinkActive="list-view__link--active">
+                <div class="list-view__marker"></div>
                 <div class="list-view__number">{{i + 1}}</div>
                 <p class="list-view__name">
                     <span>{{work.name}}</span>

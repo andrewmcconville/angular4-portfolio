@@ -115,16 +115,27 @@ export const works: Array<IWork> = [
     //         }
     //     ]
     // },
+    // {
+    //     name: "AccuLynx",
+    //     name2: "Freemium",
+    //     description: "Building prototypes, managing interface components, and designing interactions.",
+    //     date: '2019-04-13T18:00:00-05:00',
+    //     role: "UX Engineer",
+    //     url: "ux-engineering2",
+    //     hero: "wp-content/uploads/2019/04/ux-engineering-hero-2.png",
+    //     gradient: "linear-gradient(170deg, #ebf5ff 0%, #edfaed 100%)",
+    //     color: "#6b8299"
+    // },
     {
         name: "Stack Overflow",
         name2: "User Research",
         description: "Reducing points of tension within Stack Overflow's question and answer community.",
         date: '2018-05-09T13:35:00-05:00',
-        role: "Product Designer",
+        role: "UX Research",
         url: "stack-overflow-user-research",
         hero: "wp-content/uploads/2017/12/stack-overflow-ux-design-hero-2.png",
-        gradient: "linear-gradient(165deg, #edf6fc 15%, #dad2f7 100%)",
-        color: "#9a8fcc"
+        gradient: "linear-gradient(165deg, #fcf3e8 0%, #ebf1ff 100%)",
+        color: "#6b996b"
     },
     {
         name: "Q-Tip Grip",
@@ -134,8 +145,8 @@ export const works: Array<IWork> = [
         role: "Product Designer",
         url: "universal-design-q-tip-grip",
         hero: "wp-content/uploads/2020/03/universal-design-q-tip-grip-hero-2.jpg",
-        gradient: "linear-gradient(15deg, #e9f2f3 10%, #f0d9ce 100%)",
-        color: "#a3cacc"
+        gradient: "linear-gradient(15deg, #e6f4fa 15%, #f4edfa 100%)",
+        color: "#6b8b99"
     },
     {
         name: "AccuLynx",
@@ -145,8 +156,8 @@ export const works: Array<IWork> = [
         role: "UX Engineer",
         url: "ux-engineering",
         hero: "wp-content/uploads/2019/04/ux-engineering-hero-2.png",
-        gradient: "linear-gradient(165deg, #ffefdb 0%, #c2d6f2 100%)",
-        color: "#8fabcc"
+        gradient: "linear-gradient(170deg, #fcf3e8 0%, #edfaeb 100%)",
+        color: "#99846b"
     },
     // {
     //     name: "Animating Micro-Interactions",

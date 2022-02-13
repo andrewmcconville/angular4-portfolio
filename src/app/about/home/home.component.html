@@ -24,8 +24,8 @@
                 <section class="article__section">
                     <div class="article__copy">
                         <p class="article__paragraph">
-                            I'm interested in how design complements routine tasks and behaviors, integrates with practical living, and enhances societal interactions.
-                            I enjoy products that introduce positive lifestyle habits such as Google Maps, Uber, Sonos, and Audible.
+                            I'm interested in how design complements routine tasks, integrates with practical living, and enhances societal interactions.
+                            I enjoy products that introduce positive lifestyle habits such as Google Maps, Nest, Uber, Sonos, and Audible.
                         </p>
                     </div>
                 </section>
@@ -34,8 +34,9 @@
                     <li class="home__work-snippet" *ngFor="let work of works; let i = index">
                         <a class="home__work-snippet-inner"
                             [routerLink]="['/', work.url]"
+                            [style.background]="work.gradient"
                             routerLinkActive="list-view__link--active">
-                            <header class="home__work-header" [style.background]="work.gradient">
+                            <header class="home__work-header">
                                 <img src="{{work.hero}}" class="home__work-hero" />
                                 <svg class="home__work-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 3">
                                     <polygon points="50 3 0 3 0 0 50 3"/>
@@ -46,10 +47,11 @@
                                     <div>{{work.name}}</div>
                                     <div>{{work.name2}}</div>
                                 </h2>
-                                <h3 class="home__work-sub-heading">
+                                <p class="home__work-sub-heading">{{work.description}}</p>
+                                <div class="home__work-meta">
                                     <div>Role: {{work.role}}</div>
                                     <div>{{work.date | date:'MMMM d, y'}}</div>
-                                </h3>
+                                </div>
                             </footer>
                         </a>
                     </li>

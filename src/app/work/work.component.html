@@ -25,7 +25,7 @@
                     <div class="article__work-hero-container">
                         <img src="{{work.hero}}" class="article__work-hero" />
                     </div>
-                </div>                                
+                </div>
                 <svg class="article__header-slash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 3">
                     <polygon points="50 3 0 3 0 0 50 3"/>
                 </svg>
@@ -36,47 +36,6 @@
                 <stack-overflow-user-research *ngSwitchCase="'stack-overflow-user-research'"></stack-overflow-user-research>
                 <ux-engineering *ngSwitchCase="'ux-engineering'"></ux-engineering>
             </div>
-
-            <!-- <div class="article__body" itemprop="articleBody">
-                <section class="article__section" *ngFor="let section of work.sections">
-                    <div class="article__copy">
-                        <h3 class="article__subheading">{{section.name}}</h3>
-                        <p class="article__paragraph" *ngFor="let paragraph of section.content">{{paragraph}}</p>
-                    </div>
-                    <blockquote class="blockquote" *ngIf="section.quote">
-                        {{section.quote}}
-                    </blockquote>
-                    <figure class="article__figure" *ngIf="section.media">
-                        <div class="article__image-container flex flex-center-start" *ngIf="section.media.type !== 'video'">
-                            <a href="/wp-content/uploads/{{section.media.src}}" target="_blank" *ngIf="!section.media.hires">
-                                <img class="article__image"
-                                    [ngClass]="{'article__image-shadow': section.media.shadow}"
-                                    [src]="'/wp-content/uploads/' + section.media.src"
-                                    [alt]="section.media.caption"
-                                    [height]="section.media.height" width="1500" />
-                            </a>
-                            <a href="/wp-content/uploads/{{section.media.hires}}" target="_blank" *ngIf="section.media.hires">
-                                <img class="article__image"
-                                    [ngClass]="{'article__image-shadow': section.media.shadow}"
-                                    [src]="'/wp-content/uploads/' + section.media.src"
-                                    [alt]="section.media.caption"
-                                    [height]="section.media.height" width="1920" />
-                            </a>
-                        </div>
-                        <div class="article__image-container flex flex-center-start" *ngIf="section.media.type === 'video'">
-                            <video class="article__image" controls loop autoplay [height]="section.media.height" width="1500">
-                                <source [src]="'/wp-content/uploads/' + section.media.src" type="video/mp4">
-                                Your browser does not support HTML5 video.
-                            </video>
-                        </div>
-                        <figcaption class="article__caption caption-text flex-noshrink">{{section.media.caption}}</figcaption>
-                    </figure>
-                </section>
-
-                <div class="flex flex-center-center" *ngIf="work.link">
-                    <a class="button article__live-project-link" [href]="work.link" target="_blank" rel="noopener">View it here</a>
-                </div>
-            </div> -->
         </div>
     </article>
 </div>
