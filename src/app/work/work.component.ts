@@ -5,8 +5,6 @@ import { IWork } from './work.model';
 import { WorkService } from './work.service';
 import { PortfolioUIService } from '../portfolio-ui.service';
 
-import { UniversalDesignQTipGripComponent } from './universal-design-q-tip-grip/universal-design-q-tip-grip.component';
-
 @Component({
     templateUrl: './work.component.html',
     styleUrls: ['./work.component.scss']

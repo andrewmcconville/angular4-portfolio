@@ -10,7 +10,6 @@ export const works: Array<IWork> = [
         url: "stack-overflow-user-research",
         hero: "wp-content/uploads/2017/12/stack-overflow-ux-design-hero-2.png",
         gradient: "linear-gradient(165deg, #fcf3e8 0%, #ebf1ff 100%)",
-        color: "#6b996b"
     },
     {
         name: "Q-Tip Grip",
@@ -21,7 +20,16 @@ export const works: Array<IWork> = [
         url: "universal-design-q-tip-grip",
         hero: "wp-content/uploads/2020/03/universal-design-q-tip-grip-hero-2.jpg",
         gradient: "linear-gradient(15deg, #e6f4fa 15%, #f4edfa 100%)",
-        color: "#6b8b99"
+    },
+    {
+        name: "Lidar Rendering",
+        name2: "Mapping Milwaukee",
+        description: "Visualizing the City of Milwaukee via lidar point cloud data.",
+        date: '2021-01-31T18:00:00-05:00',
+        role: "",
+        url: "lidar-milwaukee",
+        hero: "wp-content/uploads/2021/01/lidar-milwaukee-hero-2.jpg",
+        gradient: "linear-gradient(170deg, #faf8ed 0%, #e8e5cf 100%)",
     },
     {
         name: "AccuLynx",
@@ -32,7 +40,6 @@ export const works: Array<IWork> = [
         url: "ux-engineering",
         hero: "wp-content/uploads/2019/04/ux-engineering-hero-2.png",
         gradient: "linear-gradient(170deg, #fcf3e8 0%, #edfaeb 100%)",
-        color: "#99846b"
     },
     // {
     //     name: "Mesmer Degree Planner",

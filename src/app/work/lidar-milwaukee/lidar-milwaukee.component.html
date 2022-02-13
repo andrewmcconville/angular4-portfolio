@@ -1,0 +1,161 @@
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Project Overview
+        </h3>
+        <p class="article__paragraph">
+            I had been searching for ever higher resolution satellite data when I stumbled upon a lidar scan of Milwaukee County.
+            Having never worked with a lidar point cloud, I was excited to see if I could tease out individual structures from the more than 120 million points; below is my process.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee.jpg"
+                    alt="Lidar point cloud rendered in Blender." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Lidar point cloud rendered in Blender</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Lidar Point Cloud
+        </h3>
+        <p class="article__paragraph">
+            The lidar data was split into several small segments which needed to be combined.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-dem-point-cloud-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-point-cloud.jpg"
+                    alt="Lidar point cloud segment of Milwaukee’s east side." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Lidar point cloud segment of Milwaukee’s east side.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            QGIS
+        </h3>
+        <p class="article__paragraph">
+            Each lidar point cloud segment was converted to a digital elevation model and combined in QGIS.
+            Their height values were then normalized and the entire collection merged into one image to be exported.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-qgis-tiles-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-qgis-tiles.jpg"
+                    alt="QGIS software containing fifteen different lidar segments." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">QGIS software containing fifteen different lidar segments.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            3D Printing
+        </h3>
+        <p class="article__paragraph">
+            I took a small detour to see if the lidar data could be 3D printed and if so, would the area’s features be recognizable.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-3d-print-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-3d-print.jpg"
+                    alt="3D print of a lidar point cloud data set." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">3D print of a lidar point cloud data set.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Data Layers
+        </h3>
+        <p class="article__paragraph">
+            The elevation model was imported into Photoshop to adjust scale and apply light denoising.
+            A color layer was added based on elevation.
+            A roads layer was added from the Wisconsin DOT to enhance their visibility.
+            Finally, lidar intensity data was added as a final layer to add texture.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-dem-color-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-dem-color.jpg"
+                    alt="Digital elevation model and color texture." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Digital elevation model and color texture.</figcaption>
+    </figure>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-street-intensity-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-street-intensity.jpg"
+                    alt="Road map and lidar intensity data." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Road map and lidar intensity data.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Rendering
+        </h3>
+        <p class="article__paragraph">
+            The layers were then combined in Blender to produce a color image with lighting applied.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-blender-lighting-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-blender-lighting.jpg"
+                    alt="Blender's node editor." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Blender's node editor.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Detail
+        </h3>
+        <p class="article__paragraph">
+            The final image was printed at 24”x36”. The rendered output features not only Milwaukee’s larger buildings and structures, but also has enough resolution to faithfully resolve individual houses and even trees.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2021/01/lidar-milwaukee-detail-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2021/01/lidar-milwaukee-detail.jpg"
+                    alt="3D rendering of Milwaukee’s lakefront." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">3D rendering of Milwaukee’s lakefront.</figcaption>
+    </figure>
+</section>

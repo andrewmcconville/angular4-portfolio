@@ -51,12 +51,12 @@
             "canonical" => "/ux-engineering",
             "date" => "2019-04-13T18:00:00-05:00"
         ],
-        "infographics" => [
-            "title" => "Information Design",
-            "description" => "If a picture is worth a thousand words, an infographic's worth is in the data points.",
-            "image" => "/wp-content/uploads/2011/12/demographics-supersized-infographic-social-media.png",
-            "canonical" => "/infographics",
-            "date" => "2012-09-24T19:31:37-05:00"
+        "lidar-milwaukee" => [
+            "title" => "Lidar Milwaukee",
+            "description" => "Visualizing the City of Milwaukee via lidar point cloud data.",
+            "image" => "/wp-content/uploads/2021/01/lidar-milwaukee-social-media.png",
+            "canonical" => "/lidar-milwaukee",
+            "date" => "2021-01-30T18:00:00-05:00"
         ],
         "" => [
             "title" => "Andrew McConville - Portfolio",

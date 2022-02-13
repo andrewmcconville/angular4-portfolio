@@ -22,6 +22,7 @@ import { WorkComponent } from './work/work.component';
 import { StackOverflowUserResearchComponent } from './work/stack-overflow-user-research/stack-overflow-user-research.component';
 import { UniversalDesignQTipGripComponent } from './work/universal-design-q-tip-grip/universal-design-q-tip-grip.component';
 import { UXEngineeringComponent } from './work/ux-engineering/ux-engineering.component';
+import { LidarMilwaukeeComponent } from './work/lidar-milwaukee/lidar-milwaukee.component';
 
 import { PortfolioUIService } from './portfolio-ui.service';
 
@@ -37,7 +38,8 @@ import { PortfolioUIService } from './portfolio-ui.service';
     PortfolioComponent,
     StackOverflowUserResearchComponent,
     UniversalDesignQTipGripComponent,
-    UXEngineeringComponent
+    UXEngineeringComponent,
+    LidarMilwaukeeComponent
   ],
   imports: [
     BrowserModule,
