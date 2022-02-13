@@ -24,7 +24,7 @@ const portfolioRoutes: Routes = [
 
 export const portfolioRoutingProviders: any[] = [];
 
-export const routing: ModuleWithProviders<AppSharedModule> = RouterModule.forRoot(portfolioRoutes);
+export const routing: ModuleWithProviders<AppSharedModule> = RouterModule.forRoot(portfolioRoutes, { relativeLinkResolution: 'legacy' });
 
 export class AppSharedModule {
     static forRoot(): ModuleWithProviders<AppSharedModule> {
