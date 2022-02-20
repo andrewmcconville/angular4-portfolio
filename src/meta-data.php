@@ -58,6 +58,13 @@
             "canonical" => "/lidar-milwaukee",
             "date" => "2021-01-30T18:00:00-05:00"
         ],
+        "milwaukee-parcel-value" => [
+            "title" => "Milwaukee Parcel Value",
+            "description" => "Mapping land value across Milwaukee and Waukesha counties.",
+            "image" => "/wp-content/uploads/2020/07/milwaukee-parcel-value-media.png",
+            "canonical" => "/milwaukee-parcel-value",
+            "date" => "2020-07-06T18:00:00-05:00"
+        ],
         "" => [
             "title" => "Andrew McConville - Portfolio",
             "description" => "UX professional with a background in B2B SaaS applications.",

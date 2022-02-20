@@ -22,6 +22,16 @@ export const works: Array<IWork> = [
         gradient: "linear-gradient(170deg, #faf8ed 0%, #e8e5cf 100%)",
     },
     {
+        name: "Milwaukee County",
+        name2: "Parcel Value",
+        description: "Mapping land value across Milwaukee and Waukesha counties.",
+        date: '2020-07-06T18:00:00-05:00',
+        role: "Data Visualization",
+        url: "milwaukee-parcel-value",
+        hero: "wp-content/uploads/2020/07/milwaukee-parcel-value-hero-2.jpg",
+        gradient: "linear-gradient(168deg, #faf9f2 0%, #e6e9fa 100%)",
+    },
+    {
         name: "Stack Overflow",
         name2: "User Research",
         description: "Reducing points of tension within Stack Overflow's question and answer community.",
