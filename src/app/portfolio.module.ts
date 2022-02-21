@@ -24,6 +24,7 @@ import { UniversalDesignQTipGripComponent } from './work/universal-design-q-tip-
 import { UXEngineeringComponent } from './work/ux-engineering/ux-engineering.component';
 import { LidarMilwaukeeComponent } from './work/lidar-milwaukee/lidar-milwaukee.component';
 import { MilwaukeeParcelValueComponent } from './work/milwaukee-parcel-value/milwaukee-parcel-value.component';
+import { OvenInterfaceComponent } from './work/oven-interface/oven-interface.component';
 
 import { PortfolioUIService } from './portfolio-ui.service';
 
@@ -41,7 +42,8 @@ import { PortfolioUIService } from './portfolio-ui.service';
     UniversalDesignQTipGripComponent,
     UXEngineeringComponent,
     LidarMilwaukeeComponent,
-    MilwaukeeParcelValueComponent
+    MilwaukeeParcelValueComponent,
+    OvenInterfaceComponent
   ],
   imports: [
     BrowserModule,

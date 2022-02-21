@@ -22,6 +22,16 @@ export const works: Array<IWork> = [
         gradient: "linear-gradient(170deg, #faf8ed 0%, #e8e5cf 100%)",
     },
     {
+        name: "Oven Interface",
+        name2: "Appliance HMI",
+        description: "Building a prototyping framework for rapid user testing.",
+        date: '2020-05-04T18:00:00-05:00',
+        role: "Product Design",
+        url: "oven-interface",
+        hero: "wp-content/uploads/2020/05/oven-interface-hero-2.jpg",
+        gradient: "linear-gradient(170deg, #f0f2f5 15%, #ebddca 100%)",
+    },
+    {
         name: "Milwaukee County",
         name2: "Parcel Value",
         description: "Mapping land value across Milwaukee and Waukesha counties.",
@@ -34,7 +44,7 @@ export const works: Array<IWork> = [
     {
         name: "Stack Overflow",
         name2: "User Research",
-        description: "Reducing points of tension within Stack Overflow's question and answer community.",
+        description: "Reducing toxic online interactions within Stack Overflow's question and answer community.",
         date: '2018-05-09T13:35:00-05:00',
         role: "UX Research",
         url: "stack-overflow-user-research",

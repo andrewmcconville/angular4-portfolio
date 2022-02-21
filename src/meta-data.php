@@ -32,7 +32,7 @@
         ],
         "stack-overflow-user-research" => [
             "title" => "Stack Overflow User Research",
-            "description" => "Reducing points of tension within Stack Overflow's Q&A community.",
+            "description" => "Reducing toxic online interactions within Stack Overflow's Q&A community.",
             "image" => "/wp-content/uploads/2017/12/stack-overflow-user-research-social-media.png",
             "canonical" => "/stack-overflow-user-research",
             "date" => "2017-12-19T20:00:00-05:00"
@@ -61,9 +61,16 @@
         "milwaukee-parcel-value" => [
             "title" => "Milwaukee Parcel Value",
             "description" => "Mapping land value across Milwaukee and Waukesha counties.",
-            "image" => "/wp-content/uploads/2020/07/milwaukee-parcel-value-media.png",
+            "image" => "/wp-content/uploads/2020/07/milwaukee-parcel-value-social-media.png",
             "canonical" => "/milwaukee-parcel-value",
             "date" => "2020-07-06T18:00:00-05:00"
+        ],
+        "oven-interface" => [
+            "title" => "Oven Interface",
+            "description" => "Building a prototyping framework for rapid user testing.",
+            "image" => "wp-content/uploads/2020/05/oven-interface-social-media.png",
+            "canonical" => "/oven-interface",
+            "date" => "2020-05-04T18:00:00-05:00"
         ],
         "" => [
             "title" => "Andrew McConville - Portfolio",

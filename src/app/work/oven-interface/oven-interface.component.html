@@ -1,0 +1,176 @@
+<section class="article__section">
+    <div class="article__copy">
+        <p class="article__paragraph">
+            This project is a prototyping framework to assess the balance between physical hardware inputs and on screen touch inputs.
+            Accomplishing this goal was done by constructing a modular system composed of 3D printed housings, a touch screen running a web interface, and keyboard switches.
+            These elements were able to be quickly disassembled and rearranged into various configurations to be tested with users.
+        </p>
+    </div>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Problem Statement
+        </h3>
+        <p class="article__paragraph">
+            Users can have difficulty identifying a starting point when attempting to turn on the oven.
+            Once powered on, some users are met with a brief moment of cognitive overload from a cluttered interface.
+        </p>
+    </div>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Prototype
+        </h3>
+        <p class="article__paragraph">
+            The best possible prototype is: real enough to suspend the user’s disbelief, easy to build, easy to change, and easy to test with.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-prototype-final-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-prototype-final.jpg"
+                    alt="Assembled oven prototype featuring physical and touch inputs." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Assembled oven prototype featuring physical and touch inputs.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Electronics
+        </h3>
+        <p class="article__paragraph">
+            The touch screen is powered by a Raspberry Pi, while the hardware buttons are keyboard switches connected to an Arduino.
+            This allowed for buttons to be quickly added and removed and the Arduino could be connected to a Mac or PC for easy debugging.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-electronics-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-electronics.jpg"
+                    alt="Disassembled parts (left), Arduino and Arduino code (right)." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Disassembled parts (left), Arduino and Arduino code (right).</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Touch Interface
+        </h3>
+        <p class="article__paragraph">
+            The Arduino key presses are picked up by a web page running in Google Chorme.
+            This web page is written in HTML, CSS, and JavaScript.
+            Using a web page allows for quick changes to the touch interface from a Mac or PC.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-touch-interface-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-touch-interface.jpg"
+                    alt="Oven interface home screen." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Oven interface home screen.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Housing
+        </h3>
+        <p class="article__paragraph">
+            The housing and button caps were designed in Rhino and 3D printed in PLA material.
+            This allowed for creating several layout variations of the hardware buttons and touch screen.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-housing-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-housing.jpg"
+                    alt="3D printed housing (left), Rhino 3D software (right)." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">3D printed housing (left), Rhino 3D software (right).</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Buttons
+        </h3>
+        <p class="article__paragraph">
+            The properties of a button almost led to a project of its own.
+            What size should they be; and what about the shape, finish, typography and labeling, feel and resistance, travel distance, sound, and lighting?
+            Each of these items listed also contained their own properties making for a very long list of considerations.
+            Being a prototype, the minimal solution was produced: a plain white 3D printed button, without sound or lighting queues.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-buttons-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-buttons.jpg"
+                    alt="3D Printed button (left), 3D printed button housing and wiring (right)." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">3D Printed button (left), 3D printed button housing and wiring (right).</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Assembly
+        </h3>
+        <p class="article__paragraph">
+            All 3D printed pieces and keyboard switches snap together without requiring the use of tools.
+            All electronics and wiring are plug and play, without requiring soldering. .
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-assembly-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-assembly.jpg"
+                    alt="Various 3D printed and electronic components." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Various 3D printed and electronic components.</figcaption>
+    </figure>
+</section>
+
+<section class="article__section">
+    <div class="article__copy">
+        <h3 class="article__subheading">
+            Mockup
+        </h3>
+        <p class="article__paragraph">
+            Photoshop mockup for visualizing scale and placement.
+        </p>
+    </div>
+    <figure class="article__figure">
+        <div class="article__image-container flex flex-center-start">
+            <a href="/wp-content/uploads/2020/05/oven-interface-mockup-hi-res.jpg" target="_blank">
+                <img class="article__image article__image-shadow"
+                    src="/wp-content/uploads/2020/05/oven-interface-mockup.jpg"
+                    alt="Photoshop mockup for visualizing scale and placement." />
+            </a>
+        </div>
+        <figcaption class="article__caption caption-text flex-noshrink">Photoshop mockup for visualizing scale and placement.</figcaption>
+    </figure>
+</section>
