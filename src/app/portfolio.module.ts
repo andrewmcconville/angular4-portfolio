@@ -50,8 +50,7 @@ import { PortfolioUIService } from './portfolio-ui.service';
     RouterModule,
     routing,
     RouterModule.forRoot(portfolioRoutingProviders, {
-    scrollPositionRestoration: 'enabled',
-    relativeLinkResolution: 'legacy'
+    scrollPositionRestoration: 'enabled'
 }),
     HttpClientModule,
     environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : [],
